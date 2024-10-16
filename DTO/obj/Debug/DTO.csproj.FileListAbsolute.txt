@@ -1,0 +1,7 @@
+D:\.Net\RestaurantManagement\DTO\bin\Debug\DTO.dll.config
+D:\.Net\RestaurantManagement\DTO\bin\Debug\DTO.dll
+D:\.Net\RestaurantManagement\DTO\bin\Debug\DTO.pdb
+D:\.Net\RestaurantManagement\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\.Net\RestaurantManagement\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\.Net\RestaurantManagement\DTO\obj\Debug\DTO.dll
+D:\.Net\RestaurantManagement\DTO\obj\Debug\DTO.pdb

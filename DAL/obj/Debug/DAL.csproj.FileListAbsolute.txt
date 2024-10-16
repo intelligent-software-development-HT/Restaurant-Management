@@ -1,0 +1,10 @@
+D:\.Net\RestaurantManagement\DAL\bin\Debug\DAL.dll
+D:\.Net\RestaurantManagement\DAL\bin\Debug\DAL.pdb
+D:\.Net\RestaurantManagement\DAL\bin\Debug\DTO.dll
+D:\.Net\RestaurantManagement\DAL\bin\Debug\DTO.pdb
+D:\.Net\RestaurantManagement\DAL\bin\Debug\DTO.dll.config
+D:\.Net\RestaurantManagement\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\.Net\RestaurantManagement\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\.Net\RestaurantManagement\DAL\obj\Debug\DAL.csproj.Up2Date
+D:\.Net\RestaurantManagement\DAL\obj\Debug\DAL.dll
+D:\.Net\RestaurantManagement\DAL\obj\Debug\DAL.pdb
