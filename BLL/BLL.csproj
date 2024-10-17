@@ -41,8 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BanBLL.cs" />
+    <Compile Include="ChiTietHoaDonBLL.cs" />
+    <Compile Include="HoaDonBLL.cs" />
+    <Compile Include="LoaiMonAnBLL.cs" />
+    <Compile Include="ManHinhBLL.cs" />
     <Compile Include="MonAnBLL.cs" />
+    <Compile Include="NguoiDungBLL.cs" />
+    <Compile Include="NguoiDungNhomNguoiDungBLL.cs" />
+    <Compile Include="NhanVienBLL.cs" />
+    <Compile Include="NhomNguoiDungBLL.cs" />
+    <Compile Include="PhanQuyenBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

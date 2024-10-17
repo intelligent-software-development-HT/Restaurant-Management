@@ -13,16 +13,56 @@ namespace RestaurantManagement
 {
     public partial class Form1 : Form
     {
-        MonAnBLL monAnBLL = new MonAnBLL();
+        FormMonAn formMonAn;
+        FormLoaiMonAn formLoaiMonAn;
         public Form1()
         {
             InitializeComponent();
-            this.Load += Form1_Load;
+            this.buttonMonAn.Click += ButtonMonAn_Click;
+            this.buttonLoaiMonAn.Click += ButtonLoaiMonAn_Click;
+            this.pictureBoxClose.Click += PictureBoxClose_Click;
+            this.pictureBoxMinimize.Click += PictureBoxMinimize_Click;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void PictureBoxMinimize_Click(object sender, EventArgs e)
         {
-            this.dataGridView1.DataSource = monAnBLL.listMonAn(); 
+            this.WindowState = FormWindowState.Minimized;
         }
+
+        private void PictureBoxClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ButtonMonAn_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormMonAn());
+
+        }
+
+        private void ShowForm(Form newForm)
+        {
+            if (panelMain.Controls.Count > 0)
+            {
+                var currentForm = panelMain.Controls[0] as Form;
+                if (currentForm != null)
+                {
+                    currentForm.Close();
+                    panelMain.Controls.Remove(currentForm);
+                }
+            }
+            newForm.TopLevel = false;
+            newForm.FormBorderStyle = FormBorderStyle.None;
+            newForm.Dock = DockStyle.Fill;
+
+            panelMain.Controls.Clear();
+            panelMain.Controls.Add(newForm);
+            newForm.Show();
+        }
+        private void ButtonLoaiMonAn_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormLoaiMonAn());
+        }
+
     }
 }

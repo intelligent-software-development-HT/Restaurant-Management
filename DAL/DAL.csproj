@@ -42,8 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LoaiMonAn.cs" />
+    <Compile Include="BanDAL.cs" />
+    <Compile Include="ChiTietHoaDonDAL.cs" />
+    <Compile Include="HoaDonDAL.cs" />
+    <Compile Include="LoaiMonAnDAL.cs" />
+    <Compile Include="ManHinhDAL.cs" />
     <Compile Include="MonAnDAL.cs" />
+    <Compile Include="NguoiDungDAL.cs" />
+    <Compile Include="NguoiDungNhomNguoiDungDAL.cs" />
+    <Compile Include="NhanVienDAL.cs" />
+    <Compile Include="NhomNguoiDungDAL.cs" />
+    <Compile Include="PhanQuyenDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

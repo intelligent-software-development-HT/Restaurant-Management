@@ -5,3 +5,10 @@ D:\.Net\RestaurantManagement\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
 D:\.Net\RestaurantManagement\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\.Net\RestaurantManagement\DTO\obj\Debug\DTO.dll
 D:\.Net\RestaurantManagement\DTO\obj\Debug\DTO.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\bin\Debug\DTO.dll.config
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\bin\Debug\DTO.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\bin\Debug\DTO.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\obj\Debug\DTO.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\obj\Debug\DTO.pdb

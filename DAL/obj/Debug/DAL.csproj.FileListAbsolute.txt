@@ -8,3 +8,13 @@ D:\.Net\RestaurantManagement\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\.Net\RestaurantManagement\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\.Net\RestaurantManagement\DAL\obj\Debug\DAL.dll
 D:\.Net\RestaurantManagement\DAL\obj\Debug\DAL.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\bin\Debug\DAL.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\bin\Debug\DAL.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\bin\Debug\DTO.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\bin\Debug\DTO.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\bin\Debug\DTO.dll.config
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\obj\Debug\DAL.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\obj\Debug\DAL.pdb
