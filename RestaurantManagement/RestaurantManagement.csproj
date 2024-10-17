@@ -52,10 +52,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLoaiMonAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoaiMonAn.Designer.cs">
+      <DependentUpon>FormLoaiMonAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMonAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonAn.Designer.cs">
+      <DependentUpon>FormMonAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoaiMonAn.resx">
+      <DependentUpon>FormLoaiMonAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonAn.resx">
+      <DependentUpon>FormMonAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,6 +107,39 @@
       <Project>{ff04dc18-1ba2-4bf4-b21a-3443f7e29ba5}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christmas-dinner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christmas-dinner %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teamwork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account-settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

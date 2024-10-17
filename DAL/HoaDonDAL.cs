@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class LoaiMonAn
+    public class HoaDonDAL
     {
         QLNHDataContext dataContext = new QLNHDataContext();
-        public LoaiMonAn()
+        public HoaDonDAL() { }
+        public List<HoaDon> getListHoaDon()
         {
-
+            return dataContext.HoaDons.ToList();
         }
     }
 }

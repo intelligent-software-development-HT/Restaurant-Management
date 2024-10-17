@@ -16,3 +16,23 @@ D:\.Net\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement
 D:\.Net\RestaurantManagement\RestaurantManagement\obj\Debug\Restaura.B356954C.Up2Date
 D:\.Net\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.exe
 D:\.Net\RestaurantManagement\RestaurantManagement\obj\Debug\RestaurantManagement.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\bin\Debug\RestaurantManagement.exe.config
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\bin\Debug\RestaurantManagement.exe
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\bin\Debug\RestaurantManagement.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\bin\Debug\BLL.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\bin\Debug\DTO.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\bin\Debug\DAL.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\bin\Debug\BLL.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\bin\Debug\DTO.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\bin\Debug\DTO.dll.config
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\bin\Debug\DAL.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.csproj.AssemblyReference.cache
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.Form1.resources
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.Properties.Resources.resources
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.csproj.GenerateResource.cache
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.csproj.CoreCompileInputs.cache
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\Restaura.B356954C.Up2Date
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.exe
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormLoaiMonAn.resources
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormMonAn.resources

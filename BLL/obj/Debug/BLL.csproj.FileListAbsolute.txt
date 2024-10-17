@@ -10,3 +10,15 @@ D:\.Net\RestaurantManagement\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\.Net\RestaurantManagement\BLL\obj\Debug\BLL.csproj.Up2Date
 D:\.Net\RestaurantManagement\BLL\obj\Debug\BLL.dll
 D:\.Net\RestaurantManagement\BLL\obj\Debug\BLL.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\bin\Debug\BLL.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\bin\Debug\BLL.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\bin\Debug\DAL.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\bin\Debug\DTO.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\bin\Debug\DAL.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\bin\Debug\DTO.pdb
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\bin\Debug\DTO.dll.config
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\obj\Debug\BLL.csproj.Up2Date
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\obj\Debug\BLL.dll
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\obj\Debug\BLL.pdb
