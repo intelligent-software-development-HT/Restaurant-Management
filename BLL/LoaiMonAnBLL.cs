@@ -16,5 +16,17 @@ namespace BLL
         {
             return loaiMonAnDAL.getListLoaiMonAn();
         }
+        public bool addLoaiMonAn(LoaiMonAn loaiMonAn)
+        {
+            return loaiMonAnDAL.addLoaiMonAn(loaiMonAn);
+        }
+        public bool deleteLoaiMonAn(int maLoaiMonAn)
+        {
+            return loaiMonAnDAL.deleteLoaiMonAn(maLoaiMonAn);
+        }
+        public bool editLoaiMonAn(int maLoaiMonAn, LoaiMonAn lNew)
+        {
+            return loaiMonAnDAL.editLoaiMonAn(maLoaiMonAn , lNew);
+        }
     }
 }
