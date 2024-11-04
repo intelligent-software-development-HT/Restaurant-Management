@@ -9,11 +9,16 @@ namespace DAL
 {
     public class NguoiDungDAL
     {
-        QLNHDataContext dataContext = new QLNHDataContext();
+        private readonly QLNHDataContext _dataContext = new QLNHDataContext();
         public NguoiDungDAL() { }
         public List<NguoiDung> getListNguoiDung()
         {
-            return dataContext.NguoiDungs.ToList<NguoiDung>();  
+            return _dataContext.NguoiDungs.ToList<NguoiDung>();  
+        }
+
+        public NguoiDung GetNguoiDungTheoTenDangNhap(string username)
+        {
+            return _dataContext.NguoiDungs.Where(nguoiDung => nguoiDung.TenDangNhap.Equals(username)).FirstOrDefault();
         }
     }
 }
