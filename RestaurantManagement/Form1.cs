@@ -18,10 +18,40 @@ namespace RestaurantManagement
         public Form1()
         {
             InitializeComponent();
+            this.FormClosed += Form1_FormClosed;
             this.buttonMonAn.Click += ButtonMonAn_Click;
             this.buttonLoaiMonAn.Click += ButtonLoaiMonAn_Click;
             this.pictureBoxClose.Click += PictureBoxClose_Click;
             this.pictureBoxMinimize.Click += PictureBoxMinimize_Click;
+            this.buttonNhomNguoiDung.Click += ButtonNhomNguoiDung_Click;
+            this.buttonTaiKhoan.Click += ButtonTaiKhoan_Click;
+            this.buttonManHinh.Click += ButtonManHinh_Click;
+            this.buttonThemVaoNhom.Click += ButtonThemVaoNhom_Click;
+        }
+
+        private void ButtonThemVaoNhom_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormThemNguoiDungVaoNhom());
+        }
+
+        private void ButtonManHinh_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormManHinh());
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Program.formDangNhap.Show();
+        }
+
+        private void ButtonTaiKhoan_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormNguoiDung());
+        }
+
+        private void ButtonNhomNguoiDung_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormNhomNguoiDung());
         }
 
         private void PictureBoxMinimize_Click(object sender, EventArgs e)
@@ -37,7 +67,6 @@ namespace RestaurantManagement
         private void ButtonMonAn_Click(object sender, EventArgs e)
         {
             ShowForm(new FormMonAn());
-
         }
 
         private void ShowForm(Form newForm)

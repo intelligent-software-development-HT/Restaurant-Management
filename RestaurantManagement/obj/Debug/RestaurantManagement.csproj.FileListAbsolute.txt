@@ -67,3 +67,9 @@ D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantMa
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\bin\Debug\System.Buffers.xml
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormDangNhap.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormCauHinh.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormNhomNguoiDung.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormNguoiDung.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormManHinh.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormPhanQuyen.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormThemNguoiDungVaoNhom.resources

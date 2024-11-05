@@ -18,6 +18,7 @@ namespace RestaurantManagement
         public FormNhomNguoiDung()
         {
             InitializeComponent();
+            this.Click += FormNhomNguoiDung_Click;
             this.Load += FormNhomNguoiDung_Load;
             this.dataGridViewNhomNguoiDung.CellClick += DataGridViewNhomNguoiDung_CellClick;
             this.buttonThem.Click += ButtonThem_Click;
@@ -25,24 +26,88 @@ namespace RestaurantManagement
             this.buttonSua.Click += ButtonSua_Click;
         }
 
+        private void FormNhomNguoiDung_Click(object sender, EventArgs e)
+        {
+            dataGridViewNhomNguoiDung.ClearSelection();
+            ClearInput();
+        }
+
         private void ButtonSua_Click(object sender, EventArgs e)
         {
-            
+            if (string.IsNullOrWhiteSpace(textBoxMaNhom.Text))
+            {
+                MessageBox.Show("Vui lòng chọn nhóm người dùng cần xóa.");
+                return;
+            }
+
+            if (!IsInputValid(textBoxTenNhom.Text, richTextBoxGhiChu.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
+                return;
+            }
+
+            NhomNguoiDung nhomNguoiDung = new NhomNguoiDung();
+            nhomNguoiDung.MaNhom = Convert.ToInt32(textBoxMaNhom.Text);
+            nhomNguoiDung.TenNhom = textBoxTenNhom.Text;
+            nhomNguoiDung.GhiChu = richTextBoxGhiChu.Text;
+
+            if (!_nhomNguoiDungBLL.Update(nhomNguoiDung))
+            {
+                MessageBox.Show("Cập nhật thất bại.");
+                return;
+            }
+
+            MessageBox.Show("Cập nhật thành công.");
+            FinishedAction();
         }
 
         private void ButtonXoa_Click(object sender, EventArgs e)
         {
-            
+            if (string.IsNullOrWhiteSpace(textBoxMaNhom.Text))
+            {
+                MessageBox.Show("Vui lòng chọn nhóm người dùng cần xóa.");
+                return;
+            }
+
+            int maNhomNguoiDung = Convert.ToInt32(textBoxMaNhom.Text);
+
+            if (!_nhomNguoiDungBLL.Delete(maNhomNguoiDung))
+            {
+                MessageBox.Show("Xóa thất bại.");
+                return;
+            }
+
+            MessageBox.Show("Xóa thành công.");
+            FinishedAction();
         }
 
         private void ButtonThem_Click(object sender, EventArgs e)
         {
-            
+            if (!IsInputValid(textBoxTenNhom.Text, richTextBoxGhiChu.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
+                return;
+            }
+
+            //Tạo controll để kiểm tra sau
+
+            NhomNguoiDung nhomNguoiDung = new NhomNguoiDung();
+            nhomNguoiDung.TenNhom = textBoxTenNhom.Text;
+            nhomNguoiDung.GhiChu = richTextBoxGhiChu.Text;
+
+            if (!_nhomNguoiDungBLL.Create(nhomNguoiDung))
+            {
+                MessageBox.Show("Thêm thất bại.");
+                return;
+            }
+
+            MessageBox.Show("Thêm thành công.");
+            FinishedAction();
         }
 
         private void DataGridViewNhomNguoiDung_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (!dataGridViewNhomNguoiDung.CurrentRow.Selected)
+            if (dataGridViewNhomNguoiDung.Rows.Count == 0 || !dataGridViewNhomNguoiDung.CurrentRow.Selected)
             {
                 return;
             }
@@ -59,9 +124,31 @@ namespace RestaurantManagement
 
         private void LoadDataNhomNguoiDung()
         {
-            List<NhomNguoiDung> nhomNguoiDung = _nhomNguoiDungBLL.getListNhomNguoiDung();
+            List<NhomNguoiDung> nhomNguoiDung = _nhomNguoiDungBLL.ReadNhomNguoiDungs().ToList();
 
             dataGridViewNhomNguoiDung.DataSource = nhomNguoiDung;
+        }
+
+        private bool IsInputValid(string firstField, string secondField)
+        {
+            return !string.IsNullOrWhiteSpace(firstField) && !string.IsNullOrWhiteSpace(secondField);
+        }
+
+        private void ClearInput()
+        {
+            foreach (Control control in groupBoxNhomNguoiDung.Controls)
+            {
+                if (control.GetType() == typeof(TextBox) || control.GetType() == typeof(RichTextBox))
+                {
+                    control.Text = string.Empty;
+                }
+            }
+        }
+
+        private void FinishedAction()
+        {
+            ClearInput();
+            LoadDataNhomNguoiDung();
         }
     }
 }
