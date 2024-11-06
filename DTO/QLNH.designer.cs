@@ -182,6 +182,13 @@ namespace DTO
 				return this.GetTable<NhomNguoiDung>();
 			}
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_LayQuyenTruyCapTheoNhom")]
+		public ISingleResult<sp_LayQuyenTruyCapTheoNhomResult> sp_LayQuyenTruyCapTheoNhom([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> maNhom)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), maNhom);
+			return ((ISingleResult<sp_LayQuyenTruyCapTheoNhomResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Ban")]
@@ -2249,6 +2256,68 @@ namespace DTO
 		{
 			this.SendPropertyChanging();
 			entity.NhomNguoiDung = null;
+		}
+	}
+	
+	public partial class sp_LayQuyenTruyCapTheoNhomResult
+	{
+		
+		private int _MaManHinh;
+		
+		private string _TenManHinh;
+		
+		private bool _CoQuyen;
+		
+		public sp_LayQuyenTruyCapTheoNhomResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaManHinh", DbType="Int NOT NULL")]
+		public int MaManHinh
+		{
+			get
+			{
+				return this._MaManHinh;
+			}
+			set
+			{
+				if ((this._MaManHinh != value))
+				{
+					this._MaManHinh = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenManHinh", DbType="NVarChar(100)")]
+		public string TenManHinh
+		{
+			get
+			{
+				return this._TenManHinh;
+			}
+			set
+			{
+				if ((this._TenManHinh != value))
+				{
+					this._TenManHinh = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CoQuyen", DbType="Bit NOT NULL")]
+		public bool CoQuyen
+		{
+			get
+			{
+				return this._CoQuyen;
+			}
+			set
+			{
+				if ((this._CoQuyen != value))
+				{
+					this._CoQuyen = value;
+				}
+			}
 		}
 	}
 }

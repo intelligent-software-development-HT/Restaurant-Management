@@ -12,3 +12,10 @@ C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\obj\Debug\D
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\obj\Debug\DTO.dll
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DTO\obj\Debug\DTO.pdb
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\DTO.dll.config
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\DTO.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\DTO.pdb
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\obj\Debug\DTO.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\obj\Debug\DTO.pdb

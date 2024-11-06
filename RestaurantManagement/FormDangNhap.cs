@@ -15,6 +15,7 @@ namespace RestaurantManagement
     public partial class FormDangNhap : Form
     {
         private readonly NguoiDungBLL _nguoiDungBLL = new NguoiDungBLL();
+        private readonly NguoiDungNhomNguoiDungBLL _nguoiDungNhomNguoiDungBLL = new NguoiDungNhomNguoiDungBLL();
         public FormDangNhap()
         {
             InitializeComponent();
@@ -62,6 +63,15 @@ namespace RestaurantManagement
             }
 
             MessageBox.Show("Đăng nhập thành công.");
+            DangNhapHeThong(username);
+        }
+
+        private void DangNhapHeThong(string username)
+        {
+            NguoiDungNhomNguoiDung nguoiDungNhomNguoiDung = _nguoiDungNhomNguoiDungBLL.GetNhomCuaNguoiDung(username);
+
+            Properties.Settings.Default.maNhom = nguoiDungNhomNguoiDung.MaNhomNguoiDung.ToString();
+            Properties.Settings.Default.tenDangNhap = nguoiDungNhomNguoiDung.TenDangNhap;
             LoadFormMain();
         }
 

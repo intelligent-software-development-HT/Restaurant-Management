@@ -16,6 +16,11 @@ namespace DAL
             return dataContext.NguoiDungNhomNguoiDungs.OrderBy(ru => ru.MaNhomNguoiDung);
         }
 
+        public NguoiDungNhomNguoiDung GetNhomCuaNguoiDung(string tenDangNhap)
+        {
+            return dataContext.NguoiDungNhomNguoiDungs.Where(ru => ru.TenDangNhap.Equals(tenDangNhap)).FirstOrDefault();
+        }
+
         public bool AddNguoiDungVaoNhom(NguoiDungNhomNguoiDung nguoiDungNhomNguoiDung)
         {
             try

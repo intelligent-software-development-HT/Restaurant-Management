@@ -17,6 +17,11 @@ namespace BLL
             return _nguoiDungNhomNguoiDungDAL.ReadNguoiDungNhomNguoiDungs();
         }
 
+        public NguoiDungNhomNguoiDung GetNhomCuaNguoiDung(string tenDangNhap)
+        {
+            return _nguoiDungNhomNguoiDungDAL.GetNhomCuaNguoiDung(tenDangNhap);
+        }
+
         public bool IsExists(int maNhomNguoiDung, string tenDangNhap)
         {
             return _nguoiDungNhomNguoiDungDAL.IsExists(maNhomNguoiDung, tenDangNhap);

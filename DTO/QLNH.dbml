@@ -104,4 +104,12 @@
       <Association Name="NhomNguoiDung_NguoiDungNhomNguoiDung" Member="NguoiDungNhomNguoiDungs" ThisKey="MaNhom" OtherKey="MaNhomNguoiDung" Type="NguoiDungNhomNguoiDung" />
     </Type>
   </Table>
+  <Function Name="dbo.sp_LayQuyenTruyCapTheoNhom" Method="sp_LayQuyenTruyCapTheoNhom">
+    <Parameter Name="maNhom" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_LayQuyenTruyCapTheoNhomResult">
+      <Column Name="MaManHinh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenManHinh" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CoQuyen" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
 </Database>

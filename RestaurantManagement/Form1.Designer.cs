@@ -30,6 +30,7 @@
         {
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonThemVaoNhom = new System.Windows.Forms.Button();
             this.buttonPhanQuyen = new System.Windows.Forms.Button();
             this.buttonManHinh = new System.Windows.Forms.Button();
             this.buttonNhomNguoiDung = new System.Windows.Forms.Button();
@@ -38,12 +39,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonMonAn = new System.Windows.Forms.Button();
             this.buttonLoaiMonAn = new System.Windows.Forms.Button();
-            this.buttonCustomer = new System.Windows.Forms.Button();
+            this.buttonBan = new System.Windows.Forms.Button();
             this.buttonDonMon = new System.Windows.Forms.Button();
             this.buttonDatMon = new System.Windows.Forms.Button();
             this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
-            this.buttonThemVaoNhom = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -70,7 +70,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.buttonMonAn);
             this.panel1.Controls.Add(this.buttonLoaiMonAn);
-            this.panel1.Controls.Add(this.buttonCustomer);
+            this.panel1.Controls.Add(this.buttonBan);
             this.panel1.Controls.Add(this.buttonDonMon);
             this.panel1.Controls.Add(this.buttonDatMon);
             this.panel1.Location = new System.Drawing.Point(0, -15);
@@ -78,6 +78,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 1092);
             this.panel1.TabIndex = 3;
+            // 
+            // buttonThemVaoNhom
+            // 
+            this.buttonThemVaoNhom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
+            this.buttonThemVaoNhom.FlatAppearance.BorderSize = 0;
+            this.buttonThemVaoNhom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThemVaoNhom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThemVaoNhom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
+            this.buttonThemVaoNhom.Image = global::RestaurantManagement.Properties.Resources.account_settings;
+            this.buttonThemVaoNhom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThemVaoNhom.Location = new System.Drawing.Point(0, 916);
+            this.buttonThemVaoNhom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonThemVaoNhom.Name = "buttonThemVaoNhom";
+            this.buttonThemVaoNhom.Size = new System.Drawing.Size(300, 77);
+            this.buttonThemVaoNhom.TabIndex = 7;
+            this.buttonThemVaoNhom.Text = "Thêm vào nhóm";
+            this.buttonThemVaoNhom.UseVisualStyleBackColor = false;
             // 
             // buttonPhanQuyen
             // 
@@ -207,23 +224,23 @@
             this.buttonLoaiMonAn.Text = "     Loại Món Ăn";
             this.buttonLoaiMonAn.UseVisualStyleBackColor = false;
             // 
-            // buttonCustomer
+            // buttonBan
             // 
-            this.buttonCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
-            this.buttonCustomer.FlatAppearance.BorderSize = 0;
-            this.buttonCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
-            this.buttonCustomer.Image = global::RestaurantManagement.Properties.Resources.dining_table;
-            this.buttonCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCustomer.Location = new System.Drawing.Point(0, 223);
-            this.buttonCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonCustomer.Name = "buttonCustomer";
-            this.buttonCustomer.Size = new System.Drawing.Size(300, 77);
-            this.buttonCustomer.TabIndex = 3;
-            this.buttonCustomer.Text = "      Bàn";
-            this.buttonCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCustomer.UseVisualStyleBackColor = false;
+            this.buttonBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
+            this.buttonBan.FlatAppearance.BorderSize = 0;
+            this.buttonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
+            this.buttonBan.Image = global::RestaurantManagement.Properties.Resources.dining_table;
+            this.buttonBan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBan.Location = new System.Drawing.Point(0, 223);
+            this.buttonBan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonBan.Name = "buttonBan";
+            this.buttonBan.Size = new System.Drawing.Size(300, 77);
+            this.buttonBan.TabIndex = 3;
+            this.buttonBan.Text = "      Bàn";
+            this.buttonBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBan.UseVisualStyleBackColor = false;
             // 
             // buttonDonMon
             // 
@@ -281,23 +298,6 @@
             this.pictureBoxClose.TabIndex = 0;
             this.pictureBoxClose.TabStop = false;
             // 
-            // buttonThemVaoNhom
-            // 
-            this.buttonThemVaoNhom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
-            this.buttonThemVaoNhom.FlatAppearance.BorderSize = 0;
-            this.buttonThemVaoNhom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonThemVaoNhom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThemVaoNhom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
-            this.buttonThemVaoNhom.Image = global::RestaurantManagement.Properties.Resources.account_settings;
-            this.buttonThemVaoNhom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThemVaoNhom.Location = new System.Drawing.Point(0, 916);
-            this.buttonThemVaoNhom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonThemVaoNhom.Name = "buttonThemVaoNhom";
-            this.buttonThemVaoNhom.Size = new System.Drawing.Size(300, 77);
-            this.buttonThemVaoNhom.TabIndex = 7;
-            this.buttonThemVaoNhom.Text = "Thêm vào nhóm";
-            this.buttonThemVaoNhom.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -326,7 +326,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonMonAn;
         private System.Windows.Forms.Button buttonLoaiMonAn;
-        private System.Windows.Forms.Button buttonCustomer;
+        private System.Windows.Forms.Button buttonBan;
         private System.Windows.Forms.Button buttonDonMon;
         private System.Windows.Forms.Button buttonDatMon;
         private System.Windows.Forms.Panel panel2;
