@@ -35,7 +35,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonMonAn = new System.Windows.Forms.Button();
             this.buttonLoaiMonAn = new System.Windows.Forms.Button();
-            this.buttonCustomer = new System.Windows.Forms.Button();
+            this.buttonTable = new System.Windows.Forms.Button();
             this.buttonDonMon = new System.Windows.Forms.Button();
             this.buttonDatMon = new System.Windows.Forms.Button();
             this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
@@ -61,7 +61,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.buttonMonAn);
             this.panel1.Controls.Add(this.buttonLoaiMonAn);
-            this.panel1.Controls.Add(this.buttonCustomer);
+            this.panel1.Controls.Add(this.buttonTable);
             this.panel1.Controls.Add(this.buttonDonMon);
             this.panel1.Controls.Add(this.buttonDatMon);
             this.panel1.Location = new System.Drawing.Point(0, -10);
@@ -141,22 +141,22 @@
             this.buttonLoaiMonAn.Text = "     Loại Món Ăn";
             this.buttonLoaiMonAn.UseVisualStyleBackColor = false;
             // 
-            // buttonCustomer
+            // buttonTable
             // 
-            this.buttonCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
-            this.buttonCustomer.FlatAppearance.BorderSize = 0;
-            this.buttonCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
-            this.buttonCustomer.Image = global::RestaurantManagement.Properties.Resources.dining_table;
-            this.buttonCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCustomer.Location = new System.Drawing.Point(0, 145);
-            this.buttonCustomer.Name = "buttonCustomer";
-            this.buttonCustomer.Size = new System.Drawing.Size(200, 50);
-            this.buttonCustomer.TabIndex = 3;
-            this.buttonCustomer.Text = "      Bàn";
-            this.buttonCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCustomer.UseVisualStyleBackColor = false;
+            this.buttonTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
+            this.buttonTable.FlatAppearance.BorderSize = 0;
+            this.buttonTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
+            this.buttonTable.Image = global::RestaurantManagement.Properties.Resources.dining_table;
+            this.buttonTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTable.Location = new System.Drawing.Point(0, 145);
+            this.buttonTable.Name = "buttonTable";
+            this.buttonTable.Size = new System.Drawing.Size(200, 50);
+            this.buttonTable.TabIndex = 3;
+            this.buttonTable.Text = "      Bàn";
+            this.buttonTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonTable.UseVisualStyleBackColor = false;
             // 
             // buttonDonMon
             // 
@@ -236,7 +236,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonMonAn;
         private System.Windows.Forms.Button buttonLoaiMonAn;
-        private System.Windows.Forms.Button buttonCustomer;
+        private System.Windows.Forms.Button buttonTable;
         private System.Windows.Forms.Button buttonDonMon;
         private System.Windows.Forms.Button buttonDatMon;
         private System.Windows.Forms.Panel panel2;

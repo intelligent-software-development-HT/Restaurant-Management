@@ -59,5 +59,9 @@ namespace DAL
                 return false;
             }
         }
+        public LoaiMonAn getById(int MaLoaiMonAn)
+        {
+            return dataContext.LoaiMonAns.Where(p => p.MaLoaiMonAn == MaLoaiMonAn).FirstOrDefault();
+        }
     }
 }

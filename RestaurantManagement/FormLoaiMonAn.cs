@@ -15,6 +15,7 @@ namespace RestaurantManagement
     public partial class FormLoaiMonAn : Form
     {
         LoaiMonAnBLL loaiMonAnBLL = new LoaiMonAnBLL();
+        bool _them;
         public FormLoaiMonAn()
         {
             InitializeComponent();
@@ -23,8 +24,65 @@ namespace RestaurantManagement
             this.buttonThem.Click += ButtonThem_Click;
             this.buttonSua.Click += ButtonSua_Click;
             this.buttonXoa.Click += ButtonXoa_Click;
+            this.buttonCancel.Click += ButtonCancel_Click;
+            this.buttonSave.Click += ButtonSave_Click;
         }
 
+        private void ButtonSave_Click(object sender, EventArgs e)
+        {
+            if (_them)
+            {
+                string tenLMA = textBoxTenLoaiMonAn.Text;
+                LoaiMonAn l = new LoaiMonAn();
+                l.TenLoaiMonAn = tenLMA;
+                if (!loaiMonAnBLL.addLoaiMonAn(l))
+                {
+                    MessageBox.Show("Thêm loại món ăn không thành công !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                int maLoaiMonAn = int.Parse(textBoxMaLoaiMonAn.Text);
+                string tenLMA = textBoxTenLoaiMonAn.Text;
+                LoaiMonAn l = new LoaiMonAn();
+                l.TenLoaiMonAn = tenLMA;
+                if (!loaiMonAnBLL.editLoaiMonAn(maLoaiMonAn, l))
+                {
+                    MessageBox.Show("Sửa loại món ăn không thành công !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            show();
+            _them = false;
+            loadData();
+        }
+
+        private void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            show();
+            _them = false;
+        }
+
+        void reset()
+        {
+            textBoxMaLoaiMonAn.Clear();
+            textBoxTenLoaiMonAn.Clear();
+        }
+        void show()
+        {
+            buttonSave.Hide();
+            buttonCancel.Hide();
+            buttonThem.Show();
+            buttonXoa.Show();
+            buttonSua.Show();
+        }
+        void hide()
+        {
+            buttonSave.Show();
+            buttonCancel.Show();
+            buttonThem.Hide();
+            buttonXoa.Hide();
+            buttonSua.Hide();
+        }
         private void ButtonXoa_Click(object sender, EventArgs e)
         {
             int maLoaiMonAn = int.Parse(textBoxMaLoaiMonAn.Text);
@@ -38,27 +96,17 @@ namespace RestaurantManagement
 
         private void ButtonSua_Click(object sender, EventArgs e)
         {
-            int maLoaiMonAn = int.Parse(textBoxMaLoaiMonAn.Text);
-            string tenLMA = textBoxTenLoaiMonAn.Text;
-            LoaiMonAn l = new LoaiMonAn();
-            l.TenLoaiMonAn = tenLMA;
-            if (!loaiMonAnBLL.editLoaiMonAn(maLoaiMonAn, l))
-            {
-                MessageBox.Show("Sửa loại món ăn không thành công !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            loadData();
+            
+            _them = false;
+            hide();
         }
 
         private void ButtonThem_Click(object sender, EventArgs e)
         {
-            string tenLMA = textBoxTenLoaiMonAn.Text;
-            LoaiMonAn l = new LoaiMonAn();
-            l.TenLoaiMonAn = tenLMA;   
-            if (!loaiMonAnBLL.addLoaiMonAn(l))
-            {
-                MessageBox.Show("Thêm loại món ăn không thành công !!!", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-            }
-            loadData();
+
+            _them = true;
+            hide();
+            reset();
         }
 
         private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -80,11 +128,7 @@ namespace RestaurantManagement
         void loadDataGridView()
         {
             List<LoaiMonAn> list = loaiMonAnBLL.getListLoaiMonAn();
-            var listLMA = list.Select(p => new {
-                Mã_Loại_Món_Ăn = p.MaLoaiMonAn,
-                Tên_Loại_Món_Ăn = p.TenLoaiMonAn
-            }).ToList();
-            dataGridView1.DataSource = listLMA;
+            dataGridView1.DataSource = list;
         }
     }
 }

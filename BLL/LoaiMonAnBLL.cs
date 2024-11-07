@@ -28,5 +28,9 @@ namespace BLL
         {
             return loaiMonAnDAL.editLoaiMonAn(maLoaiMonAn , lNew);
         }
+        public LoaiMonAn getById(int MaLoaiMonAn)
+        {
+            return loaiMonAnDAL.getById(MaLoaiMonAn);
+        }
     }
 }
