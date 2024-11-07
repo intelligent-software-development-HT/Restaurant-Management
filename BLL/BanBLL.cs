@@ -16,5 +16,17 @@ namespace BLL
         {
             return banDAL.getListBan();
         }
+        public bool addBan(Ban ban)
+        {
+            return banDAL.addBan(ban);
+        }
+        public bool deleteBan(int maBan) 
+        {
+            return banDAL.deleteBan(maBan);
+        }
+        public bool editBan(int maBan, Ban bNew)
+        {
+            return banDAL.editBan(maBan, bNew);
+        }
     }
 }

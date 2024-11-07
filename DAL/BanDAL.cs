@@ -15,5 +15,46 @@ namespace DAL
         {
             return dataContext.Bans.ToList<Ban>();
         }
+        public bool addBan(Ban ban)
+        {
+            try
+            {
+                dataContext.Bans.InsertOnSubmit(ban);
+                dataContext.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool deleteBan(int maBan)
+        {
+            try
+            {
+                Ban b = dataContext.Bans.Where(p => p.MaBan == maBan).FirstOrDefault();
+                dataContext.Bans.DeleteOnSubmit(b);
+                dataContext.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex) {
+                return false;
+            }
+        }
+        public bool editBan(int maBan,Ban bNew)
+        {
+            try
+            {
+                Ban b = dataContext.Bans.Where(p => p.MaBan == maBan).FirstOrDefault();
+                b.TenBan = bNew.TenBan;
+                b.TrangThai = bNew.TrangThai;
+                dataContext.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex) 
+            {
+                return false;
+            }
+        }
     }
 }

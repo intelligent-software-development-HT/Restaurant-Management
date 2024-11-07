@@ -20,8 +20,14 @@ namespace RestaurantManagement
             InitializeComponent();
             this.buttonMonAn.Click += ButtonMonAn_Click;
             this.buttonLoaiMonAn.Click += ButtonLoaiMonAn_Click;
+            this.buttonTable.Click += ButtonTable_Click;
             this.pictureBoxClose.Click += PictureBoxClose_Click;
             this.pictureBoxMinimize.Click += PictureBoxMinimize_Click;
+        }
+
+        private void ButtonTable_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormBan());
         }
 
         private void PictureBoxMinimize_Click(object sender, EventArgs e)

@@ -1308,7 +1308,7 @@ namespace DTO
 		
 		private string _TenMonAn;
 		
-		private System.Nullable<decimal> _DonGia;
+		private System.Nullable<int> _DonGia;
 		
 		private System.Nullable<int> _MaLoaiMonAn;
 		
@@ -1324,7 +1324,7 @@ namespace DTO
     partial void OnMaMonAnChanged();
     partial void OnTenMonAnChanging(string value);
     partial void OnTenMonAnChanged();
-    partial void OnDonGiaChanging(System.Nullable<decimal> value);
+    partial void OnDonGiaChanging(System.Nullable<int> value);
     partial void OnDonGiaChanged();
     partial void OnMaLoaiMonAnChanging(System.Nullable<int> value);
     partial void OnMaLoaiMonAnChanged();
@@ -1377,8 +1377,8 @@ namespace DTO
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGia", DbType="Decimal(10,2)")]
-		public System.Nullable<decimal> DonGia
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGia", DbType="Int")]
+		public System.Nullable<int> DonGia
 		{
 			get
 			{

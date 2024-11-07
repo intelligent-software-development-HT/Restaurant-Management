@@ -15,5 +15,21 @@ namespace BLL
         {
             return monAnDAL.getList();
         }
+        public bool addMonAn(MonAn monAn)
+        {
+            return monAnDAL.addMonAn(monAn);
+        }
+        public bool deleteMonAn(int maMonAn)
+        {
+            return monAnDAL.deleteMonAn(maMonAn);
+        }
+        public bool editMonAn(int maMonAn, MonAn monAn)
+        {
+            return monAnDAL.editMonAn(maMonAn, monAn);
+        }
+        public MonAn getById(int maMonAn)
+        {
+            return monAnDAL.getById(maMonAn);
+        }
     }
 }

@@ -36,3 +36,4 @@ C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManag
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.pdb
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormLoaiMonAn.resources
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormMonAn.resources
+C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormBan.resources
