@@ -18,3 +18,13 @@ C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\obj\Debug\D
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\obj\Debug\DAL.csproj.Up2Date
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\obj\Debug\DAL.dll
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\DAL\obj\Debug\DAL.pdb
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\bin\Debug\DAL.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\bin\Debug\DAL.pdb
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\bin\Debug\DTO.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\bin\Debug\DTO.pdb
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\bin\Debug\DTO.dll.config
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\obj\Debug\DAL.csproj.Up2Date
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\obj\Debug\DAL.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\obj\Debug\DAL.pdb
