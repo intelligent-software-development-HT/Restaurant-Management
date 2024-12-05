@@ -23,6 +23,10 @@ namespace RestaurantManagement
             this.FormClosed += Form1_FormClosed;
             this.buttonMonAn.Click += ButtonMonAn_Click;
             this.buttonLoaiMonAn.Click += ButtonLoaiMonAn_Click;
+<<<<<<< Updated upstream
+=======
+            this.buttonBan.Click += ButtonTable_Click;
+>>>>>>> Stashed changes
             this.pictureBoxClose.Click += PictureBoxClose_Click;
             this.pictureBoxMinimize.Click += PictureBoxMinimize_Click;
             this.buttonNhomNguoiDung.Click += ButtonNhomNguoiDung_Click;
@@ -30,11 +34,23 @@ namespace RestaurantManagement
             this.buttonManHinh.Click += ButtonManHinh_Click;
             this.buttonThemVaoNhom.Click += ButtonThemVaoNhom_Click;
             this.buttonPhanQuyen.Click += ButtonPhanQuyen_Click;
+            this.buttonDatMon.Click += ButtonDatMon_Click;
+            this.buttonDonMon.Click += ButtonDonMon_Click;
 
             //Lấy role của người dùng
             int maNhom = Convert.ToInt32(Properties.Settings.Default.maNhom);
             //Đưa vào hàm để phân quyền
             HandleQuyenTruyCap(maNhom);
+        }
+
+        private void ButtonDonMon_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormDonMon());
+        }
+
+        private void ButtonDatMon_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormDatMon());
         }
 
         private void ButtonPhanQuyen_Click(object sender, EventArgs e)

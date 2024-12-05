@@ -73,3 +73,7 @@ D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantMa
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormManHinh.resources
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormPhanQuyen.resources
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormThemNguoiDungVaoNhom.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormBan.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormDatMon.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormDonMon.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormThongBaoDatBan.resources

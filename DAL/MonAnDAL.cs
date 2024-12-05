@@ -12,7 +12,58 @@ namespace DAL
         public MonAnDAL() { }
         public List<MonAn> getList()
         {
+<<<<<<< Updated upstream
             return dataContext.MonAns.ToList<MonAn>();
+=======
+            return dataContext.MonAns.ToList();
+        }
+        public bool addMonAn(MonAn monAn)
+        {
+            try
+            {
+                dataContext.MonAns.InsertOnSubmit(monAn);
+                dataContext.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool deleteMonAn(int maMonAn)
+        {
+            try
+            {
+                MonAn m = dataContext.MonAns.Where(p => p.MaLoaiMonAn == maMonAn).FirstOrDefault();
+                dataContext.MonAns.DeleteOnSubmit(m);
+                dataContext.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool editMonAn(int maMonAn, MonAn mNew)
+        {
+            try
+            {
+                MonAn monAn = dataContext.MonAns.Where(p => p.MaMonAn == maMonAn).FirstOrDefault();
+                monAn.TenMonAn = mNew.TenMonAn;
+                monAn.DonGia = mNew.DonGia;
+                monAn.MaLoaiMonAn = mNew.MaLoaiMonAn;
+                dataContext.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public MonAn getById(int maMonAn)
+        {
+            return dataContext.MonAns.Where(p => p.MaMonAn == maMonAn).FirstOrDefault();
+>>>>>>> Stashed changes
         }
     }
 }

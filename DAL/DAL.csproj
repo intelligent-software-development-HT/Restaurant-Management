@@ -53,6 +53,7 @@
     <Compile Include="NhanVienDAL.cs" />
     <Compile Include="NhomNguoiDungDAL.cs" />
     <Compile Include="PhanQuyenDAL.cs" />
+    <Compile Include="PhieuDatBanDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

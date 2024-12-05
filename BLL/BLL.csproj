@@ -68,6 +68,7 @@
     <Compile Include="NhanVienBLL.cs" />
     <Compile Include="NhomNguoiDungBLL.cs" />
     <Compile Include="PhanQuyenBLL.cs" />
+    <Compile Include="PhieuDatBanBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

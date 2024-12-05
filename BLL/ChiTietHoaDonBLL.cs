@@ -10,11 +10,16 @@ namespace BLL
 {
     public class ChiTietHoaDonBLL
     {
-        ChiTietHoaDonDAL chiTietHoaDonDAL = new ChiTietHoaDonDAL();
+        private readonly ChiTietHoaDonDAL _chiTietHoaDonDAL = new ChiTietHoaDonDAL();
         public ChiTietHoaDonBLL() { }
         public List<ChiTietHoaDon> getListChiTietHoaDon()
         {
-            return chiTietHoaDonDAL.getListChiTietHoaDon();
+            return _chiTietHoaDonDAL.getListChiTietHoaDon();
+        }
+
+        public bool UpdateTrangThaiMon(int id, string trangThai)
+        {
+            return _chiTietHoaDonDAL.CapNhatTrangThaiDonMon(id, trangThai);
         }
     }
 }
