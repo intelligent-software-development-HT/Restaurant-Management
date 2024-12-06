@@ -9,11 +9,21 @@ namespace DAL
 {
     public class NhanVienDAL
     {
-        QLNHDataContext dataContext = new QLNHDataContext();
+        private readonly QLNHDataContext _dataContext = new QLNHDataContext();
         public NhanVienDAL() { }
         public List<NhanVien> getListNhanVien()
         {
-            return dataContext.NhanViens.ToList<NhanVien>();
+            return _dataContext.NhanViens.ToList<NhanVien>();
+        }
+
+        public NhanVien GetById(int id)
+        {
+            return _dataContext.NhanViens.FirstOrDefault(r => r.MaNV.Equals(id));
+        }
+
+        public NhanVien GetByTenDangNhap(string tenDangNhap)
+        {
+            return _dataContext.NhanViens.FirstOrDefault(r => r.TenDangNhap.Equals(tenDangNhap));
         }
     }
 }

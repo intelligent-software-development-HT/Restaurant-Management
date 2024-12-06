@@ -21,5 +21,10 @@ namespace BLL
         {
             return _chiTietHoaDonDAL.CapNhatTrangThaiDonMon(id, trangThai);
         }
+
+        public List<ChiTietHoaDon> GetDanhSachMonDat(int maHoaDon)
+        {
+            return _chiTietHoaDonDAL.GetDanhSachMonDat(maHoaDon);
+        }
     }
 }

@@ -16,6 +16,16 @@ namespace DAL
             return _dataContext.ChiTietHoaDons.ToList<ChiTietHoaDon>();
         }
 
+        public ChiTietHoaDon GetByMonVaHoaDon(int maMon, int maHoaDon)
+        {
+            return _dataContext.ChiTietHoaDons.FirstOrDefault(r => r.MaMonAn.Equals(maMon) && r.MaHD.Equals(maHoaDon));
+        }
+
+        public List<ChiTietHoaDon> GetDanhSachMonDat(int maHoaDon)
+        {
+            return _dataContext.ChiTietHoaDons.Where(r => r.MaHD.Equals(maHoaDon)).ToList();
+        }
+
         public bool CapNhatTrangThaiDonMon(int id, string trangThai)
         {
             try

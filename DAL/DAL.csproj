@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="BanDAL.cs" />
     <Compile Include="ChiTietHoaDonDAL.cs" />
+    <Compile Include="DatMonDAL.cs" />
     <Compile Include="HoaDonDAL.cs" />
     <Compile Include="LoaiMonAnDAL.cs" />
     <Compile Include="ManHinhDAL.cs" />

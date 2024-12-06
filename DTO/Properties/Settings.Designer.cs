@@ -33,5 +33,16 @@ namespace DTO.Properties {
                 return ((string)(this["QL_NhaHangConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=QL_NhaHang2;Integrated Security=True;TrustServerCer" +
+            "tificate=True")]
+        public string QL_NhaHang2ConnectionString {
+            get {
+                return ((string)(this["QL_NhaHang2ConnectionString"]));
+            }
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace BLL
         {
             return hoaDonDAL.getListHoaDon();
         }
+
+        public HoaDon GetByBan(int maBan)
+        {
+            return hoaDonDAL.GetByBan(maBan);
+        }
     }
 }

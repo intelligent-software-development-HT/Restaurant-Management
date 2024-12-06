@@ -11,10 +11,17 @@ namespace BLL
     public class NhanVienBLL
     {
         NhanVienDAL nhanVienDAL = new NhanVienDAL();
+
         public NhanVienBLL() { }
+
         public List<NhanVien> listNhanVien()
         {
             return nhanVienDAL.getListNhanVien();
+        }
+
+        public NhanVien GetByTenDangNhap(string tenDangNhap)
+        {
+            return nhanVienDAL.GetByTenDangNhap(tenDangNhap);
         }
     }
 }
