@@ -11,6 +11,10 @@ namespace DAL
     {
         QLNHDataContext dataContext = new QLNHDataContext();
         public BanDAL() { }
+        public Ban GetById(int id)
+        {
+            return dataContext.Bans.FirstOrDefault(r => r.MaBan.Equals(id));
+        }
         public List<Ban> getListBan()
         {
             return dataContext.Bans.ToList<Ban>();

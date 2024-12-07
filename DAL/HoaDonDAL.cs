@@ -11,6 +11,10 @@ namespace DAL
     {
         private readonly QLNHDataContext _dataContext = new QLNHDataContext();
         public HoaDonDAL() { }
+        public HoaDon GetById(int maHoaDon)
+        {
+            return _dataContext.HoaDons.FirstOrDefault(r => r.MaHD.Equals(maHoaDon));
+        }
         public List<HoaDon> getListHoaDon()
         {
             return _dataContext.HoaDons.ToList();
@@ -19,6 +23,19 @@ namespace DAL
         public HoaDon GetByBan(int maBan)
         {
             return _dataContext.HoaDons.FirstOrDefault(r => r.MaBan.Equals(maBan) && r.TrangThaiThanhToan.Equals("Chưa thanh toán"));
+        }
+
+        public bool ThanhToan(int maHoaDon, int maBan)
+        {
+            try
+            {
+                _dataContext.sp_thanhToan(maHoaDon, maBan);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }

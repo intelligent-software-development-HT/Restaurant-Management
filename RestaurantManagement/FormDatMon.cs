@@ -30,6 +30,29 @@ namespace RestaurantManagement
             this.pictureBoxNotify.Click += PictureBoxNotify_Click;
             this.nudSoLuong.ValueChanged += NudSoLuong_ValueChanged;
             this.buttonThemMon.Click += ButtonThemMon_Click;
+            this.buttonThanhToan.Click += ButtonThanhToan_Click;
+        }
+
+        private void ButtonThanhToan_Click(object sender, EventArgs e)
+        {
+            int maBan = Convert.ToInt32(groupBoxDatMon.Tag);
+            HoaDon hoaDon = _hoaDonBLL.GetByBan(maBan);
+
+            DialogResult result = MessageBox.Show("Bạn muốn thanh toán?", "Thanh toán", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Cancel)
+            {
+                return;
+            }
+
+            if (!_hoaDonBLL.XuLyThanhToan(hoaDon.MaHD, maBan))
+            {
+                MessageBox.Show("Thanh toán thất bại.");
+                return;
+            }
+
+            LoadDanhSachBan();
+            LoadThongTinDatMon(0);
         }
 
         private void ButtonThemMon_Click(object sender, EventArgs e)
@@ -327,6 +350,15 @@ namespace RestaurantManagement
             groupBoxDatMon.Tag = (sender as Button).Tag;//Mã hóa đơn
 
             HoaDon hoaDon = _hoaDonBLL.GetByBan(Convert.ToInt32(groupBoxDatMon.Tag));
+
+            if (hoaDon != null)
+            {
+                buttonThanhToan.Enabled = true;
+            }
+            else
+            {
+                buttonThanhToan.Enabled = false;
+            }
 
             LoadThongTinDatMon(hoaDon?.MaHD ?? 0);
         }

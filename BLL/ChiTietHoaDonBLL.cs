@@ -12,6 +12,10 @@ namespace BLL
     {
         private readonly ChiTietHoaDonDAL _chiTietHoaDonDAL = new ChiTietHoaDonDAL();
         public ChiTietHoaDonBLL() { }
+        public ChiTietHoaDon GetById(int id)
+        {
+            return _chiTietHoaDonDAL.GetById(id);
+        }
         public List<ChiTietHoaDon> getListChiTietHoaDon()
         {
             return _chiTietHoaDonDAL.getListChiTietHoaDon();

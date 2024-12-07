@@ -10,16 +10,28 @@ namespace BLL
 {
     public class HoaDonBLL
     {
-        HoaDonDAL hoaDonDAL = new HoaDonDAL();
+        private readonly HoaDonDAL _hoaDonDAL = new HoaDonDAL();
+
         public HoaDonBLL() { }  
+
+        public HoaDon GetById(int maHoaDon)
+        {
+            return _hoaDonDAL.GetById(maHoaDon);
+        }
+
         public List<HoaDon> getListHoaDon()
         {
-            return hoaDonDAL.getListHoaDon();
+            return _hoaDonDAL.getListHoaDon();
         }
 
         public HoaDon GetByBan(int maBan)
         {
-            return hoaDonDAL.GetByBan(maBan);
+            return _hoaDonDAL.GetByBan(maBan);
+        }
+
+        public bool XuLyThanhToan(int maHoaDon, int maBan)
+        {
+            return _hoaDonDAL.ThanhToan(maHoaDon, maBan);
         }
     }
 }

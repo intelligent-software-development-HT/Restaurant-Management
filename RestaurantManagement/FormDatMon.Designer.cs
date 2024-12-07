@@ -202,6 +202,7 @@
             // 
             // buttonThanhToan
             // 
+            this.buttonThanhToan.Enabled = false;
             this.buttonThanhToan.Location = new System.Drawing.Point(535, 666);
             this.buttonThanhToan.Name = "buttonThanhToan";
             this.buttonThanhToan.Size = new System.Drawing.Size(166, 64);
@@ -228,6 +229,7 @@
             this.columnHeader4});
             this.listViewDonMon.GridLines = true;
             this.listViewDonMon.HideSelection = false;
+            this.listViewDonMon.HoverSelection = true;
             this.listViewDonMon.Location = new System.Drawing.Point(19, 179);
             this.listViewDonMon.Name = "listViewDonMon";
             this.listViewDonMon.Size = new System.Drawing.Size(682, 416);
@@ -238,22 +240,24 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Tên món";
-            this.columnHeader1.Width = 300;
+            this.columnHeader1.Width = 178;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Số lượng";
-            this.columnHeader2.Width = 90;
+            this.columnHeader2.Width = 80;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Đơn giá";
-            this.columnHeader3.Width = 120;
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.columnHeader3.Width = 95;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Thành tiền";
-            this.columnHeader4.Width = 150;
+            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.columnHeader4.Width = 100;
             // 
             // panelThongTinDatMon
             // 

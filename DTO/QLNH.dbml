@@ -138,4 +138,9 @@
     <Parameter Name="soLuong" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.sp_thanhToan" Method="sp_thanhToan">
+    <Parameter Name="maHoaDon" Type="System.Int32" DbType="Int" />
+    <Parameter Name="maBan" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

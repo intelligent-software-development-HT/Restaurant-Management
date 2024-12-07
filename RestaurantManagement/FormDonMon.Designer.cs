@@ -30,21 +30,32 @@
         {
             this.dataGridViewDonMon = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxDonMon = new System.Windows.Forms.ComboBox();
             this.buttonCapNhatTrangThai = new System.Windows.Forms.Button();
+            this.comboBoxDonMon = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDonMon)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewDonMon
             // 
+            this.dataGridViewDonMon.AllowUserToAddRows = false;
+            this.dataGridViewDonMon.AllowUserToDeleteRows = false;
+            this.dataGridViewDonMon.AllowUserToResizeRows = false;
+            this.dataGridViewDonMon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewDonMon.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewDonMon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewDonMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDonMon.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridViewDonMon.Location = new System.Drawing.Point(12, 12);
+            this.dataGridViewDonMon.MultiSelect = false;
             this.dataGridViewDonMon.Name = "dataGridViewDonMon";
+            this.dataGridViewDonMon.ReadOnly = true;
+            this.dataGridViewDonMon.RowHeadersVisible = false;
             this.dataGridViewDonMon.RowHeadersWidth = 62;
             this.dataGridViewDonMon.RowTemplate.Height = 28;
-            this.dataGridViewDonMon.Size = new System.Drawing.Size(765, 710);
+            this.dataGridViewDonMon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewDonMon.Size = new System.Drawing.Size(1043, 710);
             this.dataGridViewDonMon.TabIndex = 0;
             // 
             // groupBox1
@@ -52,29 +63,12 @@
             this.groupBox1.Controls.Add(this.buttonCapNhatTrangThai);
             this.groupBox1.Controls.Add(this.comboBoxDonMon);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(783, 12);
+            this.groupBox1.Location = new System.Drawing.Point(1061, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(320, 160);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đơn món";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Trạng thái đơn món";
-            // 
-            // comboBoxDonMon
-            // 
-            this.comboBoxDonMon.FormattingEnabled = true;
-            this.comboBoxDonMon.Location = new System.Drawing.Point(27, 61);
-            this.comboBoxDonMon.Name = "comboBoxDonMon";
-            this.comboBoxDonMon.Size = new System.Drawing.Size(266, 28);
-            this.comboBoxDonMon.TabIndex = 1;
             // 
             // buttonCapNhatTrangThai
             // 
@@ -85,11 +79,29 @@
             this.buttonCapNhatTrangThai.Text = "Cập nhật trạng thái";
             this.buttonCapNhatTrangThai.UseVisualStyleBackColor = true;
             // 
+            // comboBoxDonMon
+            // 
+            this.comboBoxDonMon.FormattingEnabled = true;
+            this.comboBoxDonMon.Location = new System.Drawing.Point(27, 61);
+            this.comboBoxDonMon.Name = "comboBoxDonMon";
+            this.comboBoxDonMon.Size = new System.Drawing.Size(266, 28);
+            this.comboBoxDonMon.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Trạng thái đơn món";
+            // 
             // FormDonMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1214, 734);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1393, 734);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewDonMon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

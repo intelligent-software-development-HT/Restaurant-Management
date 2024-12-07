@@ -11,6 +11,10 @@ namespace DAL
     {
         private readonly QLNHDataContext _dataContext = new QLNHDataContext();
         public ChiTietHoaDonDAL() { }
+        public ChiTietHoaDon GetById(int id)
+        {
+            return _dataContext.ChiTietHoaDons.FirstOrDefault(r => r.MaCTHD.Equals(id));
+        }
         public List<ChiTietHoaDon> getListChiTietHoaDon()
         {
             return _dataContext.ChiTietHoaDons.ToList<ChiTietHoaDon>();
