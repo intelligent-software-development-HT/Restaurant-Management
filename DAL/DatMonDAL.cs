@@ -22,6 +22,7 @@ namespace DAL
             try
             {
                 _context.sp_ThemMonVaoHoaDonMoi(thongTinDatMon.MaNhanVien, thongTinDatMon.MaBan, thongTinDatMon.MaMonAn, thongTinDatMon.SoLuong);
+                _context.Refresh(RefreshMode.OverwriteCurrentValues, _context.ChiTietHoaDons);
                 return true;
             }
             catch (Exception ex)
@@ -62,9 +63,9 @@ namespace DAL
 
                     //_context.sp_CapNhatMonVaoHoaDon(thongTinDatMon.MaChiTietHoaDon, thongTinDatMon.SoLuong);
 
-                    //_context.Refresh(RefreshMode.OverwriteCurrentValues, _context.ChiTietHoaDons);
-
                     _context.SubmitChanges();
+
+                    _context.Refresh(RefreshMode.OverwriteCurrentValues, _context.ChiTietHoaDons);
                 }
                 return true;
             }
@@ -72,7 +73,11 @@ namespace DAL
             {
                 foreach (var conflict in _context.ChangeConflicts)
                 {
-                    conflict.Resolve(RefreshMode.KeepChanges);
+                    foreach (var member in conflict.MemberConflicts)
+                    {
+                        Console.WriteLine($"Conflict in member: {member.Member.Name}");
+                    }
+                    conflict.Resolve(RefreshMode.OverwriteCurrentValues);
                 }
                 _context.SubmitChanges();
                 return true;

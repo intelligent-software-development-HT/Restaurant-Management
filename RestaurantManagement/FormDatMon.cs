@@ -57,6 +57,12 @@ namespace RestaurantManagement
 
         private void ButtonThemMon_Click(object sender, EventArgs e)
         {
+            if (!panelThongTinDatMon.Visible)
+            {
+                MessageBox.Show("Vui lòng chọn món");
+                return;
+            }
+
             int soLuong = Convert.ToInt32(nudSoLuong.Value);
             int maMon = Convert.ToInt32(lblTenMon.Tag);
             int maBan = Convert.ToInt32(groupBoxDatMon.Tag);
@@ -75,11 +81,16 @@ namespace RestaurantManagement
 
             if (!_datMonBLL.XuLyDatMon(thongTinDatMon))
             {
-                MessageBox.Show("Lỗi xảy ra trong quá trình đặt món. Vui lòng thử lại.");
+                MessageBox.Show("Đặt món không thành công.");
                 return;
             }
 
-            //LoadListView, ClearThongTin
+            if (maHoaDon == 0)
+            {
+                HoaDon hoaDonNew = _hoaDonBLL.GetByBan(maBan);
+                maHoaDon = hoaDonNew.MaHD;
+            }
+
             LoadThongTinDatMon(maHoaDon);
             LoadDanhSachBan();
         }

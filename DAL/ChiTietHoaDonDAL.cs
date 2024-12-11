@@ -1,7 +1,9 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,6 +15,7 @@ namespace DAL
         public ChiTietHoaDonDAL() { }
         public ChiTietHoaDon GetById(int id)
         {
+            _dataContext.Refresh(RefreshMode.OverwriteCurrentValues, _dataContext.ChiTietHoaDons);
             return _dataContext.ChiTietHoaDons.FirstOrDefault(r => r.MaCTHD.Equals(id));
         }
         public List<ChiTietHoaDon> getListChiTietHoaDon()
@@ -27,6 +30,7 @@ namespace DAL
 
         public List<ChiTietHoaDon> GetDanhSachMonDat(int maHoaDon)
         {
+            _dataContext.Refresh(RefreshMode.OverwriteCurrentValues, _dataContext.ChiTietHoaDons);
             return _dataContext.ChiTietHoaDons.Where(r => r.MaHD.Equals(maHoaDon)).ToList();
         }
 

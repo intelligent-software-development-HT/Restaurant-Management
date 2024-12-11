@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3A37A1A0-4BA1-4A75-8630-71C7E9135467}|DAL\\DAL.csproj|d:\\hocky7\\phat trien ung dung thong minh\\doan\\restaurant-management\\dal\\datmondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A37A1A0-4BA1-4A75-8630-71C7E9135467}|DAL\\DAL.csproj|solutionrelative:dal\\datmondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF04DC18-1BA2-4BF4-B21A-3443F7E29BA5}|DTO\\DTO.csproj|d:\\hocky7\\phat trien ung dung thong minh\\doan\\restaurant-management\\dto\\qlnh.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
-      "RelativeMoniker": "D:0:0:{FF04DC18-1BA2-4BF4-B21A-3443F7E29BA5}|DTO\\DTO.csproj|solutionrelative:dto\\qlnh.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,31 +50,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatMonDAL.cs",
-              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\DAL\\DatMonDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\DatMonDAL.cs",
-              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\DAL\\DatMonDAL.cs",
-              "RelativeToolTip": "DAL\\DatMonDAL.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwEIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T10:01:43.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QLNH.dbml",
-              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\DTO\\QLNH.dbml",
-              "RelativeDocumentMoniker": "DTO\\QLNH.dbml",
-              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\DTO\\QLNH.dbml",
-              "RelativeToolTip": "DTO\\QLNH.dbml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2024-12-07T08:51:38.628Z",
-              "EditorCaption": ""
             }
           ]
         },

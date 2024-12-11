@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace DAL
         }
         public List<Ban> getListBan()
         {
+            dataContext.Refresh(RefreshMode.OverwriteCurrentValues, dataContext.Bans);
             return dataContext.Bans.ToList<Ban>();
         }
         public bool addBan(Ban ban)
