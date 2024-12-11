@@ -77,3 +77,9 @@ D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantMa
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormDatMon.resources
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormDonMon.resources
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormThongBaoDatBan.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.DocIO.Base.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.Compression.Base.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.OfficeChart.Base.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.DocIO.Base.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.Compression.Base.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.OfficeChart.Base.xml

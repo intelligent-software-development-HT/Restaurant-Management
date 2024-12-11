@@ -1055,13 +1055,13 @@ namespace DTO
 		
 		private int _MaHD;
 		
-		private System.Nullable<int> _MaNV;
+		private int _MaNV;
 		
 		private System.Nullable<int> _MaBan;
 		
 		private System.Nullable<System.DateTime> _NgayLap;
 		
-		private System.Nullable<int> _TongTien;
+		private int _TongTien;
 		
 		private string _TrangThaiThanhToan;
 		
@@ -1077,13 +1077,13 @@ namespace DTO
     partial void OnCreated();
     partial void OnMaHDChanging(int value);
     partial void OnMaHDChanged();
-    partial void OnMaNVChanging(System.Nullable<int> value);
+    partial void OnMaNVChanging(int value);
     partial void OnMaNVChanged();
     partial void OnMaBanChanging(System.Nullable<int> value);
     partial void OnMaBanChanged();
     partial void OnNgayLapChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayLapChanged();
-    partial void OnTongTienChanging(System.Nullable<int> value);
+    partial void OnTongTienChanging(int value);
     partial void OnTongTienChanged();
     partial void OnTrangThaiThanhToanChanging(string value);
     partial void OnTrangThaiThanhToanChanged();
@@ -1118,7 +1118,7 @@ namespace DTO
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNV", DbType="Int")]
-		public System.Nullable<int> MaNV
+		public int MaNV
 		{
 			get
 			{
@@ -1186,7 +1186,7 @@ namespace DTO
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TongTien", DbType="Int")]
-		public System.Nullable<int> TongTien
+		public int TongTien
 		{
 			get
 			{
@@ -1299,7 +1299,7 @@ namespace DTO
 					}
 					else
 					{
-						this._MaNV = default(Nullable<int>);
+						this._MaNV = default(int);
 					}
 					this.SendPropertyChanged("NhanVien");
 				}

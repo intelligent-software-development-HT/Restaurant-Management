@@ -31,6 +31,28 @@ namespace RestaurantManagement
             this.nudSoLuong.ValueChanged += NudSoLuong_ValueChanged;
             this.buttonThemMon.Click += ButtonThemMon_Click;
             this.buttonThanhToan.Click += ButtonThanhToan_Click;
+            this.buttonInHoaDon.Click += ButtonInHoaDon_Click;
+        }
+
+        private void ButtonInHoaDon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int maBan = Convert.ToInt32(groupBoxDatMon.Tag);
+                HoaDon hoaDon = _hoaDonBLL.GetByBan(maBan);
+                Ban ban = _banBLL.GetById(maBan);
+                NhanVien nhanVien = _nhanVienBLL.GetById(hoaDon.MaNV);
+                List<ChiTietHoaDon> chiTietHoaDons = _chiTietHoaDonBLL.GetDanhSachMonDat(hoaDon.MaHD);
+
+                _hoaDonBLL.InHoaDon(hoaDon.MaHD, hoaDon.NgayLap.ToString(), ban.TenBan, nhanVien.TenNV, hoaDon.TongTien, chiTietHoaDons);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("In hóa đơn thất bại");
+                return;
+            }
+
+            MessageBox.Show("In hóa đơn thành công");
         }
 
         private void ButtonThanhToan_Click(object sender, EventArgs e)

@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace DAL
         public HoaDonDAL() { }
         public HoaDon GetById(int maHoaDon)
         {
+            _dataContext.Refresh(RefreshMode.OverwriteCurrentValues, _dataContext.HoaDons);
             return _dataContext.HoaDons.FirstOrDefault(r => r.MaHD.Equals(maHoaDon));
         }
         public List<HoaDon> getListHoaDon()

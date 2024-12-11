@@ -14,6 +14,11 @@ namespace BLL
 
         public NhanVienBLL() { }
 
+        public NhanVien GetById(int maNhanVien)
+        {
+            return nhanVienDAL.GetById(maNhanVien);
+        }
+
         public List<NhanVien> listNhanVien()
         {
             return nhanVienDAL.getListNhanVien();

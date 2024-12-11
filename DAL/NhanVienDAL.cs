@@ -11,6 +11,7 @@ namespace DAL
     {
         private readonly QLNHDataContext _dataContext = new QLNHDataContext();
         public NhanVienDAL() { }
+
         public List<NhanVien> getListNhanVien()
         {
             return _dataContext.NhanViens.ToList<NhanVien>();

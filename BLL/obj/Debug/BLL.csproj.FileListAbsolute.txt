@@ -44,3 +44,11 @@ D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\obj\Debu
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\obj\Debug\BLL.csproj.Up2Date
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\obj\Debug\BLL.dll
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\obj\Debug\BLL.pdb
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.Compression.Base.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.DocIO.Base.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.OfficeChart.Base.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.XlsIO.Base.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.Compression.Base.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.DocIO.Base.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.OfficeChart.Base.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.XlsIO.Base.xml
