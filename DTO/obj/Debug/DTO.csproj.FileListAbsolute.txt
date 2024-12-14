@@ -38,3 +38,15 @@ D:\QLNH\Restaurant-Management\DTO\bin\Debug\Accord.Math.xml
 D:\QLNH\Restaurant-Management\DTO\bin\Debug\Accord.Math.Core.xml
 D:\QLNH\Restaurant-Management\DTO\bin\Debug\Accord.Statistics.xml
 D:\QLNH\Restaurant-Management\DTO\obj\Debug\DTO.csproj.Up2Date
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.dll.config
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.MachineLearning.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.Math.Core.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.Math.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.Statistics.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.MachineLearning.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.Math.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.Math.Core.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\bin\Debug\Accord.Statistics.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DTO\obj\Debug\DTO.csproj.Up2Date

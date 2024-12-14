@@ -13,6 +13,7 @@ namespace BLL
     {
         HoaDonBLL hoaDonBLL = new HoaDonBLL();
         MultipleLinearRegression linearRegression = new MultipleLinearRegression(); 
+        MultipleLinearRegression regression = new MultipleLinearRegression();   
         public void trainModel()
         {
             var data = hoaDonBLL.getDT();
@@ -42,13 +43,14 @@ namespace BLL
             }
             var mlra = new MultipleLinearRegressionAnalysis(intercept: true)
             {
-                Inputs = new[] { "Thu", "Ngay", "Thang", "Nam" }, // Không cần Codification ở đây
+                Inputs = new[] { "Thu", "Thang", "Nam" }, // Không cần Codification ở đây
                 Output = "DoanhThu"
             };
 
             mlra.OrdinaryLeastSquares.IsRobust = true;
 
-            linearRegression = mlra.Learn(features, revenue);
+            //regression = mlra.Learn(features, revenue);
+            regression = mlra.Learn(features, revenue);
 
             double predicted = mlra.Transform(features[0]);
             double r2 = mlra.RSquared;
@@ -65,7 +67,7 @@ namespace BLL
 
             // Đưa vào mảng double[]
             double[] dateArray = { thu, thang, nam };
-            double predict = linearRegression.Transform(dateArray);
+            double predict = regression.Transform(dateArray);
             return predict;
         }
     }

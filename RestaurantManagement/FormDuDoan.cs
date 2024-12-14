@@ -54,13 +54,6 @@ namespace RestaurantManagement
             // Xóa tất cả các chuỗi hiện có trên biểu đồ
             chart1.Series.Clear();
 
-            // Thêm biểu đồ cột
-            Series barSeries = new Series
-            {
-                Name = "Bar Data",
-                Color = System.Drawing.Color.Blue,
-                ChartType = SeriesChartType.Column // Biểu đồ cột
-            };
 
             // Thêm biểu đồ đường
             Series lineSeries = new Series
@@ -76,8 +69,6 @@ namespace RestaurantManagement
                 lineSeries.Points.AddXY(dateRange[i], yLine[i]);
             }
 
-            // Thêm các chuỗi vào biểu đồ
-            chart1.Series.Add(barSeries);
             chart1.Series.Add(lineSeries);
 
             // Tiêu đề biểu đồ
