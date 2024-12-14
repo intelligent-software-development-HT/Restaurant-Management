@@ -128,3 +128,15 @@ D:\QLNH\Restaurant-Management\RestaurantManagement\obj\Debug\Restaura.B356954C.U
 D:\QLNH\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.exe
 D:\QLNH\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.pdb
 D:\QLNH\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormThongKe.resources
+D:\QLNH\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormDuDoan.resources
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.dll.config
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.dll
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.MachineLearning.dll
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.Math.Core.dll
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.Math.dll
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.Statistics.dll
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.xml
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.MachineLearning.xml
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.Math.xml
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.Math.Core.xml
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.Statistics.xml

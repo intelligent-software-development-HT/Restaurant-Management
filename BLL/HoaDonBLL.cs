@@ -50,5 +50,15 @@ namespace BLL
         {
             return _hoaDonDAL.thongKeMonAn(startDate,endDate);
         }
+        
+        public ISingleResult<GetDoanhThuTheoNgay3Result> getDT()
+        {
+            return _hoaDonDAL.getDT();
+        }
+
+        internal IEnumerable<object> GetDoanhThuTheoNgay3()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

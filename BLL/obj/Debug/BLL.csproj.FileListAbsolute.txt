@@ -74,3 +74,14 @@ D:\QLNH\Restaurant-Management\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\QLNH\Restaurant-Management\BLL\obj\Debug\BLL.csproj.Up2Date
 D:\QLNH\Restaurant-Management\BLL\obj\Debug\BLL.dll
 D:\QLNH\Restaurant-Management\BLL\obj\Debug\BLL.pdb
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.dll.config
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.MachineLearning.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.Math.Core.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.Math.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.Statistics.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.MachineLearning.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.Math.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.Math.Core.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Accord.Statistics.xml
