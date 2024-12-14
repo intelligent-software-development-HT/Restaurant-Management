@@ -33,7 +33,6 @@ namespace RestaurantManagement
             this.buttonThanhToan.Click += ButtonThanhToan_Click;
             this.buttonInHoaDon.Click += ButtonInHoaDon_Click;
         }
-
         private void ButtonInHoaDon_Click(object sender, EventArgs e)
         {
             try
@@ -167,17 +166,19 @@ namespace RestaurantManagement
         {
             LoadDanhSachBan();
             LoadThucDon();
+            
             panelThongTinDatMon.Visible = false;
             labelTenDangNhap.Text = "Hello " + Properties.Settings.Default.tenDangNhap;
             labelTenDangNhap.Tag = Properties.Settings.Default.tenDangNhap;
+            
         }
+
 
         private void LoadThucDon()
         {
             LoadDanhSachLoaiMon();
             LoadDanhSachThucDon();
         }
-
         private void LoadDanhSachLoaiMon()
         {
             List<LoaiMonAn> loaiMons = _loaiMonBLL.getListLoaiMonAn();
@@ -189,29 +190,49 @@ namespace RestaurantManagement
 
             this.flowLayoutPanelLoaiMon.Controls.Clear();
 
+            // Nút "Tất cả"
             Button btnTatCa = new Button
             {
                 Text = "Tất cả",
                 Margin = new Padding(5),
-                Tag = 0
+                Tag = 0,
+                AutoSize = true,// Kích thước cố định
+                BackColor = Color.White // Màu nền
             };
             btnTatCa.Click += BtnTatCa_Click;
             this.flowLayoutPanelLoaiMon.Controls.Add(btnTatCa);
 
+            // Thêm các loại món
             foreach (var item in loaiMons)
             {
                 Button btnLoaiMon = new Button
                 {
                     Text = item.TenLoaiMonAn,
                     Margin = new Padding(5),
-                    Tag = item.MaLoaiMonAn
+                    Tag = item.MaLoaiMonAn,
+                    AutoSize = true,
+                    BackColor = Color.White,
+                    FlatStyle = FlatStyle.Flat,
                 };
 
                 btnLoaiMon.Click += BtnLoaiMon_Click;
-
                 this.flowLayoutPanelLoaiMon.Controls.Add(btnLoaiMon);
             }
+
+            // Tính toán tổng chiều rộng của các nút
+            int totalWidth = flowLayoutPanelLoaiMon.Controls.OfType<Button>().Sum(btn => btn.Width + btn.Margin.Horizontal + (loaiMons.Count * 7));
+
+            // Cài đặt giá trị cho HScrollBar
+            hScrollBar1.Minimum = 0;
+            hScrollBar1.Maximum = totalWidth - this.flowLayoutPanelLoaiMon.Width; // Tổng chiều rộng - chiều rộng của FlowLayoutPanel
+            hScrollBar1.LargeChange = this.flowLayoutPanelLoaiMon.Width; // Kích thước cuộn lớn
+            hScrollBar1.SmallChange = 10; // Kích thước cuộn nhỏ
+
+            // Đặt chiều rộng của FlowLayoutPanel nếu cần
+            flowLayoutPanelLoaiMon.Width = totalWidth; // Cập nhật chiều rộng của FlowLayoutPanel
         }
+
+
 
         private void BtnTatCa_Click(object sender, EventArgs e)
         {
@@ -230,6 +251,7 @@ namespace RestaurantManagement
 
             if (mons?.Count <= 0)
             {
+                this.tableLayoutPanelMon.Controls.Clear();
                 return;
             }
 
@@ -269,7 +291,10 @@ namespace RestaurantManagement
                         Text = mons[index].TenMonAn,
                         Dock = DockStyle.Fill,
                         Tag = mons[index].MaMonAn,
-                        Margin = new Padding(8)
+                        Margin = new Padding(8),
+                        BackColor = Color.White,
+                        FlatStyle = FlatStyle.Flat
+
                     };
                     btnMonAn.Click += BtnMonAn_Click;
                     this.tableLayoutPanelMon.Controls.Add(btnMonAn, index % tableLayoutPanelMon.ColumnCount,
@@ -357,7 +382,8 @@ namespace RestaurantManagement
                         Dock = DockStyle.Fill,
                         Tag = bans[index].MaBan,
                         Margin = new Padding(5),
-                        BackColor = !bans[index].TrangThai ? Color.FromArgb(193, 133, 59) : Color.FromArgb(204, 27, 27)
+                        BackColor = !bans[index].TrangThai ? Color.FromArgb(0, 128, 128) : Color.FromArgb(172, 26, 8),
+                        ForeColor = Color.White
                     };
                     btnTable.Click += BtnTable_Click;
                     this.tableLayoutPanelBan.Controls.Add(btnTable, index % tableLayoutPanelBan.ColumnCount,
@@ -394,6 +420,16 @@ namespace RestaurantManagement
             }
 
             LoadThongTinDatMon(hoaDon?.MaHD ?? 0);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hScrollBar1_Scroll_1(object sender, ScrollEventArgs e)
+        {
+            flowLayoutPanelLoaiMon.Left = -hScrollBar1.Value;
         }
     }
 }

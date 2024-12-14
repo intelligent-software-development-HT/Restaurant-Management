@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewManHinh = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonHuy = new System.Windows.Forms.Button();
-            this.buttonSua = new System.Windows.Forms.Button();
-            this.buttonXoa = new System.Windows.Forms.Button();
-            this.buttonThem = new System.Windows.Forms.Button();
             this.textBoxTenManHinh = new System.Windows.Forms.TextBox();
             this.textBoxMaManHinh = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonThem = new System.Windows.Forms.Button();
+            this.buttonXoa = new System.Windows.Forms.Button();
+            this.buttonSua = new System.Windows.Forms.Button();
+            this.buttonHuy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewManHinh)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -47,17 +49,34 @@
             this.dataGridViewManHinh.AllowUserToAddRows = false;
             this.dataGridViewManHinh.AllowUserToDeleteRows = false;
             this.dataGridViewManHinh.AllowUserToResizeRows = false;
+            this.dataGridViewManHinh.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewManHinh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewManHinh.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewManHinh.Location = new System.Drawing.Point(9, 8);
             this.dataGridViewManHinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewManHinh.MultiSelect = false;
             this.dataGridViewManHinh.Name = "dataGridViewManHinh";
             this.dataGridViewManHinh.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewManHinh.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewManHinh.RowHeadersVisible = false;
             this.dataGridViewManHinh.RowHeadersWidth = 62;
             this.dataGridViewManHinh.RowTemplate.Height = 28;
             this.dataGridViewManHinh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewManHinh.Size = new System.Drawing.Size(405, 408);
+            this.dataGridViewManHinh.Size = new System.Drawing.Size(405, 661);
             this.dataGridViewManHinh.TabIndex = 0;
             // 
             // groupBox1
@@ -70,96 +89,127 @@
             this.groupBox1.Controls.Add(this.textBoxMaManHinh);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(418, 8);
+            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.groupBox1.Location = new System.Drawing.Point(418, 0);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(255, 314);
+            this.groupBox1.Size = new System.Drawing.Size(571, 669);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Màn hình";
             // 
-            // buttonHuy
-            // 
-            this.buttonHuy.Location = new System.Drawing.Point(21, 261);
-            this.buttonHuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonHuy.Name = "buttonHuy";
-            this.buttonHuy.Size = new System.Drawing.Size(83, 34);
-            this.buttonHuy.TabIndex = 4;
-            this.buttonHuy.Text = "Hủy";
-            this.buttonHuy.UseVisualStyleBackColor = true;
-            // 
-            // buttonSua
-            // 
-            this.buttonSua.Location = new System.Drawing.Point(21, 224);
-            this.buttonSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonSua.Name = "buttonSua";
-            this.buttonSua.Size = new System.Drawing.Size(83, 34);
-            this.buttonSua.TabIndex = 4;
-            this.buttonSua.Text = "Sửa";
-            this.buttonSua.UseVisualStyleBackColor = true;
-            // 
-            // buttonXoa
-            // 
-            this.buttonXoa.Location = new System.Drawing.Point(21, 186);
-            this.buttonXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonXoa.Name = "buttonXoa";
-            this.buttonXoa.Size = new System.Drawing.Size(83, 34);
-            this.buttonXoa.TabIndex = 4;
-            this.buttonXoa.Text = "Xóa";
-            this.buttonXoa.UseVisualStyleBackColor = true;
-            // 
-            // buttonThem
-            // 
-            this.buttonThem.Location = new System.Drawing.Point(21, 148);
-            this.buttonThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonThem.Name = "buttonThem";
-            this.buttonThem.Size = new System.Drawing.Size(83, 34);
-            this.buttonThem.TabIndex = 4;
-            this.buttonThem.Text = "Thêm";
-            this.buttonThem.UseVisualStyleBackColor = true;
-            // 
             // textBoxTenManHinh
             // 
-            this.textBoxTenManHinh.Location = new System.Drawing.Point(21, 87);
+            this.textBoxTenManHinh.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTenManHinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.textBoxTenManHinh.Location = new System.Drawing.Point(340, 75);
             this.textBoxTenManHinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxTenManHinh.Name = "textBoxTenManHinh";
-            this.textBoxTenManHinh.Size = new System.Drawing.Size(169, 20);
+            this.textBoxTenManHinh.Size = new System.Drawing.Size(227, 30);
             this.textBoxTenManHinh.TabIndex = 3;
             // 
             // textBoxMaManHinh
             // 
-            this.textBoxMaManHinh.Location = new System.Drawing.Point(21, 44);
+            this.textBoxMaManHinh.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMaManHinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.textBoxMaManHinh.Location = new System.Drawing.Point(340, 28);
             this.textBoxMaManHinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxMaManHinh.Name = "textBoxMaManHinh";
             this.textBoxMaManHinh.ReadOnly = true;
-            this.textBoxMaManHinh.Size = new System.Drawing.Size(169, 20);
+            this.textBoxMaManHinh.Size = new System.Drawing.Size(227, 30);
             this.textBoxMaManHinh.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 72);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.label2.Location = new System.Drawing.Point(26, 82);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 13);
+            this.label2.Size = new System.Drawing.Size(140, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên màn hình";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 28);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.label1.Location = new System.Drawing.Point(26, 35);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.Size = new System.Drawing.Size(133, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã màn hình";
+            // 
+            // buttonThem
+            // 
+            this.buttonThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonThem.FlatAppearance.BorderSize = 0;
+            this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.buttonThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThem.Location = new System.Drawing.Point(11, 619);
+            this.buttonThem.Name = "buttonThem";
+            this.buttonThem.Size = new System.Drawing.Size(134, 37);
+            this.buttonThem.TabIndex = 30;
+            this.buttonThem.Text = "Thêm";
+            this.buttonThem.UseVisualStyleBackColor = false;
+            // 
+            // buttonXoa
+            // 
+            this.buttonXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonXoa.FlatAppearance.BorderSize = 0;
+            this.buttonXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.buttonXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonXoa.Location = new System.Drawing.Point(150, 619);
+            this.buttonXoa.Name = "buttonXoa";
+            this.buttonXoa.Size = new System.Drawing.Size(134, 37);
+            this.buttonXoa.TabIndex = 31;
+            this.buttonXoa.Text = "Xóa";
+            this.buttonXoa.UseVisualStyleBackColor = false;
+            // 
+            // buttonSua
+            // 
+            this.buttonSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonSua.FlatAppearance.BorderSize = 0;
+            this.buttonSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.buttonSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSua.Location = new System.Drawing.Point(289, 619);
+            this.buttonSua.Name = "buttonSua";
+            this.buttonSua.Size = new System.Drawing.Size(134, 37);
+            this.buttonSua.TabIndex = 32;
+            this.buttonSua.Text = "Sửa";
+            this.buttonSua.UseVisualStyleBackColor = false;
+            // 
+            // buttonHuy
+            // 
+            this.buttonHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonHuy.FlatAppearance.BorderSize = 0;
+            this.buttonHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHuy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.buttonHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonHuy.Location = new System.Drawing.Point(428, 619);
+            this.buttonHuy.Name = "buttonHuy";
+            this.buttonHuy.Size = new System.Drawing.Size(134, 37);
+            this.buttonHuy.TabIndex = 33;
+            this.buttonHuy.Text = "Hủy";
+            this.buttonHuy.UseVisualStyleBackColor = false;
             // 
             // FormManHinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 680);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewManHinh);
@@ -182,9 +232,9 @@
         private System.Windows.Forms.TextBox textBoxMaManHinh;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonHuy;
-        private System.Windows.Forms.Button buttonSua;
         private System.Windows.Forms.Button buttonXoa;
         private System.Windows.Forms.Button buttonThem;
+        private System.Windows.Forms.Button buttonHuy;
+        private System.Windows.Forms.Button buttonSua;
     }
 }

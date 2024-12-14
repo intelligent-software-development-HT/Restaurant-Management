@@ -150,5 +150,10 @@ namespace RestaurantManagement
             ClearInput();
             LoadDataNhomNguoiDung();
         }
+
+        private void dataGridViewNhomNguoiDung_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

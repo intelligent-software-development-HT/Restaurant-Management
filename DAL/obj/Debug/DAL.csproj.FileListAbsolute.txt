@@ -28,3 +28,13 @@ D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\obj\Debu
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\obj\Debug\DAL.dll
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\DAL\obj\Debug\DAL.pdb
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\DAL.dll
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\DAL.pdb
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\DTO.dll
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\DTO.pdb
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\DTO.dll.config
+D:\QLNH\Restaurant-Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\QLNH\Restaurant-Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\QLNH\Restaurant-Management\DAL\obj\Debug\DAL.csproj.Up2Date
+D:\QLNH\Restaurant-Management\DAL\obj\Debug\DAL.dll
+D:\QLNH\Restaurant-Management\DAL\obj\Debug\DAL.pdb
