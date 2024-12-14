@@ -28,12 +28,14 @@ namespace RestaurantManagement
             this.buttonSave.Click += ButtonSave_Click;
             this.buttonCancel.Click += ButtonCancel_Click;
         }
+
         void reset()
         {
             textBoxMaMonAn.Clear();
             textBoxTenMonAn.Clear();
             textBoxDonGia.Clear();
         }
+
         void show()
         {
             buttonSave.Hide();
@@ -42,6 +44,7 @@ namespace RestaurantManagement
             buttonXoa.Show();
             buttonSua.Show();
         }
+
         void hide()
         {
             buttonSave.Show();
@@ -50,6 +53,7 @@ namespace RestaurantManagement
             buttonXoa.Hide();
             buttonSua.Hide();
         }
+
         private void ButtonCancel_Click(object sender, EventArgs e)
         {
             show();
@@ -73,9 +77,11 @@ namespace RestaurantManagement
             {
                 int maMonAn = int.Parse(textBoxMaMonAn.Text);
                 MonAn mNew = new MonAn();
-                mNew.TenMonAn = textBoxMaMonAn.Text;
+                mNew.TenMonAn = textBoxTenMonAn.Text;
                 mNew.DonGia = int.Parse(textBoxDonGia.Text);
-                mNew.MaLoaiMonAn = int.Parse(comboBoxLoaiMonAn.SelectedValue.ToString());
+                int maLoaiMon = int.Parse(comboBoxLoaiMonAn.SelectedValue.ToString());
+                mNew.LoaiMonAn = loaiMonAnBLL.getById(maLoaiMon);
+                mNew.MaLoaiMonAn = maLoaiMon;
                 if (!monAnBLL.editMonAn(maMonAn, mNew))
                 {
                     MessageBox.Show("Sửa món ăn không thành công !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -130,6 +136,7 @@ namespace RestaurantManagement
         {
             loadData();
         }
+
         void loadData()
         {
             loadDataGridView();
@@ -137,21 +144,43 @@ namespace RestaurantManagement
 
             BindingDataMonAn(1);
         }
+
         void loadCMB()
         {
             comboBoxLoaiMonAn.DataSource = loaiMonAnBLL.getListLoaiMonAn();
             comboBoxLoaiMonAn.DisplayMember = "TenLoaiMonAn";
             comboBoxLoaiMonAn.ValueMember = "MaLoaiMonAn";
         }
+
         void loadDataGridView()
         {
-            dataGridView1.DataSource = monAnBLL.listMonAn();
+            List<MonAn> monAns = monAnBLL.listMonAn();
+
+            DataTable table = new DataTable();
+            table.Columns.Add("MaMonAn");
+            table.Columns.Add("TenMonAn");
+            table.Columns.Add("MoTa");
+            table.Columns.Add("DonGia");
+            table.Columns.Add("TenLoaiMonAn");
+
+            foreach (var item in monAns)
+            {
+                DataRow row = table.NewRow();
+                row["MaMonAn"] = item.MaMonAn;
+                row["TenMonAn"] = item.TenMonAn;
+                row["MoTa"] = item.MoTa;
+                row["DonGia"] = item.DonGia;
+                row["TenLoaiMonAn"] = item.LoaiMonAn.TenLoaiMonAn;
+
+                table.Rows.Add(row);
+            }
+
+            dataGridView1.DataSource = table;
             dataGridView1.Columns[0].HeaderText = "Mã món ăn"; 
             dataGridView1.Columns[1].HeaderText = "Tên món ăn";
             dataGridView1.Columns[2].HeaderText = "Mô tả";
-            dataGridView1.Columns[3].HeaderText = "Hình ảnh";
-            dataGridView1.Columns[4].HeaderText = "Đơn giá";
-            dataGridView1.Columns[5].HeaderText = "Mã loại món ăn";
+            dataGridView1.Columns[3].HeaderText = "Đơn giá";
+            dataGridView1.Columns[4].HeaderText = "Tên loại món ăn";
         }
     }
 }

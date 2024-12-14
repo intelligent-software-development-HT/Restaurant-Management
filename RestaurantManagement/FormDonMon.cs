@@ -24,20 +24,14 @@ namespace RestaurantManagement
         {
             InitializeComponent();
             this.Load += FormDonMon_Load;
-            this.dataGridViewDonMon.CellClick += DataGridViewDonMon_CellClick;
-            this.buttonCapNhatTrangThai.Click += ButtonCapNhatTrangThai_Click;
+            this.dataGridViewDonMon.RowPrePaint += DataGridViewDonMon_RowPrePaint;
+            this.buttonDaXong.Click += ButtonDaXong_Click;
         }
 
-        private void ButtonCapNhatTrangThai_Click(object sender, EventArgs e)
+        private void ButtonDaXong_Click(object sender, EventArgs e)
         {
-            if (comboBoxDonMon.SelectedIndex == -1)
-            {
-                MessageBox.Show("Vui lòng chọn trạng thái cập nhật");
-                return;
-            }
-
             int maCTHD = Convert.ToInt32(dataGridViewDonMon.CurrentRow.Cells[0].Value);
-            string status = comboBoxDonMon.SelectedValue.ToString();
+            string status = "completed";
 
             if (!_chiTietHoaDonBLL.UpdateTrangThaiMon(maCTHD, status))
             {
@@ -46,45 +40,26 @@ namespace RestaurantManagement
             }
 
             LoadDonMon();
-            ClearThongTin();
         }
 
-        private void ClearThongTin()
+        private void DataGridViewDonMon_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
-            comboBoxDonMon.SelectedIndex = -1;
-        }
-
-        private void DataGridViewDonMon_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dataGridViewDonMon.SelectedRows.Count <= 0)
+            DataGridViewRow row = dataGridViewDonMon.Rows[e.RowIndex];
+            if (row.Cells[4].Value.ToString() == "Đã xong")
             {
-                return;
+                dataGridViewDonMon.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Green;
+                dataGridViewDonMon.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.White;
             }
-
-            int maCTHD = Convert.ToInt32(dataGridViewDonMon.CurrentRow.Cells[0].Value);
-            ChiTietHoaDon chiTietHoaDon = _chiTietHoaDonBLL.GetById(maCTHD);
-
-            comboBoxDonMon.SelectedValue = chiTietHoaDon.TrangThaiMon;
+            else
+            {
+                dataGridViewDonMon.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Yellow;
+                dataGridViewDonMon.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Black;
+            }
         }
 
         private void FormDonMon_Load(object sender, EventArgs e)
         {
             LoadDonMon();
-            LoadTrangThaiMon();
-        }
-
-        private void LoadTrangThaiMon()
-        {
-            Dictionary<string, string> trangThais = new Dictionary<string, string>
-            {
-                { "preparing", "Đang chuẩn bị" },
-                { "completed", "Đã xong" },
-                //{ "Đã hủy", "canceled" },
-            };
-
-            comboBoxDonMon.DataSource = new BindingSource(trangThais, null);
-            comboBoxDonMon.DisplayMember = "Value";
-            comboBoxDonMon.ValueMember = "Key";
         }
 
         private void LoadDonMon()

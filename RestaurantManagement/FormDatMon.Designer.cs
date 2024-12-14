@@ -71,21 +71,19 @@ namespace RestaurantManagement
             this.tabControl1.Controls.Add(this.tabPageBan);
             this.tabControl1.Controls.Add(this.tabPageThucDon);
             this.tabControl1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(8, 25);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Location = new System.Drawing.Point(12, 38);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(497, 644);
+            this.tabControl1.Size = new System.Drawing.Size(746, 991);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPageBan
             // 
             this.tabPageBan.Controls.Add(this.tableLayoutPanelBan);
-            this.tabPageBan.Location = new System.Drawing.Point(4, 32);
-            this.tabPageBan.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPageBan.Location = new System.Drawing.Point(4, 44);
             this.tabPageBan.Name = "tabPageBan";
-            this.tabPageBan.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageBan.Size = new System.Drawing.Size(489, 608);
+            this.tabPageBan.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageBan.Size = new System.Drawing.Size(738, 943);
             this.tabPageBan.TabIndex = 0;
             this.tabPageBan.Text = "Bàn";
             this.tabPageBan.UseVisualStyleBackColor = true;
@@ -101,12 +99,11 @@ namespace RestaurantManagement
             this.tableLayoutPanelBan.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanelBan.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanelBan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelBan.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanelBan.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanelBan.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanelBan.Name = "tableLayoutPanelBan";
             this.tableLayoutPanelBan.RowCount = 1;
             this.tableLayoutPanelBan.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelBan.Size = new System.Drawing.Size(485, 604);
+            this.tableLayoutPanelBan.Size = new System.Drawing.Size(732, 937);
             this.tableLayoutPanelBan.TabIndex = 0;
             // 
             // tabPageThucDon
@@ -114,20 +111,19 @@ namespace RestaurantManagement
             this.tabPageThucDon.Controls.Add(this.hScrollBar2);
             this.tabPageThucDon.Controls.Add(this.flowLayoutPanelLoaiMon);
             this.tabPageThucDon.Controls.Add(this.tableLayoutPanelMon);
-            this.tabPageThucDon.Location = new System.Drawing.Point(4, 32);
-            this.tabPageThucDon.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPageThucDon.Location = new System.Drawing.Point(4, 44);
             this.tabPageThucDon.Name = "tabPageThucDon";
-            this.tabPageThucDon.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageThucDon.Size = new System.Drawing.Size(489, 608);
+            this.tabPageThucDon.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPageThucDon.Size = new System.Drawing.Size(738, 943);
             this.tabPageThucDon.TabIndex = 1;
             this.tabPageThucDon.Text = "Thực đơn";
             this.tabPageThucDon.UseVisualStyleBackColor = true;
             // 
             // hScrollBar2
             // 
-            this.hScrollBar2.Location = new System.Drawing.Point(6, 53);
+            this.hScrollBar2.Location = new System.Drawing.Point(9, 82);
             this.hScrollBar2.Name = "hScrollBar2";
-            this.hScrollBar2.Size = new System.Drawing.Size(481, 16);
+            this.hScrollBar2.Size = new System.Drawing.Size(722, 16);
             this.hScrollBar2.TabIndex = 2;
             this.hScrollBar2.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar2_Scroll);
             // 
@@ -135,10 +131,9 @@ namespace RestaurantManagement
             // 
             this.flowLayoutPanelLoaiMon.AutoScroll = true;
             this.flowLayoutPanelLoaiMon.ForeColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanelLoaiMon.Location = new System.Drawing.Point(5, 5);
-            this.flowLayoutPanelLoaiMon.Margin = new System.Windows.Forms.Padding(2);
+            this.flowLayoutPanelLoaiMon.Location = new System.Drawing.Point(8, 8);
             this.flowLayoutPanelLoaiMon.Name = "flowLayoutPanelLoaiMon";
-            this.flowLayoutPanelLoaiMon.Size = new System.Drawing.Size(483, 42);
+            this.flowLayoutPanelLoaiMon.Size = new System.Drawing.Size(724, 65);
             this.flowLayoutPanelLoaiMon.TabIndex = 1;
             // 
             // tableLayoutPanelMon
@@ -147,13 +142,12 @@ namespace RestaurantManagement
             this.tableLayoutPanelMon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelMon.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelMon.ForeColor = System.Drawing.Color.Teal;
-            this.tableLayoutPanelMon.Location = new System.Drawing.Point(5, 71);
-            this.tableLayoutPanelMon.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanelMon.Location = new System.Drawing.Point(8, 109);
             this.tableLayoutPanelMon.Name = "tableLayoutPanelMon";
             this.tableLayoutPanelMon.RowCount = 2;
             this.tableLayoutPanelMon.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelMon.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelMon.Size = new System.Drawing.Size(483, 401);
+            this.tableLayoutPanelMon.Size = new System.Drawing.Size(724, 617);
             this.tableLayoutPanelMon.TabIndex = 0;
             // 
             // groupBoxDatMon
@@ -167,11 +161,9 @@ namespace RestaurantManagement
             this.groupBoxDatMon.Controls.Add(this.panelThongTinDatMon);
             this.groupBoxDatMon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDatMon.ForeColor = System.Drawing.Color.Teal;
-            this.groupBoxDatMon.Location = new System.Drawing.Point(509, 51);
-            this.groupBoxDatMon.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxDatMon.Location = new System.Drawing.Point(764, 78);
             this.groupBoxDatMon.Name = "groupBoxDatMon";
-            this.groupBoxDatMon.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBoxDatMon.Size = new System.Drawing.Size(481, 618);
+            this.groupBoxDatMon.Size = new System.Drawing.Size(722, 951);
             this.groupBoxDatMon.TabIndex = 1;
             this.groupBoxDatMon.TabStop = false;
             this.groupBoxDatMon.Text = "Đặt món";
@@ -182,10 +174,9 @@ namespace RestaurantManagement
             this.buttonThemMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThemMon.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThemMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
-            this.buttonThemMon.Location = new System.Drawing.Point(310, 67);
-            this.buttonThemMon.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonThemMon.Location = new System.Drawing.Point(465, 103);
             this.buttonThemMon.Name = "buttonThemMon";
-            this.buttonThemMon.Size = new System.Drawing.Size(170, 38);
+            this.buttonThemMon.Size = new System.Drawing.Size(255, 58);
             this.buttonThemMon.TabIndex = 8;
             this.buttonThemMon.Text = "Thêm món";
             this.buttonThemMon.UseVisualStyleBackColor = false;
@@ -195,10 +186,9 @@ namespace RestaurantManagement
             this.textBoxTongTien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTongTien.Enabled = false;
             this.textBoxTongTien.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTongTien.Location = new System.Drawing.Point(366, 545);
-            this.textBoxTongTien.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTongTien.Location = new System.Drawing.Point(549, 838);
             this.textBoxTongTien.Name = "textBoxTongTien";
-            this.textBoxTongTien.Size = new System.Drawing.Size(111, 23);
+            this.textBoxTongTien.Size = new System.Drawing.Size(166, 35);
             this.textBoxTongTien.TabIndex = 5;
             this.textBoxTongTien.Text = "0";
             this.textBoxTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -207,23 +197,22 @@ namespace RestaurantManagement
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(195, 545);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(292, 838);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 23);
+            this.label1.Size = new System.Drawing.Size(154, 35);
             this.label1.TabIndex = 4;
             this.label1.Text = "Tổng tiền";
             // 
             // buttonThanhToan
             // 
             this.buttonThanhToan.BackColor = System.Drawing.Color.Teal;
+            this.buttonThanhToan.Enabled = false;
             this.buttonThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThanhToan.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThanhToan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
-            this.buttonThanhToan.Location = new System.Drawing.Point(300, 572);
-            this.buttonThanhToan.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonThanhToan.Location = new System.Drawing.Point(450, 880);
             this.buttonThanhToan.Name = "buttonThanhToan";
-            this.buttonThanhToan.Size = new System.Drawing.Size(177, 40);
+            this.buttonThanhToan.Size = new System.Drawing.Size(266, 62);
             this.buttonThanhToan.TabIndex = 6;
             this.buttonThanhToan.Text = "Thanh toán";
             this.buttonThanhToan.UseVisualStyleBackColor = false;
@@ -231,13 +220,13 @@ namespace RestaurantManagement
             // buttonInHoaDon
             // 
             this.buttonInHoaDon.BackColor = System.Drawing.Color.Teal;
+            this.buttonInHoaDon.Enabled = false;
             this.buttonInHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInHoaDon.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonInHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
-            this.buttonInHoaDon.Location = new System.Drawing.Point(116, 572);
-            this.buttonInHoaDon.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonInHoaDon.Location = new System.Drawing.Point(174, 880);
             this.buttonInHoaDon.Name = "buttonInHoaDon";
-            this.buttonInHoaDon.Size = new System.Drawing.Size(180, 40);
+            this.buttonInHoaDon.Size = new System.Drawing.Size(270, 62);
             this.buttonInHoaDon.TabIndex = 7;
             this.buttonInHoaDon.Text = "In hóa đơn";
             this.buttonInHoaDon.UseVisualStyleBackColor = false;
@@ -254,11 +243,9 @@ namespace RestaurantManagement
             this.listViewDonMon.ForeColor = System.Drawing.Color.Teal;
             this.listViewDonMon.GridLines = true;
             this.listViewDonMon.HideSelection = false;
-            this.listViewDonMon.HoverSelection = true;
-            this.listViewDonMon.Location = new System.Drawing.Point(13, 116);
-            this.listViewDonMon.Margin = new System.Windows.Forms.Padding(2);
+            this.listViewDonMon.Location = new System.Drawing.Point(20, 178);
             this.listViewDonMon.Name = "listViewDonMon";
-            this.listViewDonMon.Size = new System.Drawing.Size(455, 427);
+            this.listViewDonMon.Size = new System.Drawing.Size(682, 657);
             this.listViewDonMon.TabIndex = 2;
             this.listViewDonMon.UseCompatibleStateImageBehavior = false;
             this.listViewDonMon.View = System.Windows.Forms.View.Details;
@@ -291,10 +278,9 @@ namespace RestaurantManagement
             this.panelThongTinDatMon.Controls.Add(this.nudSoLuong);
             this.panelThongTinDatMon.Controls.Add(this.lblThanhTien);
             this.panelThongTinDatMon.Controls.Add(this.lblTenMon);
-            this.panelThongTinDatMon.Location = new System.Drawing.Point(4, 24);
-            this.panelThongTinDatMon.Margin = new System.Windows.Forms.Padding(2);
+            this.panelThongTinDatMon.Location = new System.Drawing.Point(6, 37);
             this.panelThongTinDatMon.Name = "panelThongTinDatMon";
-            this.panelThongTinDatMon.Size = new System.Drawing.Size(473, 39);
+            this.panelThongTinDatMon.Size = new System.Drawing.Size(710, 60);
             this.panelThongTinDatMon.TabIndex = 0;
             // 
             // textBoxDonGia
@@ -303,11 +289,10 @@ namespace RestaurantManagement
             this.textBoxDonGia.Enabled = false;
             this.textBoxDonGia.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDonGia.ForeColor = System.Drawing.Color.Teal;
-            this.textBoxDonGia.Location = new System.Drawing.Point(251, 10);
-            this.textBoxDonGia.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxDonGia.Location = new System.Drawing.Point(376, 15);
             this.textBoxDonGia.Name = "textBoxDonGia";
             this.textBoxDonGia.ReadOnly = true;
-            this.textBoxDonGia.Size = new System.Drawing.Size(73, 20);
+            this.textBoxDonGia.Size = new System.Drawing.Size(110, 29);
             this.textBoxDonGia.TabIndex = 3;
             this.textBoxDonGia.Text = "0";
             this.textBoxDonGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -317,15 +302,14 @@ namespace RestaurantManagement
             this.nudSoLuong.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nudSoLuong.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudSoLuong.ForeColor = System.Drawing.Color.Teal;
-            this.nudSoLuong.Location = new System.Drawing.Point(138, 7);
-            this.nudSoLuong.Margin = new System.Windows.Forms.Padding(2);
+            this.nudSoLuong.Location = new System.Drawing.Point(207, 11);
             this.nudSoLuong.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.nudSoLuong.Name = "nudSoLuong";
-            this.nudSoLuong.Size = new System.Drawing.Size(70, 23);
+            this.nudSoLuong.Size = new System.Drawing.Size(105, 32);
             this.nudSoLuong.TabIndex = 2;
             this.nudSoLuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudSoLuong.Value = new decimal(new int[] {
@@ -339,10 +323,9 @@ namespace RestaurantManagement
             this.lblThanhTien.AutoSize = true;
             this.lblThanhTien.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThanhTien.ForeColor = System.Drawing.Color.Teal;
-            this.lblThanhTien.Location = new System.Drawing.Point(430, 11);
-            this.lblThanhTien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblThanhTien.Location = new System.Drawing.Point(645, 17);
             this.lblThanhTien.Name = "lblThanhTien";
-            this.lblThanhTien.Size = new System.Drawing.Size(34, 19);
+            this.lblThanhTien.Size = new System.Drawing.Size(50, 29);
             this.lblThanhTien.TabIndex = 1;
             this.lblThanhTien.Text = "0 đ";
             this.lblThanhTien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -352,10 +335,9 @@ namespace RestaurantManagement
             this.lblTenMon.AutoSize = true;
             this.lblTenMon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenMon.ForeColor = System.Drawing.Color.Teal;
-            this.lblTenMon.Location = new System.Drawing.Point(6, 11);
-            this.lblTenMon.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTenMon.Location = new System.Drawing.Point(9, 17);
             this.lblTenMon.Name = "lblTenMon";
-            this.lblTenMon.Size = new System.Drawing.Size(53, 19);
+            this.lblTenMon.Size = new System.Drawing.Size(76, 29);
             this.lblTenMon.TabIndex = 0;
             this.lblTenMon.Text = "Pizza";
             // 
@@ -364,10 +346,9 @@ namespace RestaurantManagement
             this.labelTenDangNhap.AutoSize = true;
             this.labelTenDangNhap.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTenDangNhap.ForeColor = System.Drawing.Color.Teal;
-            this.labelTenDangNhap.Location = new System.Drawing.Point(880, 25);
-            this.labelTenDangNhap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTenDangNhap.Location = new System.Drawing.Point(1320, 38);
             this.labelTenDangNhap.Name = "labelTenDangNhap";
-            this.labelTenDangNhap.Size = new System.Drawing.Size(51, 19);
+            this.labelTenDangNhap.Size = new System.Drawing.Size(74, 29);
             this.labelTenDangNhap.TabIndex = 3;
             this.labelTenDangNhap.Text = "Hello";
             // 
@@ -377,10 +358,9 @@ namespace RestaurantManagement
             this.buttonKiemTraDatBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonKiemTraDatBan.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKiemTraDatBan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
-            this.buttonKiemTraDatBan.Location = new System.Drawing.Point(513, 11);
-            this.buttonKiemTraDatBan.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonKiemTraDatBan.Location = new System.Drawing.Point(770, 17);
             this.buttonKiemTraDatBan.Name = "buttonKiemTraDatBan";
-            this.buttonKiemTraDatBan.Size = new System.Drawing.Size(208, 27);
+            this.buttonKiemTraDatBan.Size = new System.Drawing.Size(312, 42);
             this.buttonKiemTraDatBan.TabIndex = 4;
             this.buttonKiemTraDatBan.Text = "Kiểm tra đặt bàn";
             this.buttonKiemTraDatBan.UseVisualStyleBackColor = false;
@@ -391,10 +371,9 @@ namespace RestaurantManagement
             this.labelThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelThongBao.ForeColor = System.Drawing.Color.Transparent;
             this.labelThongBao.Image = global::RestaurantManagement.Properties.Resources.circle__2_;
-            this.labelThongBao.Location = new System.Drawing.Point(772, 11);
-            this.labelThongBao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelThongBao.Location = new System.Drawing.Point(1158, 17);
             this.labelThongBao.Name = "labelThongBao";
-            this.labelThongBao.Size = new System.Drawing.Size(21, 21);
+            this.labelThongBao.Size = new System.Drawing.Size(32, 32);
             this.labelThongBao.TabIndex = 6;
             this.labelThongBao.Text = "0";
             this.labelThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -402,20 +381,20 @@ namespace RestaurantManagement
             // pictureBoxNotify
             // 
             this.pictureBoxNotify.Image = global::RestaurantManagement.Properties.Resources.notification;
-            this.pictureBoxNotify.Location = new System.Drawing.Point(764, 25);
-            this.pictureBoxNotify.Margin = new System.Windows.Forms.Padding(1);
+            this.pictureBoxNotify.Location = new System.Drawing.Point(1146, 38);
+            this.pictureBoxNotify.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxNotify.Name = "pictureBoxNotify";
-            this.pictureBoxNotify.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxNotify.Size = new System.Drawing.Size(24, 25);
             this.pictureBoxNotify.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxNotify.TabIndex = 2;
             this.pictureBoxNotify.TabStop = false;
             // 
             // FormDatMon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1000, 680);
+            this.ClientSize = new System.Drawing.Size(1500, 1046);
             this.Controls.Add(this.labelThongBao);
             this.Controls.Add(this.buttonKiemTraDatBan);
             this.Controls.Add(this.labelTenDangNhap);
@@ -424,7 +403,6 @@ namespace RestaurantManagement
             this.Controls.Add(this.tabControl1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDatMon";
             this.Text = "FormDatMon";
             this.tabControl1.ResumeLayout(false);

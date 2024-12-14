@@ -49,9 +49,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(518, 17);
+            this.label1.Location = new System.Drawing.Point(777, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 24);
+            this.label1.Size = new System.Drawing.Size(228, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã loại món ăn";
             // 
@@ -60,18 +61,20 @@
             this.textBoxMaLoaiMonAn.Enabled = false;
             this.textBoxMaLoaiMonAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMaLoaiMonAn.ForeColor = System.Drawing.Color.Teal;
-            this.textBoxMaLoaiMonAn.Location = new System.Drawing.Point(710, 12);
+            this.textBoxMaLoaiMonAn.Location = new System.Drawing.Point(1065, 18);
+            this.textBoxMaLoaiMonAn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxMaLoaiMonAn.Name = "textBoxMaLoaiMonAn";
-            this.textBoxMaLoaiMonAn.Size = new System.Drawing.Size(195, 29);
+            this.textBoxMaLoaiMonAn.Size = new System.Drawing.Size(290, 40);
             this.textBoxMaLoaiMonAn.TabIndex = 2;
             // 
             // textBoxTenLoaiMonAn
             // 
             this.textBoxTenLoaiMonAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTenLoaiMonAn.ForeColor = System.Drawing.Color.Teal;
-            this.textBoxTenLoaiMonAn.Location = new System.Drawing.Point(710, 67);
+            this.textBoxTenLoaiMonAn.Location = new System.Drawing.Point(1065, 103);
+            this.textBoxTenLoaiMonAn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxTenLoaiMonAn.Name = "textBoxTenLoaiMonAn";
-            this.textBoxTenLoaiMonAn.Size = new System.Drawing.Size(195, 29);
+            this.textBoxTenLoaiMonAn.Size = new System.Drawing.Size(290, 40);
             this.textBoxTenLoaiMonAn.TabIndex = 4;
             // 
             // label2
@@ -79,9 +82,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(518, 72);
+            this.label2.Location = new System.Drawing.Point(777, 111);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 24);
+            this.label2.Size = new System.Drawing.Size(239, 33);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên loại món ăn";
             // 
@@ -93,9 +97,10 @@
             this.buttonThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThem.Location = new System.Drawing.Point(12, 616);
+            this.buttonThem.Location = new System.Drawing.Point(18, 948);
+            this.buttonThem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonThem.Name = "buttonThem";
-            this.buttonThem.Size = new System.Drawing.Size(150, 50);
+            this.buttonThem.Size = new System.Drawing.Size(225, 77);
             this.buttonThem.TabIndex = 21;
             this.buttonThem.Text = "Thêm";
             this.buttonThem.UseVisualStyleBackColor = false;
@@ -108,9 +113,10 @@
             this.buttonXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonXoa.Location = new System.Drawing.Point(187, 615);
+            this.buttonXoa.Location = new System.Drawing.Point(280, 946);
+            this.buttonXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonXoa.Name = "buttonXoa";
-            this.buttonXoa.Size = new System.Drawing.Size(150, 50);
+            this.buttonXoa.Size = new System.Drawing.Size(225, 77);
             this.buttonXoa.TabIndex = 22;
             this.buttonXoa.Text = "Xóa";
             this.buttonXoa.UseVisualStyleBackColor = false;
@@ -123,9 +129,10 @@
             this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCancel.Location = new System.Drawing.Point(187, 616);
+            this.buttonCancel.Location = new System.Drawing.Point(280, 948);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(150, 50);
+            this.buttonCancel.Size = new System.Drawing.Size(225, 77);
             this.buttonCancel.TabIndex = 25;
             this.buttonCancel.Text = "Hủy";
             this.buttonCancel.UseVisualStyleBackColor = false;
@@ -138,9 +145,10 @@
             this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSave.Location = new System.Drawing.Point(12, 616);
+            this.buttonSave.Location = new System.Drawing.Point(18, 948);
+            this.buttonSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(150, 50);
+            this.buttonSave.Size = new System.Drawing.Size(225, 77);
             this.buttonSave.TabIndex = 24;
             this.buttonSave.Text = "Lưu";
             this.buttonSave.UseVisualStyleBackColor = false;
@@ -153,15 +161,19 @@
             this.buttonSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSua.Location = new System.Drawing.Point(362, 615);
+            this.buttonSua.Location = new System.Drawing.Point(543, 946);
+            this.buttonSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSua.Name = "buttonSua";
-            this.buttonSua.Size = new System.Drawing.Size(150, 50);
+            this.buttonSua.Size = new System.Drawing.Size(225, 77);
             this.buttonSua.TabIndex = 23;
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
@@ -183,8 +195,11 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.Color.Black;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 18);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,15 +208,17 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(500, 597);
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(750, 918);
             this.dataGridView1.TabIndex = 20;
             // 
             // FormLoaiMonAn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1000, 680);
+            this.ClientSize = new System.Drawing.Size(1500, 1046);
             this.Controls.Add(this.buttonThem);
             this.Controls.Add(this.buttonXoa);
             this.Controls.Add(this.buttonCancel);
@@ -213,6 +230,7 @@
             this.Controls.Add(this.textBoxMaLoaiMonAn);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormLoaiMonAn";
             this.Text = "FormLoaiMonAn";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

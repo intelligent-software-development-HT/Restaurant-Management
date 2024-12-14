@@ -47,7 +47,7 @@ namespace RestaurantManagement
             }
 
             textBoxTenDangNhap.Text = dataGridViewNguoiDung.CurrentRow.Cells[0].Value.ToString();
-            checkBoxHoatDong.Checked = Convert.ToBoolean(dataGridViewNguoiDung.CurrentRow.Cells[2].Value);
+            checkBoxHoatDong.Checked = Convert.ToBoolean(dataGridViewNguoiDung.CurrentRow.Cells[1].Value);
         }
 
         private void ButtonSua_Click(object sender, EventArgs e)
@@ -141,9 +141,22 @@ namespace RestaurantManagement
 
         private void LoadDataNguoiDung()
         {
-            List<NguoiDung> nguoiDungs = _nguoiDungBLL.ReadNguoiDungs().ToList();
+            List<NguoiDung> nguoiDungs = _nguoiDungBLL.ReadNguoiDungs().Where(r => r.TenDangNhap != "admin").ToList();
 
-            dataGridViewNguoiDung.DataSource = nguoiDungs;
+            var table = new DataTable();
+            table.Columns.Add("TenDangNhap");
+            table.Columns.Add("HoatDong");
+
+            foreach (var item in nguoiDungs)
+            {
+                DataRow row = table.NewRow();
+                row["TenDangNhap"] = item.TenDangNhap;
+                row["HoatDong"] = item.HoatDong;
+
+                table.Rows.Add(row);
+            }
+
+            dataGridViewNguoiDung.DataSource = table;
         }
 
         private void ClearInput()

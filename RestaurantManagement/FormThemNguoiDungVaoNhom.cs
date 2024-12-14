@@ -103,14 +103,40 @@ namespace RestaurantManagement
         {
             List<NguoiDungNhomNguoiDung> nguoiDungNhomNguoiDungs = _nguoiDungNhomNguoiDung.getListNguoiDungNhomNguoiDung().ToList();
 
-            dataGridViewThemVaoNhom.DataSource = nguoiDungNhomNguoiDungs;
+            var table = new DataTable();
+            table.Columns.Add("TenDangNhap");
+            table.Columns.Add("NhomNguoiDung");
+
+            foreach (var item in nguoiDungNhomNguoiDungs)
+            {
+                DataRow row = table.NewRow();
+                row["TenDangNhap"] = item.TenDangNhap;
+                row["NhomNguoiDung"] = item.MaNhomNguoiDung;
+
+                table.Rows.Add(row);
+            }
+
+            dataGridViewThemVaoNhom.DataSource = table;
         }
 
         private void LoadDataNguoiDung()
         {
             List<NguoiDung> nguoiDungs = _nguoiDungBLL.ReadNguoiDungs().ToList();
 
-            dataGridViewNguoiDung.DataSource = nguoiDungs;
+            var table = new DataTable();
+            table.Columns.Add("TenDangNhap");
+            table.Columns.Add("HoatDong");
+
+            foreach (var item in nguoiDungs)
+            {
+                DataRow row = table.NewRow();
+                row["TenDangNhap"] = item.TenDangNhap;
+                row["HoatDong"] = item.HoatDong;
+
+                table.Rows.Add(row);
+            }
+
+            dataGridViewNguoiDung.DataSource = table;
         }
     }
 }

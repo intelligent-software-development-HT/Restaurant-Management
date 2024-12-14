@@ -263,10 +263,38 @@ namespace BLL
             foreach (var item in chiTietHoaDons)
             {
                 WTableRow row = table.AddRow(true); // Thêm một hàng mới vào bảng
-                row.Cells[0].AddParagraph().AppendText(item.MaMonAn.ToString());             // Tên món
-                row.Cells[1].AddParagraph().AppendText(item.SoLuong.ToString()); // Số lượng
-                row.Cells[2].AddParagraph().AppendText(item.ThanhTien?.ToString("N0")); // Đơn giá
-                row.Cells[3].AddParagraph().AppendText(item.ThanhTien?.ToString("N0")); // Thành tiền
+                //row.Cells[0].AddParagraph().AppendText(item.MonAn.TenMonAn.ToString());
+                //row.Cells[1].AddParagraph().AppendText(item.SoLuong.ToString());
+                //row.Cells[2].AddParagraph().AppendText(item.MonAn.DonGia?.ToString("N0"));
+                //row.Cells[3].AddParagraph().AppendText(item.ThanhTien?.ToString("N0"));
+
+                // Cột "Tên món"
+                var cell0 = row.Cells[0];
+                var paragraph0 = cell0.AddParagraph();
+                paragraph0.AppendText(item.MonAn.TenMonAn.ToString());
+                paragraph0.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left; // Căn trái
+                cell0.CellFormat.VerticalAlignment = VerticalAlignment.Middle; // Căn giữa theo chiều dọc
+
+                // Cột "SL"
+                var cell1 = row.Cells[1];
+                var paragraph1 = cell1.AddParagraph();
+                paragraph1.AppendText(item.SoLuong.ToString());
+                paragraph1.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Right; // Căn giữa
+                cell1.CellFormat.VerticalAlignment = VerticalAlignment.Middle; // Căn giữa theo chiều dọc
+
+                // Cột "ĐG"
+                var cell2 = row.Cells[2];
+                var paragraph2 = cell2.AddParagraph();
+                paragraph2.AppendText(item.MonAn.DonGia?.ToString("N0"));
+                paragraph2.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Right; // Căn phải
+                cell2.CellFormat.VerticalAlignment = VerticalAlignment.Middle; // Căn giữa theo chiều dọc
+
+                // Cột "Thành tiền"
+                var cell3 = row.Cells[3];
+                var paragraph3 = cell3.AddParagraph();
+                paragraph3.AppendText(item.ThanhTien?.ToString("N0"));
+                paragraph3.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Right; // Căn phải
+                cell3.CellFormat.VerticalAlignment = VerticalAlignment.Middle; // Căn giữa theo chiều dọc
             }
 
             // Save document to file

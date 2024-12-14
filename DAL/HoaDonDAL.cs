@@ -25,6 +25,7 @@ namespace DAL
 
         public HoaDon GetByBan(int maBan)
         {
+            _dataContext.Refresh(RefreshMode.OverwriteCurrentValues, _dataContext.HoaDons);
             return _dataContext.HoaDons.FirstOrDefault(r => r.MaBan.Equals(maBan) && r.TrangThaiThanhToan.Equals("Chưa thanh toán"));
         }
 

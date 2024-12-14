@@ -50,6 +50,7 @@ namespace RestaurantManagement
                 MessageBox.Show("Xử lý trạng thái không thành công");
             }
         }
+
         private void ButtonInHoaDon_Click(object sender, EventArgs e)
         {
             try
@@ -205,12 +206,12 @@ namespace RestaurantManagement
             labelThongBao.Text = soLuongThongBao.ToString();
         }
 
-
         private void LoadThucDon()
         {
             LoadDanhSachLoaiMon();
             LoadDanhSachThucDon();
         }
+
         private void LoadDanhSachLoaiMon()
         {
             List<LoaiMonAn> loaiMons = _loaiMonBLL.getListLoaiMonAn();
@@ -263,8 +264,6 @@ namespace RestaurantManagement
             // Đặt chiều rộng của FlowLayoutPanel nếu cần
             flowLayoutPanelLoaiMon.Width = totalWidth; // Cập nhật chiều rộng của FlowLayoutPanel
         }
-
-
 
         private void BtnTatCa_Click(object sender, EventArgs e)
         {
@@ -445,10 +444,12 @@ namespace RestaurantManagement
             if (hoaDon != null)
             {
                 buttonThanhToan.Enabled = true;
+                buttonInHoaDon.Enabled = true;
             }
             else
             {
                 buttonThanhToan.Enabled = false;
+                buttonInHoaDon.Enabled = false;
             }
 
             LoadThongTinDatMon(hoaDon?.MaHD ?? 0);
@@ -458,8 +459,6 @@ namespace RestaurantManagement
         {
 
         }
-
-       
 
         private void hScrollBar2_Scroll(object sender, ScrollEventArgs e)
         {

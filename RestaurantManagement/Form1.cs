@@ -131,19 +131,24 @@ namespace RestaurantManagement
                         IsControlVisible(buttonMonAn, quyenTruyCap);
                         break;
                     case 6:
-                        IsControlVisible(buttonTaiKhoan, quyenTruyCap);
                         break;
                     case 7:
-                        IsControlVisible(buttonNhomNguoiDung, quyenTruyCap);
+                        IsControlVisible(buttonTaiKhoan, quyenTruyCap);
                         break;
                     case 8:
-                        IsControlVisible(buttonManHinh, quyenTruyCap);
+                        IsControlVisible(buttonNhomNguoiDung, quyenTruyCap);
                         break;
                     case 9:
-                        IsControlVisible(buttonThemVaoNhom, quyenTruyCap);
+                        IsControlVisible(buttonManHinh, quyenTruyCap);
                         break;
                     case 10:
                         IsControlVisible(buttonPhanQuyen, quyenTruyCap);
+                        break;
+                    case 11:
+                        IsControlVisible(buttonThemVaoNhom, quyenTruyCap);
+                        break;
+                    case 12:
+                        IsControlVisible(buttonThongKe, quyenTruyCap);
                         break;
                     default:
                         break;

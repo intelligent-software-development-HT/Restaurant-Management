@@ -31,7 +31,7 @@ namespace DAL
         {
             try
             {
-                MonAn m = dataContext.MonAns.Where(p => p.MaLoaiMonAn == maMonAn).FirstOrDefault();
+                MonAn m = dataContext.MonAns.Where(p => p.MaMonAn == maMonAn).FirstOrDefault();
                 dataContext.MonAns.DeleteOnSubmit(m);
                 dataContext.SubmitChanges();
                 return true;
@@ -48,6 +48,7 @@ namespace DAL
                 MonAn monAn = dataContext.MonAns.Where(p => p.MaMonAn == maMonAn).FirstOrDefault();
                 monAn.TenMonAn = mNew.TenMonAn;
                 monAn.DonGia = mNew.DonGia;
+                monAn.LoaiMonAn = mNew.LoaiMonAn;
                 monAn.MaLoaiMonAn = mNew.MaLoaiMonAn;
                 dataContext.SubmitChanges();
                 return true;

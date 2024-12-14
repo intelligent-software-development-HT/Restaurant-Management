@@ -75,6 +75,12 @@ namespace RestaurantManagement
         {
             NguoiDungNhomNguoiDung nguoiDungNhomNguoiDung = _nguoiDungNhomNguoiDungBLL.GetNhomCuaNguoiDung(username);
 
+            if (nguoiDungNhomNguoiDung == null)
+            {
+                MessageBox.Show("Người dùng không có quyền truy cập");
+                return;
+            }
+
             Properties.Settings.Default.maNhom = nguoiDungNhomNguoiDung.MaNhomNguoiDung.ToString();
             Properties.Settings.Default.tenDangNhap = nguoiDungNhomNguoiDung.TenDangNhap;
             LoadFormMain();
@@ -89,7 +95,7 @@ namespace RestaurantManagement
 
         private void FormDangNhap_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private bool IsInputValid(string username, string password)

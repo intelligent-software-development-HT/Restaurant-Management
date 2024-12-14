@@ -50,7 +50,8 @@
             this.dataGridViewManHinh.AllowUserToAddRows = false;
             this.dataGridViewManHinh.AllowUserToDeleteRows = false;
             this.dataGridViewManHinh.AllowUserToResizeRows = false;
-            this.dataGridViewManHinh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewManHinh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewManHinh.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewManHinh.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -69,8 +70,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewManHinh.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewManHinh.Location = new System.Drawing.Point(9, 8);
-            this.dataGridViewManHinh.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewManHinh.Location = new System.Drawing.Point(14, 12);
             this.dataGridViewManHinh.MultiSelect = false;
             this.dataGridViewManHinh.Name = "dataGridViewManHinh";
             this.dataGridViewManHinh.ReadOnly = true;
@@ -86,7 +86,7 @@
             this.dataGridViewManHinh.RowHeadersWidth = 62;
             this.dataGridViewManHinh.RowTemplate.Height = 28;
             this.dataGridViewManHinh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewManHinh.Size = new System.Drawing.Size(405, 661);
+            this.dataGridViewManHinh.Size = new System.Drawing.Size(608, 1017);
             this.dataGridViewManHinh.TabIndex = 0;
             // 
             // groupBox1
@@ -101,11 +101,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Teal;
-            this.groupBox1.Location = new System.Drawing.Point(418, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(627, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(571, 669);
+            this.groupBox1.Size = new System.Drawing.Size(856, 1029);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Màn hình";
@@ -118,9 +116,10 @@
             this.buttonHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHuy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHuy.Location = new System.Drawing.Point(428, 619);
+            this.buttonHuy.Location = new System.Drawing.Point(642, 952);
+            this.buttonHuy.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonHuy.Name = "buttonHuy";
-            this.buttonHuy.Size = new System.Drawing.Size(134, 37);
+            this.buttonHuy.Size = new System.Drawing.Size(201, 57);
             this.buttonHuy.TabIndex = 33;
             this.buttonHuy.Text = "Hủy";
             this.buttonHuy.UseVisualStyleBackColor = false;
@@ -133,9 +132,10 @@
             this.buttonSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSua.Location = new System.Drawing.Point(289, 619);
+            this.buttonSua.Location = new System.Drawing.Point(434, 952);
+            this.buttonSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSua.Name = "buttonSua";
-            this.buttonSua.Size = new System.Drawing.Size(134, 37);
+            this.buttonSua.Size = new System.Drawing.Size(201, 57);
             this.buttonSua.TabIndex = 32;
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = false;
@@ -148,9 +148,10 @@
             this.buttonXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonXoa.Location = new System.Drawing.Point(150, 619);
+            this.buttonXoa.Location = new System.Drawing.Point(225, 952);
+            this.buttonXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonXoa.Name = "buttonXoa";
-            this.buttonXoa.Size = new System.Drawing.Size(134, 37);
+            this.buttonXoa.Size = new System.Drawing.Size(201, 57);
             this.buttonXoa.TabIndex = 31;
             this.buttonXoa.Text = "Xóa";
             this.buttonXoa.UseVisualStyleBackColor = false;
@@ -163,9 +164,10 @@
             this.buttonThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThem.Location = new System.Drawing.Point(11, 619);
+            this.buttonThem.Location = new System.Drawing.Point(16, 952);
+            this.buttonThem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonThem.Name = "buttonThem";
-            this.buttonThem.Size = new System.Drawing.Size(134, 37);
+            this.buttonThem.Size = new System.Drawing.Size(201, 57);
             this.buttonThem.TabIndex = 30;
             this.buttonThem.Text = "Thêm";
             this.buttonThem.UseVisualStyleBackColor = false;
@@ -174,21 +176,19 @@
             // 
             this.textBoxTenManHinh.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTenManHinh.ForeColor = System.Drawing.Color.Teal;
-            this.textBoxTenManHinh.Location = new System.Drawing.Point(340, 75);
-            this.textBoxTenManHinh.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTenManHinh.Location = new System.Drawing.Point(510, 115);
             this.textBoxTenManHinh.Name = "textBoxTenManHinh";
-            this.textBoxTenManHinh.Size = new System.Drawing.Size(227, 30);
+            this.textBoxTenManHinh.Size = new System.Drawing.Size(338, 42);
             this.textBoxTenManHinh.TabIndex = 3;
             // 
             // textBoxMaManHinh
             // 
             this.textBoxMaManHinh.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMaManHinh.ForeColor = System.Drawing.Color.Teal;
-            this.textBoxMaManHinh.Location = new System.Drawing.Point(340, 28);
-            this.textBoxMaManHinh.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxMaManHinh.Location = new System.Drawing.Point(510, 43);
             this.textBoxMaManHinh.Name = "textBoxMaManHinh";
             this.textBoxMaManHinh.ReadOnly = true;
-            this.textBoxMaManHinh.Size = new System.Drawing.Size(227, 30);
+            this.textBoxMaManHinh.Size = new System.Drawing.Size(338, 42);
             this.textBoxMaManHinh.TabIndex = 2;
             // 
             // label2
@@ -196,10 +196,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(26, 82);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(39, 126);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 23);
+            this.label2.Size = new System.Drawing.Size(217, 35);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên màn hình";
             // 
@@ -208,23 +207,21 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(26, 35);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(39, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 23);
+            this.label1.Size = new System.Drawing.Size(206, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã màn hình";
             // 
             // FormManHinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1000, 680);
+            this.ClientSize = new System.Drawing.Size(1500, 1046);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewManHinh);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormManHinh";
             this.Text = "FormManHinh";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewManHinh)).EndInit();
