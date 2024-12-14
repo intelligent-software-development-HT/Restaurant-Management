@@ -13,12 +13,44 @@ namespace DAL
 
         public PhieuDatBanDAL()
         {
-            
+
         }
 
         public List<DatBan> GetDanhSachDatBan()
         {
-            return _context.DatBans.ToList();
+            return _context.DatBans.Where(r => r.ThoiGianDat >= DateTime.Now).OrderBy(r => r.ThoiGianDat).ToList();
+        }
+
+        public int KiemTraBanKhaDung()
+        {
+            return _context.sp_kiemTraBanKhaDung();
+        }
+
+        public void XuLyTrangThaiDatBan()
+        {
+            _context.sp_xuLyTrangThaiDatBan();
+        }
+
+        public bool DuyetTrangThaiDatBan(int maDatBan)
+        {
+            try
+            {
+                DatBan datBan = _context.DatBans.FirstOrDefault(r => r.MaPhieuDatBan.Equals(maDatBan));
+
+                if (datBan == null)
+                {
+                    return false;
+                }
+
+                datBan.TrangThai = "completed";
+                _context.SubmitChanges();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }
