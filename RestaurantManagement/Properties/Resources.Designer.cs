@@ -63,6 +63,16 @@ namespace RestaurantManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _lock {
+            get {
+                object obj = ResourceManager.GetObject("lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap account_settings {
             get {
                 object obj = ResourceManager.GetObject("account-settings", resourceCulture);
@@ -183,9 +193,9 @@ namespace RestaurantManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap eye {
+        internal static System.Drawing.Bitmap eye__1_ {
             get {
-                object obj = ResourceManager.GetObject("eye", resourceCulture);
+                object obj = ResourceManager.GetObject("eye (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +203,9 @@ namespace RestaurantManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hidden {
+        internal static System.Drawing.Bitmap hidden__1_ {
             get {
-                object obj = ResourceManager.GetObject("hidden", resourceCulture);
+                object obj = ResourceManager.GetObject("hidden (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,29 +213,9 @@ namespace RestaurantManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hidden1 {
+        internal static System.Drawing.Bitmap id_card__2_ {
             get {
-                object obj = ResourceManager.GetObject("hidden1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap id_card {
-            get {
-                object obj = ResourceManager.GetObject("id-card", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap id_card__1_ {
-            get {
-                object obj = ResourceManager.GetObject("id-card (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("id-card (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,16 +276,6 @@ namespace RestaurantManagement.Properties {
         internal static System.Drawing.Bitmap padlock {
             get {
                 object obj = ResourceManager.GetObject("padlock", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap padlock__1_ {
-            get {
-                object obj = ResourceManager.GetObject("padlock (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

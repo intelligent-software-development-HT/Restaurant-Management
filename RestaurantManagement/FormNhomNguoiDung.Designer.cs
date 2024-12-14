@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxMaNhom = new System.Windows.Forms.TextBox();
@@ -38,8 +39,8 @@
             this.richTextBoxGhiChu = new System.Windows.Forms.RichTextBox();
             this.buttonThem = new System.Windows.Forms.Button();
             this.groupBoxNhomNguoiDung = new System.Windows.Forms.GroupBox();
-            this.buttonXoa = new System.Windows.Forms.Button();
             this.buttonSua = new System.Windows.Forms.Button();
+            this.buttonXoa = new System.Windows.Forms.Button();
             this.dataGridViewNhomNguoiDung = new System.Windows.Forms.DataGridView();
             this.groupBoxNhomNguoiDung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNhomNguoiDung)).BeginInit();
@@ -67,19 +68,20 @@
             // 
             // textBoxMaNhom
             // 
-            this.textBoxMaNhom.Location = new System.Drawing.Point(114, 48);
+            this.textBoxMaNhom.Location = new System.Drawing.Point(114, 55);
             this.textBoxMaNhom.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMaNhom.Name = "textBoxMaNhom";
             this.textBoxMaNhom.ReadOnly = true;
-            this.textBoxMaNhom.Size = new System.Drawing.Size(330, 30);
+            this.textBoxMaNhom.Size = new System.Drawing.Size(279, 30);
             this.textBoxMaNhom.TabIndex = 2;
+            this.textBoxMaNhom.TextChanged += new System.EventHandler(this.textBoxMaNhom_TextChanged);
             // 
             // textBoxTenNhom
             // 
-            this.textBoxTenNhom.Location = new System.Drawing.Point(114, 109);
+            this.textBoxTenNhom.Location = new System.Drawing.Point(114, 113);
             this.textBoxTenNhom.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTenNhom.Name = "textBoxTenNhom";
-            this.textBoxTenNhom.Size = new System.Drawing.Size(330, 30);
+            this.textBoxTenNhom.Size = new System.Drawing.Size(279, 30);
             this.textBoxTenNhom.TabIndex = 3;
             // 
             // label3
@@ -95,16 +97,16 @@
             // richTextBoxGhiChu
             // 
             this.richTextBoxGhiChu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBoxGhiChu.Location = new System.Drawing.Point(114, 180);
+            this.richTextBoxGhiChu.Location = new System.Drawing.Point(114, 187);
             this.richTextBoxGhiChu.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxGhiChu.Name = "richTextBoxGhiChu";
-            this.richTextBoxGhiChu.Size = new System.Drawing.Size(330, 177);
+            this.richTextBoxGhiChu.Size = new System.Drawing.Size(279, 106);
             this.richTextBoxGhiChu.TabIndex = 5;
             this.richTextBoxGhiChu.Text = "";
             // 
             // buttonThem
             // 
-            this.buttonThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonThem.BackColor = System.Drawing.Color.Teal;
             this.buttonThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonThem.Location = new System.Drawing.Point(15, 611);
             this.buttonThem.Margin = new System.Windows.Forms.Padding(4);
@@ -117,15 +119,16 @@
             // groupBoxNhomNguoiDung
             // 
             this.groupBoxNhomNguoiDung.BackColor = System.Drawing.Color.White;
+            this.groupBoxNhomNguoiDung.Controls.Add(this.textBoxMaNhom);
             this.groupBoxNhomNguoiDung.Controls.Add(this.buttonSua);
             this.groupBoxNhomNguoiDung.Controls.Add(this.buttonXoa);
             this.groupBoxNhomNguoiDung.Controls.Add(this.buttonThem);
             this.groupBoxNhomNguoiDung.Controls.Add(this.richTextBoxGhiChu);
             this.groupBoxNhomNguoiDung.Controls.Add(this.label3);
             this.groupBoxNhomNguoiDung.Controls.Add(this.textBoxTenNhom);
-            this.groupBoxNhomNguoiDung.Controls.Add(this.textBoxMaNhom);
             this.groupBoxNhomNguoiDung.Controls.Add(this.label2);
             this.groupBoxNhomNguoiDung.Controls.Add(this.label1);
+            this.groupBoxNhomNguoiDung.ForeColor = System.Drawing.Color.Teal;
             this.groupBoxNhomNguoiDung.Location = new System.Drawing.Point(586, 2);
             this.groupBoxNhomNguoiDung.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxNhomNguoiDung.Name = "groupBoxNhomNguoiDung";
@@ -135,21 +138,9 @@
             this.groupBoxNhomNguoiDung.TabStop = false;
             this.groupBoxNhomNguoiDung.Text = "Nhóm người dùng";
             // 
-            // buttonXoa
-            // 
-            this.buttonXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
-            this.buttonXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
-            this.buttonXoa.Location = new System.Drawing.Point(251, 611);
-            this.buttonXoa.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonXoa.Name = "buttonXoa";
-            this.buttonXoa.Size = new System.Drawing.Size(114, 48);
-            this.buttonXoa.TabIndex = 6;
-            this.buttonXoa.Text = "Xóa";
-            this.buttonXoa.UseVisualStyleBackColor = false;
-            // 
             // buttonSua
             // 
-            this.buttonSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonSua.BackColor = System.Drawing.Color.Teal;
             this.buttonSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonSua.Location = new System.Drawing.Point(133, 611);
             this.buttonSua.Margin = new System.Windows.Forms.Padding(4);
@@ -159,41 +150,61 @@
             this.buttonSua.Text = "Sửa";
             this.buttonSua.UseVisualStyleBackColor = false;
             // 
+            // buttonXoa
+            // 
+            this.buttonXoa.BackColor = System.Drawing.Color.Teal;
+            this.buttonXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.buttonXoa.Location = new System.Drawing.Point(251, 611);
+            this.buttonXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonXoa.Name = "buttonXoa";
+            this.buttonXoa.Size = new System.Drawing.Size(114, 48);
+            this.buttonXoa.TabIndex = 6;
+            this.buttonXoa.Text = "Xóa";
+            this.buttonXoa.UseVisualStyleBackColor = false;
+            // 
             // dataGridViewNhomNguoiDung
             // 
             this.dataGridViewNhomNguoiDung.AllowUserToAddRows = false;
             this.dataGridViewNhomNguoiDung.AllowUserToDeleteRows = false;
             this.dataGridViewNhomNguoiDung.AllowUserToResizeRows = false;
+            this.dataGridViewNhomNguoiDung.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewNhomNguoiDung.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewNhomNguoiDung.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewNhomNguoiDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewNhomNguoiDung.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewNhomNguoiDung.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewNhomNguoiDung.Location = new System.Drawing.Point(11, 11);
             this.dataGridViewNhomNguoiDung.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewNhomNguoiDung.MultiSelect = false;
             this.dataGridViewNhomNguoiDung.Name = "dataGridViewNhomNguoiDung";
             this.dataGridViewNhomNguoiDung.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewNhomNguoiDung.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewNhomNguoiDung.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewNhomNguoiDung.RowHeadersVisible = false;
             this.dataGridViewNhomNguoiDung.RowHeadersWidth = 62;
             this.dataGridViewNhomNguoiDung.RowTemplate.Height = 28;
             this.dataGridViewNhomNguoiDung.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewNhomNguoiDung.Size = new System.Drawing.Size(569, 658);
-            this.dataGridViewNhomNguoiDung.TabIndex = 7;
-            this.dataGridViewNhomNguoiDung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewNhomNguoiDung_CellContentClick);
+            this.dataGridViewNhomNguoiDung.Size = new System.Drawing.Size(569, 661);
+            this.dataGridViewNhomNguoiDung.TabIndex = 8;
             // 
             // FormNhomNguoiDung
             // 
@@ -204,9 +215,9 @@
             this.Controls.Add(this.dataGridViewNhomNguoiDung);
             this.Controls.Add(this.groupBoxNhomNguoiDung);
             this.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.ForeColor = System.Drawing.Color.Teal;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormNhomNguoiDung";
             this.Text = "FormNhomNguoiDung";
             this.groupBoxNhomNguoiDung.ResumeLayout(false);
@@ -226,8 +237,8 @@
         private System.Windows.Forms.RichTextBox richTextBoxGhiChu;
         private System.Windows.Forms.Button buttonThem;
         private System.Windows.Forms.GroupBox groupBoxNhomNguoiDung;
-        private System.Windows.Forms.DataGridView dataGridViewNhomNguoiDung;
         private System.Windows.Forms.Button buttonSua;
         private System.Windows.Forms.Button buttonXoa;
+        private System.Windows.Forms.DataGridView dataGridViewNhomNguoiDung;
     }
 }

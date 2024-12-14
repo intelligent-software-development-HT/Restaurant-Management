@@ -302,6 +302,15 @@
   <ItemGroup>
     <None Include="Resources\circle %282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye %281%29.png" />
+    <None Include="Resources\hidden %281%29.png" />
+    <None Include="Resources\id-card %282%29.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\restaurant1.png" />
+    <None Include="Resources\padlock1.png" />
+    <Content Include="Resources\restaurant.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('..\packages\Accord.3.8.0\build\Accord.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

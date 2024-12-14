@@ -46,26 +46,27 @@
             this.groupBox1.Controls.Add(this.comboBoxDonMon);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
-            this.groupBox1.Location = new System.Drawing.Point(776, 17);
+            this.groupBox1.ForeColor = System.Drawing.Color.Teal;
+            this.groupBox1.Location = new System.Drawing.Point(517, 11);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(708, 335);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(472, 218);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đơn món";
             // 
             // buttonCapNhatTrangThai
             // 
-            this.buttonCapNhatTrangThai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonCapNhatTrangThai.BackColor = System.Drawing.Color.Teal;
             this.buttonCapNhatTrangThai.FlatAppearance.BorderSize = 0;
             this.buttonCapNhatTrangThai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCapNhatTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCapNhatTrangThai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonCapNhatTrangThai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCapNhatTrangThai.Location = new System.Drawing.Point(456, 271);
-            this.buttonCapNhatTrangThai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonCapNhatTrangThai.Location = new System.Drawing.Point(304, 176);
             this.buttonCapNhatTrangThai.Name = "buttonCapNhatTrangThai";
-            this.buttonCapNhatTrangThai.Size = new System.Drawing.Size(244, 57);
+            this.buttonCapNhatTrangThai.Size = new System.Drawing.Size(163, 37);
             this.buttonCapNhatTrangThai.TabIndex = 30;
             this.buttonCapNhatTrangThai.Text = "Cập nhật";
             this.buttonCapNhatTrangThai.UseVisualStyleBackColor = false;
@@ -73,19 +74,22 @@
             // comboBoxDonMon
             // 
             this.comboBoxDonMon.BackColor = System.Drawing.Color.White;
-            this.comboBoxDonMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.comboBoxDonMon.ForeColor = System.Drawing.Color.Teal;
             this.comboBoxDonMon.FormattingEnabled = true;
-            this.comboBoxDonMon.Location = new System.Drawing.Point(346, 102);
+            this.comboBoxDonMon.Location = new System.Drawing.Point(231, 66);
+            this.comboBoxDonMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxDonMon.Name = "comboBoxDonMon";
-            this.comboBoxDonMon.Size = new System.Drawing.Size(352, 43);
+            this.comboBoxDonMon.Size = new System.Drawing.Size(236, 31);
             this.comboBoxDonMon.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 114);
+            this.label1.ForeColor = System.Drawing.Color.Teal;
+            this.label1.Location = new System.Drawing.Point(4, 74);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(304, 35);
+            this.label1.Size = new System.Drawing.Size(198, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Trạng thái đơn món";
             // 
@@ -108,15 +112,14 @@
             this.dataGridViewDonMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewDonMon.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewDonMon.GridColor = System.Drawing.Color.Black;
-            this.dataGridViewDonMon.Location = new System.Drawing.Point(18, 18);
-            this.dataGridViewDonMon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridViewDonMon.Location = new System.Drawing.Point(12, 12);
             this.dataGridViewDonMon.MultiSelect = false;
             this.dataGridViewDonMon.Name = "dataGridViewDonMon";
             this.dataGridViewDonMon.ReadOnly = true;
@@ -130,18 +133,20 @@
             this.dataGridViewDonMon.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewDonMon.RowHeadersWidth = 62;
             this.dataGridViewDonMon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewDonMon.Size = new System.Drawing.Size(750, 1009);
+            this.dataGridViewDonMon.Size = new System.Drawing.Size(500, 656);
             this.dataGridViewDonMon.TabIndex = 27;
             // 
             // FormDonMon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1500, 1046);
+            this.ClientSize = new System.Drawing.Size(1000, 680);
             this.Controls.Add(this.dataGridViewDonMon);
             this.Controls.Add(this.groupBox1);
+            this.ForeColor = System.Drawing.Color.Teal;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormDonMon";
             this.Text = "FormDonMon";
             this.groupBox1.ResumeLayout(false);

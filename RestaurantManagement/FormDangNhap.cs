@@ -102,12 +102,12 @@ namespace RestaurantManagement
             if (textBoxMatKhau.UseSystemPasswordChar)
             {
                 textBoxMatKhau.UseSystemPasswordChar = false;
-                pictureBox4.Image = Properties.Resources.eye;
+                pictureBox4.Image = Properties.Resources.hidden__1_;
             }
             else
             {
                 textBoxMatKhau.UseSystemPasswordChar = true;
-                pictureBox4.Image = Properties.Resources.hidden;
+                pictureBox4.Image = Properties.Resources.eye__1_;
             }
         }
     }

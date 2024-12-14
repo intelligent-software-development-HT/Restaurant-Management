@@ -252,13 +252,13 @@ namespace RestaurantManagement
             }
 
             // Tính toán tổng chiều rộng của các nút
-            int totalWidth = flowLayoutPanelLoaiMon.Controls.OfType<Button>().Sum(btn => btn.Width + btn.Margin.Horizontal + (loaiMons.Count * 7));
+            int totalWidth = flowLayoutPanelLoaiMon.Controls.OfType<Button>().Sum(btn => btn.Width + btn.Margin.Horizontal + (loaiMons.Count * 10));
 
-            // Cài đặt giá trị cho HScrollBar
-            //hScrollBar1.Minimum = 0;
-            //hScrollBar1.Maximum = totalWidth - this.flowLayoutPanelLoaiMon.Width; // Tổng chiều rộng - chiều rộng của FlowLayoutPanel
-            //hScrollBar1.LargeChange = this.flowLayoutPanelLoaiMon.Width; // Kích thước cuộn lớn
-            //hScrollBar1.SmallChange = 10; // Kích thước cuộn nhỏ
+            //Cài đặt giá trị cho HScrollBar
+            hScrollBar2.Minimum = 0;
+            hScrollBar2.Maximum = totalWidth - this.flowLayoutPanelLoaiMon.Width; // Tổng chiều rộng - chiều rộng của FlowLayoutPanel
+            hScrollBar2.LargeChange = this.flowLayoutPanelLoaiMon.Width; // Kích thước cuộn lớn
+            hScrollBar2.SmallChange = 10; // Kích thước cuộn nhỏ
 
             // Đặt chiều rộng của FlowLayoutPanel nếu cần
             flowLayoutPanelLoaiMon.Width = totalWidth; // Cập nhật chiều rộng của FlowLayoutPanel
@@ -459,9 +459,11 @@ namespace RestaurantManagement
 
         }
 
-        private void hScrollBar1_Scroll_1(object sender, ScrollEventArgs e)
+       
+
+        private void hScrollBar2_Scroll(object sender, ScrollEventArgs e)
         {
-            //flowLayoutPanelLoaiMon.Left = -hScrollBar1.Value;
+            flowLayoutPanelLoaiMon.Left = -hScrollBar2.Value;
         }
     }
 }

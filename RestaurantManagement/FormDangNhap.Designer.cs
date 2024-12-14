@@ -33,23 +33,23 @@
             this.textBoxMatKhau = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonDangNhap = new System.Windows.Forms.Button();
             this.buttonThoat = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxTenDangNhap
             // 
             this.textBoxTenDangNhap.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTenDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.textBoxTenDangNhap.ForeColor = System.Drawing.Color.Teal;
             this.textBoxTenDangNhap.Location = new System.Drawing.Point(384, 128);
             this.textBoxTenDangNhap.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTenDangNhap.Name = "textBoxTenDangNhap";
@@ -60,7 +60,7 @@
             // textBoxMatKhau
             // 
             this.textBoxMatKhau.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.textBoxMatKhau.ForeColor = System.Drawing.Color.Teal;
             this.textBoxMatKhau.Location = new System.Drawing.Point(384, 203);
             this.textBoxMatKhau.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxMatKhau.Name = "textBoxMatKhau";
@@ -71,7 +71,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -82,7 +82,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Tahoma", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 307);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 117);
@@ -90,23 +90,13 @@
             this.label1.Text = "QUẢN LÝ NHÀ HÀNG";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::RestaurantManagement.Properties.Resources.restaurant;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(270, 270);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // buttonDangNhap
             // 
-            this.buttonDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.buttonDangNhap.BackColor = System.Drawing.Color.Teal;
             this.buttonDangNhap.FlatAppearance.BorderSize = 0;
             this.buttonDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDangNhap.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonDangNhap.ForeColor = System.Drawing.Color.White;
             this.buttonDangNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDangNhap.Location = new System.Drawing.Point(322, 274);
             this.buttonDangNhap.Name = "buttonDangNhap";
@@ -117,11 +107,11 @@
             // 
             // buttonThoat
             // 
-            this.buttonThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.buttonThoat.BackColor = System.Drawing.Color.Teal;
             this.buttonThoat.FlatAppearance.BorderSize = 0;
             this.buttonThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThoat.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThoat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonThoat.ForeColor = System.Drawing.Color.White;
             this.buttonThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonThoat.Location = new System.Drawing.Point(482, 274);
             this.buttonThoat.Name = "buttonThoat";
@@ -132,7 +122,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::RestaurantManagement.Properties.Resources.hidden1;
+            this.pictureBox4.Image = global::RestaurantManagement.Properties.Resources.hidden__1_;
             this.pictureBox4.Location = new System.Drawing.Point(658, 203);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(39, 36);
@@ -143,7 +133,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::RestaurantManagement.Properties.Resources.padlock__1_;
+            this.pictureBox3.Image = global::RestaurantManagement.Properties.Resources._lock;
             this.pictureBox3.Location = new System.Drawing.Point(320, 203);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 36);
@@ -153,13 +143,23 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::RestaurantManagement.Properties.Resources.id_card__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(320, 128);
+            this.pictureBox2.Image = global::RestaurantManagement.Properties.Resources.id_card__2_;
+            this.pictureBox2.Location = new System.Drawing.Point(320, 123);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 48);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RestaurantManagement.Properties.Resources.restaurant;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(270, 270);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FormDangNhap
             // 
@@ -185,10 +185,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "s";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

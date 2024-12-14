@@ -45,6 +45,7 @@ namespace RestaurantManagement
         {
             DataTable dt = new DataTable();
             var data = hoaDonBLL.GetDoanhThu(startDate, endDate);
+
             dt.Columns.Add("Ngay", typeof(DateTime));
             dt.Columns.Add("DoanhThu", typeof(double));
 
@@ -57,10 +58,10 @@ namespace RestaurantManagement
 
             Series barSeries = new Series
             {
-                Name = "Doanh Thu",
-                Color = System.Drawing.Color.FromArgb(167,62,20),
+                Color = System.Drawing.Color.FromArgb(0, 128, 128),
                 IsValueShownAsLabel = true,
-                ChartType = SeriesChartType.Column // Thay đổi loại biểu đồ thành cột
+                ChartType = SeriesChartType.Column,// Độ dày viền
+                LabelForeColor = System.Drawing.Color.Black // Màu nhãn
             };
 
             // Thêm dữ liệu vào series
@@ -70,9 +71,16 @@ namespace RestaurantManagement
             }
 
             chart1.Series.Add(barSeries);
-            chart1.ChartAreas[0].AxisX.Title = "Ngày";
-            chart1.ChartAreas[0].AxisY.Title = "Doanh Thu";
-        }
+
+            // Thiết lập tiêu đề cho biểu đồ
+            chart1.Titles.Clear();
+            // Thiết lập tiêu đề trục
+            chart1.ChartAreas[0].AxisX.TitleFont = new Font("Arial", 12);
+            chart1.ChartAreas[0].AxisY.TitleFont = new Font("Arial", 12);
+            chart1.ChartAreas[0].AxisX.LabelStyle.Angle = -45;
+            // Thêm lưới cho trục
+            }
+
         void thongKeMonAn(DateTime startDate, DateTime endDate)
         {
             DataTable dt = new DataTable();
@@ -98,10 +106,10 @@ namespace RestaurantManagement
 
             Series barSeries = new Series
             {
-                Name = "Doanh Thu",
-                Color = System.Drawing.Color.FromArgb(167, 62, 20),
+                Color = System.Drawing.Color.FromArgb(0, 128, 128),
                 IsValueShownAsLabel = true,
-                ChartType = SeriesChartType.Column // Thay đổi loại biểu đồ thành cột
+                ChartType = SeriesChartType.Column,
+                LabelForeColor = System.Drawing.Color.Black
             };
 
             // Thêm dữ liệu vào series
@@ -112,11 +120,15 @@ namespace RestaurantManagement
 
             chart1.Series.Add(barSeries);
 
-            // Đảm bảo rằng có ít nhất một ChartArea
+            // Thiết lập tiêu đề trục
             if (chart1.ChartAreas.Count > 0)
             {
-                chart1.ChartAreas[0].AxisX.Title = "Món ăn";
-                chart1.ChartAreas[0].AxisY.Title = "Số lượng";
+                chart1.ChartAreas[0].AxisX.TitleFont = new Font("Arial", 12);
+                chart1.ChartAreas[0].AxisY.TitleFont = new Font("Arial", 12);
+                chart1.ChartAreas[0].AxisX.IsLabelAutoFit = false; // Tắt tự động điều chỉnh nhãn
+                chart1.ChartAreas[0].AxisX.LabelStyle.Angle = -25;
+                // Thêm lưới cho trục
+
             }
             else
             {

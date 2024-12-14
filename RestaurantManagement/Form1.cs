@@ -131,21 +131,18 @@ namespace RestaurantManagement
                         IsControlVisible(buttonMonAn, quyenTruyCap);
                         break;
                     case 6:
-                        IsControlVisible(buttonNhanVien, quyenTruyCap);
-                        break;
-                    case 7:
                         IsControlVisible(buttonTaiKhoan, quyenTruyCap);
                         break;
-                    case 8:
+                    case 7:
                         IsControlVisible(buttonNhomNguoiDung, quyenTruyCap);
                         break;
-                    case 9:
+                    case 8:
                         IsControlVisible(buttonManHinh, quyenTruyCap);
                         break;
-                    case 10:
+                    case 9:
                         IsControlVisible(buttonThemVaoNhom, quyenTruyCap);
                         break;
-                    case 11:
+                    case 10:
                         IsControlVisible(buttonPhanQuyen, quyenTruyCap);
                         break;
                     default:
@@ -188,5 +185,9 @@ namespace RestaurantManagement
             ShowForm(new FormLoaiMonAn());
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

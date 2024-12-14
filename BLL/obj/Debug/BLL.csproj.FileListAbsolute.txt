@@ -96,3 +96,7 @@ D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debu
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Accord.Math.xml
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Accord.Math.Core.xml
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Accord.Statistics.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.Compression.Base.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.DocIO.Base.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.OfficeChart.Base.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.XlsIO.Base.xml

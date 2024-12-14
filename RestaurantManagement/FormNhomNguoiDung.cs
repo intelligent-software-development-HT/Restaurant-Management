@@ -155,5 +155,10 @@ namespace RestaurantManagement
         {
 
         }
+
+        private void textBoxMaNhom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

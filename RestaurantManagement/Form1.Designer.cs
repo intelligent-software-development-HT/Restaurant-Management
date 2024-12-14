@@ -30,12 +30,12 @@
         {
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonThongKe = new System.Windows.Forms.Button();
             this.buttonThemVaoNhom = new System.Windows.Forms.Button();
             this.buttonPhanQuyen = new System.Windows.Forms.Button();
             this.buttonManHinh = new System.Windows.Forms.Button();
             this.buttonNhomNguoiDung = new System.Windows.Forms.Button();
             this.buttonTaiKhoan = new System.Windows.Forms.Button();
-            this.buttonNhanVien = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonMonAn = new System.Windows.Forms.Button();
             this.buttonLoaiMonAn = new System.Windows.Forms.Button();
@@ -44,7 +44,6 @@
             this.buttonDatMon = new System.Windows.Forms.Button();
             this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
-            this.buttonThongKe = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -60,14 +59,13 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.buttonThongKe);
             this.panel1.Controls.Add(this.buttonThemVaoNhom);
             this.panel1.Controls.Add(this.buttonPhanQuyen);
             this.panel1.Controls.Add(this.buttonManHinh);
             this.panel1.Controls.Add(this.buttonNhomNguoiDung);
             this.panel1.Controls.Add(this.buttonTaiKhoan);
-            this.panel1.Controls.Add(this.buttonNhanVien);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.buttonMonAn);
             this.panel1.Controls.Add(this.buttonLoaiMonAn);
@@ -79,16 +77,32 @@
             this.panel1.Size = new System.Drawing.Size(200, 710);
             this.panel1.TabIndex = 3;
             // 
+            // buttonThongKe
+            // 
+            this.buttonThongKe.BackColor = System.Drawing.Color.Teal;
+            this.buttonThongKe.FlatAppearance.BorderSize = 0;
+            this.buttonThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThongKe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.buttonThongKe.Image = global::RestaurantManagement.Properties.Resources.account_settings;
+            this.buttonThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThongKe.Location = new System.Drawing.Point(0, 595);
+            this.buttonThongKe.Name = "buttonThongKe";
+            this.buttonThongKe.Size = new System.Drawing.Size(200, 50);
+            this.buttonThongKe.TabIndex = 8;
+            this.buttonThongKe.Text = "Thống kê";
+            this.buttonThongKe.UseVisualStyleBackColor = false;
+            // 
             // buttonThemVaoNhom
             // 
-            this.buttonThemVaoNhom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonThemVaoNhom.BackColor = System.Drawing.Color.Teal;
             this.buttonThemVaoNhom.FlatAppearance.BorderSize = 0;
             this.buttonThemVaoNhom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThemVaoNhom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThemVaoNhom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonThemVaoNhom.Image = global::RestaurantManagement.Properties.Resources.account_settings;
             this.buttonThemVaoNhom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThemVaoNhom.Location = new System.Drawing.Point(0, 595);
+            this.buttonThemVaoNhom.Location = new System.Drawing.Point(0, 539);
             this.buttonThemVaoNhom.Name = "buttonThemVaoNhom";
             this.buttonThemVaoNhom.Size = new System.Drawing.Size(200, 50);
             this.buttonThemVaoNhom.TabIndex = 7;
@@ -97,30 +111,30 @@
             // 
             // buttonPhanQuyen
             // 
-            this.buttonPhanQuyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonPhanQuyen.BackColor = System.Drawing.Color.Teal;
             this.buttonPhanQuyen.FlatAppearance.BorderSize = 0;
             this.buttonPhanQuyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPhanQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPhanQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonPhanQuyen.Image = global::RestaurantManagement.Properties.Resources.account_settings;
             this.buttonPhanQuyen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPhanQuyen.Location = new System.Drawing.Point(0, 539);
+            this.buttonPhanQuyen.Location = new System.Drawing.Point(0, 483);
             this.buttonPhanQuyen.Name = "buttonPhanQuyen";
             this.buttonPhanQuyen.Size = new System.Drawing.Size(200, 50);
             this.buttonPhanQuyen.TabIndex = 7;
-            this.buttonPhanQuyen.Text = "Phân quyền";
+            this.buttonPhanQuyen.Text = "  Phân quyền";
             this.buttonPhanQuyen.UseVisualStyleBackColor = false;
             // 
             // buttonManHinh
             // 
-            this.buttonManHinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonManHinh.BackColor = System.Drawing.Color.Teal;
             this.buttonManHinh.FlatAppearance.BorderSize = 0;
             this.buttonManHinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonManHinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonManHinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonManHinh.Image = global::RestaurantManagement.Properties.Resources.account_settings;
             this.buttonManHinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonManHinh.Location = new System.Drawing.Point(0, 482);
+            this.buttonManHinh.Location = new System.Drawing.Point(0, 426);
             this.buttonManHinh.Name = "buttonManHinh";
             this.buttonManHinh.Size = new System.Drawing.Size(200, 50);
             this.buttonManHinh.TabIndex = 7;
@@ -129,63 +143,48 @@
             // 
             // buttonNhomNguoiDung
             // 
-            this.buttonNhomNguoiDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonNhomNguoiDung.BackColor = System.Drawing.Color.Teal;
             this.buttonNhomNguoiDung.FlatAppearance.BorderSize = 0;
             this.buttonNhomNguoiDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNhomNguoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNhomNguoiDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonNhomNguoiDung.Image = global::RestaurantManagement.Properties.Resources.account_settings;
             this.buttonNhomNguoiDung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonNhomNguoiDung.Location = new System.Drawing.Point(0, 426);
+            this.buttonNhomNguoiDung.Location = new System.Drawing.Point(0, 370);
             this.buttonNhomNguoiDung.Name = "buttonNhomNguoiDung";
             this.buttonNhomNguoiDung.Size = new System.Drawing.Size(200, 50);
             this.buttonNhomNguoiDung.TabIndex = 7;
-            this.buttonNhomNguoiDung.Text = "Nhóm người dùng";
+            this.buttonNhomNguoiDung.Text = "    Nhóm người dùng";
             this.buttonNhomNguoiDung.UseVisualStyleBackColor = false;
             // 
             // buttonTaiKhoan
             // 
-            this.buttonTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonTaiKhoan.BackColor = System.Drawing.Color.Teal;
             this.buttonTaiKhoan.FlatAppearance.BorderSize = 0;
             this.buttonTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
             this.buttonTaiKhoan.Image = global::RestaurantManagement.Properties.Resources.account_settings;
             this.buttonTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTaiKhoan.Location = new System.Drawing.Point(0, 369);
+            this.buttonTaiKhoan.Location = new System.Drawing.Point(0, 313);
             this.buttonTaiKhoan.Name = "buttonTaiKhoan";
             this.buttonTaiKhoan.Size = new System.Drawing.Size(200, 50);
             this.buttonTaiKhoan.TabIndex = 7;
             this.buttonTaiKhoan.Text = " Tài khoản";
             this.buttonTaiKhoan.UseVisualStyleBackColor = false;
             // 
-            // buttonNhanVien
-            // 
-            this.buttonNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
-            this.buttonNhanVien.FlatAppearance.BorderSize = 0;
-            this.buttonNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
-            this.buttonNhanVien.Image = global::RestaurantManagement.Properties.Resources.teamwork;
-            this.buttonNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonNhanVien.Location = new System.Drawing.Point(0, 313);
-            this.buttonNhanVien.Name = "buttonNhanVien";
-            this.buttonNhanVien.Size = new System.Drawing.Size(200, 50);
-            this.buttonNhanVien.TabIndex = 6;
-            this.buttonNhanVien.Text = " Nhân viên";
-            this.buttonNhanVien.UseVisualStyleBackColor = false;
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.panel2.BackColor = System.Drawing.Color.Teal;
             this.panel2.Location = new System.Drawing.Point(0, 10);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1200, 20);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // buttonMonAn
             // 
-            this.buttonMonAn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonMonAn.BackColor = System.Drawing.Color.Teal;
             this.buttonMonAn.FlatAppearance.BorderSize = 0;
             this.buttonMonAn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMonAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -202,7 +201,7 @@
             // 
             // buttonLoaiMonAn
             // 
-            this.buttonLoaiMonAn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonLoaiMonAn.BackColor = System.Drawing.Color.Teal;
             this.buttonLoaiMonAn.FlatAppearance.BorderSize = 0;
             this.buttonLoaiMonAn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLoaiMonAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -218,7 +217,7 @@
             // 
             // buttonBan
             // 
-            this.buttonBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonBan.BackColor = System.Drawing.Color.Teal;
             this.buttonBan.FlatAppearance.BorderSize = 0;
             this.buttonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -235,7 +234,7 @@
             // 
             // buttonDonMon
             // 
-            this.buttonDonMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonDonMon.BackColor = System.Drawing.Color.Teal;
             this.buttonDonMon.FlatAppearance.BorderSize = 0;
             this.buttonDonMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDonMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -251,7 +250,7 @@
             // 
             // buttonDatMon
             // 
-            this.buttonDatMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonDatMon.BackColor = System.Drawing.Color.Teal;
             this.buttonDatMon.FlatAppearance.BorderSize = 0;
             this.buttonDatMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDatMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -284,22 +283,6 @@
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxClose.TabIndex = 0;
             this.pictureBoxClose.TabStop = false;
-            // 
-            // buttonThongKe
-            // 
-            this.buttonThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
-            this.buttonThongKe.FlatAppearance.BorderSize = 0;
-            this.buttonThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThongKe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
-            this.buttonThongKe.Image = global::RestaurantManagement.Properties.Resources.account_settings;
-            this.buttonThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThongKe.Location = new System.Drawing.Point(0, 646);
-            this.buttonThongKe.Name = "buttonThongKe";
-            this.buttonThongKe.Size = new System.Drawing.Size(200, 50);
-            this.buttonThongKe.TabIndex = 8;
-            this.buttonThongKe.Text = "Thống kê";
-            this.buttonThongKe.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -335,7 +318,6 @@
         private System.Windows.Forms.PictureBox pictureBoxClose;
         private System.Windows.Forms.PictureBox pictureBoxMinimize;
         private System.Windows.Forms.Button buttonTaiKhoan;
-        private System.Windows.Forms.Button buttonNhanVien;
         private System.Windows.Forms.Button buttonPhanQuyen;
         private System.Windows.Forms.Button buttonManHinh;
         private System.Windows.Forms.Button buttonNhomNguoiDung;

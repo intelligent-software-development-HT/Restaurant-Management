@@ -153,3 +153,6 @@ D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantMa
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\bin\Debug\Accord.Statistics.xml
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormDuDoan.resources
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormThongKe.resources
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.DocIO.Base.xml
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.Compression.Base.xml
+D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.OfficeChart.Base.xml
