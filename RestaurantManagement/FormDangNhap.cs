@@ -62,7 +62,6 @@ namespace RestaurantManagement
                 return;
             }
 
-            MessageBox.Show("Đăng nhập thành công.");
             DangNhapHeThong(username);
         }
 

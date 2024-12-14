@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,8 +12,13 @@ namespace DAL
     {
         QLNHDataContext dataContext = new QLNHDataContext();
         public BanDAL() { }
+        public Ban GetById(int id)
+        {
+            return dataContext.Bans.FirstOrDefault(r => r.MaBan.Equals(id));
+        }
         public List<Ban> getListBan()
         {
+            dataContext.Refresh(RefreshMode.OverwriteCurrentValues, dataContext.Bans);
             return dataContext.Bans.ToList<Ban>();
         }
         public bool addBan(Ban ban)

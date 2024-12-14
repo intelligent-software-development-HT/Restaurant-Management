@@ -12,13 +12,7 @@ namespace DAL
         public MonAnDAL() { }
         public List<MonAn> getList()
         {
-            var list = dataContext.MonAns.ToList(); 
-            foreach (var monAn in list)
-            {
-                var loaiMonAn = dataContext.LoaiMonAns.FirstOrDefault(l => l.MaLoaiMonAn == monAn.MaLoaiMonAn);
-                monAn.TenLoaiMonAn = loaiMonAn?.TenLoaiMonAn; 
-            }
-            return list.ToList();
+            return dataContext.MonAns.ToList();
         }
         public bool addMonAn(MonAn monAn)
         {
@@ -28,7 +22,7 @@ namespace DAL
                 dataContext.SubmitChanges();
                 return true;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 return false;
             }
@@ -65,7 +59,12 @@ namespace DAL
         }
         public MonAn getById(int maMonAn)
         {
-            return dataContext.MonAns.Where(p=>p.MaMonAn == maMonAn).FirstOrDefault();
+            return dataContext.MonAns.Where(p => p.MaMonAn == maMonAn).FirstOrDefault();
+        }
+
+        public List<MonAn> GetMonAnsByLoaiMon(int maLoaiMonAn)
+        {
+            return dataContext.MonAns.Where(r => r.MaLoaiMonAn.Equals(maLoaiMonAn)).ToList();
         }
     }
 }

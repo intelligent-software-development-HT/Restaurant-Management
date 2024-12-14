@@ -12,6 +12,10 @@ namespace BLL
     {
         BanDAL banDAL = new BanDAL();
         public BanBLL() { }
+        public Ban GetById(int id)
+        {
+            return banDAL.GetById(id);
+        }
         public List<Ban> getListBan()
         {
             return banDAL.getListBan();

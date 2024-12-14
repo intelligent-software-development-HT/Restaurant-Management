@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBan.Designer.cs">
+      <DependentUpon>FormBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCauHinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,18 @@
     </Compile>
     <Compile Include="FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDatMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDatMon.Designer.cs">
+      <DependentUpon>FormDatMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDonMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDonMon.Designer.cs">
+      <DependentUpon>FormDonMon.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLoaiMonAn.cs">
       <SubType>Form</SubType>
@@ -106,16 +124,31 @@
     <Compile Include="FormThemNguoiDungVaoNhom.Designer.cs">
       <DependentUpon>FormThemNguoiDungVaoNhom.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormThongBaoDatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongBaoDatBan.Designer.cs">
+      <DependentUpon>FormThongBaoDatBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBan.resx">
+      <DependentUpon>FormBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCauHinh.resx">
       <DependentUpon>FormCauHinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDatMon.resx">
+      <DependentUpon>FormDatMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDonMon.resx">
+      <DependentUpon>FormDonMon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLoaiMonAn.resx">
       <DependentUpon>FormLoaiMonAn.cs</DependentUpon>
@@ -137,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormThemNguoiDungVaoNhom.resx">
       <DependentUpon>FormThemNguoiDungVaoNhom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongBaoDatBan.resx">
+      <DependentUpon>FormThongBaoDatBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -203,6 +239,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\account-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

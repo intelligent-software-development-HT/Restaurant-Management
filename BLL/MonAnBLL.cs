@@ -31,5 +31,9 @@ namespace BLL
         {
             return monAnDAL.getById(maMonAn);
         }
+        public List<MonAn> GetMonAnsByLoaiMon(int loaiMon)
+        {
+            return monAnDAL.GetMonAnsByLoaiMon(loaiMon);
+        }
     }
 }
