@@ -1,10 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\",
+  "WorkspaceRootPath": "D:\\QLQA\\Restaurant-Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|d:\\hocky7\\phat trien ung dung thong minh\\doan\\restaurant-management\\restaurantmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A37A1A0-4BA1-4A75-8630-71C7E9135467}|DAL\\DAL.csproj|d:\\qlqa\\restaurant-management\\dal\\bandal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A37A1A0-4BA1-4A75-8630-71C7E9135467}|DAL\\DAL.csproj|solutionrelative:dal\\bandal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|D:\\QLQA\\Restaurant-Management\\restaurantmanagement\\formmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\formmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|D:\\QLQA\\Restaurant-Management\\restaurantmanagement\\formloaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\formloaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|D:\\QLQA\\Restaurant-Management\\restaurantmanagement\\formban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\formban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B791BC66-EF1F-431B-84D4-4DCCD1561E0A}|BLL\\BLL.csproj|D:\\QLQA\\Restaurant-Management\\bll\\banbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B791BC66-EF1F-431B-84D4-4DCCD1561E0A}|BLL\\BLL.csproj|solutionrelative:bll\\banbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,13 +70,43 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormBan.cs [Design]",
+              "DocumentMoniker": "D:\\QLQA\\Restaurant-Management\\RestaurantManagement\\FormBan.cs",
+              "RelativeDocumentMoniker": "RestaurantManagement\\FormBan.cs",
+              "ToolTip": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\RestaurantManagement\\FormBan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T00:57:47.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormLoaiMonAn.cs [Design]",
+              "DocumentMoniker": "D:\\QLQA\\Restaurant-Management\\RestaurantManagement\\FormLoaiMonAn.cs",
+              "RelativeDocumentMoniker": "RestaurantManagement\\FormLoaiMonAn.cs",
+              "ToolTip": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\RestaurantManagement\\FormLoaiMonAn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T00:55:09.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormMonAn.cs [Design]",
+              "DocumentMoniker": "D:\\QLQA\\Restaurant-Management\\RestaurantManagement\\FormMonAn.cs",
+              "RelativeDocumentMoniker": "RestaurantManagement\\FormMonAn.cs",
+              "ToolTip": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\RestaurantManagement\\FormMonAn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T00:54:36.153Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\Form1.cs",
-              "RelativeDocumentMoniker": "RestaurantManagement\\Form1.cs",
-              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\Form1.cs",
-              "RelativeToolTip": "RestaurantManagement\\Form1.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAkwHwAAAAcAAAAAAAAAA==",
+              "Title": "BanDAL.cs",
+              "DocumentMoniker": "D:\\QLQA\\Restaurant-Management\\DAL\\BanDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\BanDAL.cs",
+              "ToolTip": "D:\\QLQA\\Restaurant-Management\\DAL\\BanDAL.cs",
+              "RelativeToolTip": "DAL\\BanDAL.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T08:40:39.91Z",
               "EditorCaption": ""
@@ -72,8 +118,16 @@
           "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BanBLL.cs",
+              "DocumentMoniker": "D:\\QLQA\\Restaurant-Management\\BLL\\BanBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\BanBLL.cs",
+              "ToolTip": "D:\\QLQA\\Restaurant-Management\\BLL\\BanBLL.cs",
+              "RelativeToolTip": "BLL\\BanBLL.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T00:37:36.574Z"
             }
           ]
         }
