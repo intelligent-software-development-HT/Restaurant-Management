@@ -69,7 +69,7 @@ namespace DTO
     #endregion
 		
 		public QLNHDataContext() : 
-				base(global::DTO.Properties.Settings.Default.QL_NhaHang2ConnectionString1, mappingSource)
+				base(global::DTO.Properties.Settings.Default.QL_NhaHang2ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -222,18 +222,18 @@ namespace DTO
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ThongKeMonAn")]
-		public ISingleResult<sp_ThongKeMonAnResult> sp_ThongKeMonAn([global::System.Data.Linq.Mapping.ParameterAttribute(Name="StartDate", DbType="DateTime")] System.Nullable<System.DateTime> startDate, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EndDate", DbType="DateTime")] System.Nullable<System.DateTime> endDate)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_kiemTraBanKhaDung")]
+		public int sp_kiemTraBanKhaDung()
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), startDate, endDate);
-			return ((ISingleResult<sp_ThongKeMonAnResult>)(result.ReturnValue));
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.getRevenue")]
-		public ISingleResult<getRevenueResult> getRevenue([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Date")] System.Nullable<System.DateTime> startDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Date")] System.Nullable<System.DateTime> endDate)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_xuLyTrangThaiDatBan")]
+		public int sp_xuLyTrangThaiDatBan()
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), startDate, endDate);
-			return ((ISingleResult<getRevenueResult>)(result.ReturnValue));
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((int)(result.ReturnValue));
 		}
 	}
 	
@@ -2640,94 +2640,6 @@ namespace DTO
 				if ((this._CoQuyen != value))
 				{
 					this._CoQuyen = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_ThongKeMonAnResult
-	{
-		
-		private string _TenMonAn;
-		
-		private System.Nullable<int> _TongSoLuong;
-		
-		public sp_ThongKeMonAnResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenMonAn", DbType="NVarChar(100)")]
-		public string TenMonAn
-		{
-			get
-			{
-				return this._TenMonAn;
-			}
-			set
-			{
-				if ((this._TenMonAn != value))
-				{
-					this._TenMonAn = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TongSoLuong", DbType="Int")]
-		public System.Nullable<int> TongSoLuong
-		{
-			get
-			{
-				return this._TongSoLuong;
-			}
-			set
-			{
-				if ((this._TongSoLuong != value))
-				{
-					this._TongSoLuong = value;
-				}
-			}
-		}
-	}
-	
-	public partial class getRevenueResult
-	{
-		
-		private System.Nullable<System.DateTime> _Ngay;
-		
-		private System.Nullable<int> _DoanhThu;
-		
-		public getRevenueResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ngay", DbType="Date")]
-		public System.Nullable<System.DateTime> Ngay
-		{
-			get
-			{
-				return this._Ngay;
-			}
-			set
-			{
-				if ((this._Ngay != value))
-				{
-					this._Ngay = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DoanhThu", DbType="Int")]
-		public System.Nullable<int> DoanhThu
-		{
-			get
-			{
-				return this._DoanhThu;
-			}
-			set
-			{
-				if ((this._DoanhThu != value))
-				{
-					this._DoanhThu = value;
 				}
 			}
 		}

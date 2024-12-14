@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_NhaHang2" Class="QLNHDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=QL_NhaHang2;User ID=sa;Trust Server Certificate=True" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="QL_NhaHang2ConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=QL_NhaHang2;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="QL_NhaHang2ConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Ban" Member="Bans">
     <Type Name="Ban">
       <Column Name="MaBan" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -143,20 +143,10 @@
     <Parameter Name="maBan" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.sp_ThongKeMonAn" Method="sp_ThongKeMonAn">
-    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="DateTime" />
-    <ElementType Name="sp_ThongKeMonAnResult">
-      <Column Name="TenMonAn" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="TongSoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
+  <Function Name="dbo.sp_kiemTraBanKhaDung" Method="sp_kiemTraBanKhaDung">
+    <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.getRevenue" Method="getRevenue">
-    <Parameter Name="startDate" Type="System.DateTime" DbType="Date" />
-    <Parameter Name="endDate" Type="System.DateTime" DbType="Date" />
-    <ElementType Name="getRevenueResult">
-      <Column Name="Ngay" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="DoanhThu" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
+  <Function Name="dbo.sp_xuLyTrangThaiDatBan" Method="sp_xuLyTrangThaiDatBan">
+    <Return Type="System.Int32" />
   </Function>
 </Database>

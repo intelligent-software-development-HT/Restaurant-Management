@@ -20,5 +20,20 @@ namespace BLL
         {
             return _phieuDatBanDAL.GetDanhSachDatBan();
         }
+
+        public int KiemTraBanKhaDung()
+        {
+            return _phieuDatBanDAL.KiemTraBanKhaDung();
+        }
+
+        public void XuLyTrangThaiDatBan()
+        {
+            _phieuDatBanDAL.XuLyTrangThaiDatBan();
+        }
+
+        public bool DuyetTrangThaiDatBan(int maDatBan)
+        {
+            return _phieuDatBanDAL.DuyetTrangThaiDatBan(maDatBan);
+        }
     }
 }
