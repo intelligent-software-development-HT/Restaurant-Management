@@ -31,7 +31,7 @@ namespace DAL
             _context.sp_xuLyTrangThaiDatBan();
         }
 
-        public bool DuyetTrangThaiDatBan(int maDatBan)
+        public bool DuyetTrangThaiDatBan(int maDatBan, string trangThai)
         {
             try
             {
@@ -42,7 +42,7 @@ namespace DAL
                     return false;
                 }
 
-                datBan.TrangThai = "completed";
+                datBan.TrangThai = trangThai;
                 _context.SubmitChanges();
 
                 return true;

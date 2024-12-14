@@ -23,6 +23,22 @@ namespace RestaurantManagement
             this.pictureBoxCloseModal.Click += PictureBoxCloseModal_Click;
             this.dataGridViewThongBao.MouseDown += DataGridViewThongBao_MouseDown;
             this.duyệtToolStripMenuItem.Click += DuyệtToolStripMenuItem_Click;
+            this.hủyToolStripMenuItem.Click += HủyToolStripMenuItem_Click;
+        }
+
+        private void HủyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewThongBao.SelectedRows.Count <= 0)
+            {
+                return;
+            }
+
+            int maDatBan = Convert.ToInt32(dataGridViewThongBao.CurrentRow.Cells[0].Value);
+
+            if (_phieuDatBanBLL.DuyetTrangThaiDatBan(maDatBan, "cancel"))
+            {
+                LoadDanhSachDatBan();
+            }
         }
 
         private void DuyệtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -34,7 +50,7 @@ namespace RestaurantManagement
 
             int maDatBan = Convert.ToInt32(dataGridViewThongBao.CurrentRow.Cells[0].Value);
 
-            if (_phieuDatBanBLL.DuyetTrangThaiDatBan(maDatBan))
+            if (_phieuDatBanBLL.DuyetTrangThaiDatBan(maDatBan, "completed"))
             {
                 LoadDanhSachDatBan();
             }

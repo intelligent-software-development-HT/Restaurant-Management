@@ -31,9 +31,9 @@ namespace BLL
             _phieuDatBanDAL.XuLyTrangThaiDatBan();
         }
 
-        public bool DuyetTrangThaiDatBan(int maDatBan)
+        public bool DuyetTrangThaiDatBan(int maDatBan, string trangThai)
         {
-            return _phieuDatBanDAL.DuyetTrangThaiDatBan(maDatBan);
+            return _phieuDatBanDAL.DuyetTrangThaiDatBan(maDatBan, trangThai);
         }
     }
 }

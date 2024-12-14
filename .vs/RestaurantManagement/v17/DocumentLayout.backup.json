@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|d:\\hocky7\\phat trien ung dung thong minh\\doan\\restaurant-management\\restaurantmanagement\\formnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\formnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A37A1A0-4BA1-4A75-8630-71C7E9135467}|DAL\\DAL.csproj|d:\\hocky7\\phat trien ung dung thong minh\\doan\\restaurant-management\\dal\\phieudatbandal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A37A1A0-4BA1-4A75-8630-71C7E9135467}|DAL\\DAL.csproj|solutionrelative:dal\\phieudatbandal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|d:\\hocky7\\phat trien ung dung thong minh\\doan\\restaurant-management\\restaurantmanagement\\formnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\formnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B791BC66-EF1F-431B-84D4-4DCCD1561E0A}|BLL\\BLL.csproj|d:\\hocky7\\phat trien ung dung thong minh\\doan\\restaurant-management\\bll\\phieudatbanbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B791BC66-EF1F-431B-84D4-4DCCD1561E0A}|BLL\\BLL.csproj|solutionrelative:bll\\phieudatbanbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|d:\\hocky7\\phat trien ung dung thong minh\\doan\\restaurant-management\\restaurantmanagement\\formthongbaodatban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\formthongbaodatban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|d:\\hocky7\\phat trien ung dung thong minh\\doan\\restaurant-management\\restaurantmanagement\\formthongbaodatban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\formthongbaodatban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|d:\\hocky7\\phat trien ung dung thong minh\\doan\\restaurant-management\\restaurantmanagement\\formdatmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18562CB2-7BBC-4EAE-8814-4C90C3FE04EB}|RestaurantManagement\\RestaurantManagement.csproj|solutionrelative:restaurantmanagement\\formdatmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +30,34 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PhieuDatBanDAL.cs",
+              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\DAL\\PhieuDatBanDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\PhieuDatBanDAL.cs",
+              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\DAL\\PhieuDatBanDAL.cs",
+              "RelativeToolTip": "DAL\\PhieuDatBanDAL.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:21:53.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PhieuDatBanBLL.cs",
+              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\BLL\\PhieuDatBanBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\PhieuDatBanBLL.cs",
+              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\BLL\\PhieuDatBanBLL.cs",
+              "RelativeToolTip": "BLL\\PhieuDatBanBLL.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:21:38.459Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -62,27 +100,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormNguoiDung.cs",
-              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\FormNguoiDung.cs",
-              "RelativeDocumentMoniker": "RestaurantManagement\\FormNguoiDung.cs",
-              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\FormNguoiDung.cs",
-              "RelativeToolTip": "RestaurantManagement\\FormNguoiDung.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAuwI0AAAAoAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FormThongBaoDatBan.cs",
+              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\FormThongBaoDatBan.cs",
+              "RelativeDocumentMoniker": "RestaurantManagement\\FormThongBaoDatBan.cs",
+              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\FormThongBaoDatBan.cs",
+              "RelativeToolTip": "RestaurantManagement\\FormThongBaoDatBan.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T19:02:56.175Z",
+              "WhenOpened": "2024-12-14T19:17:58.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormNguoiDung.cs [Design]",
-              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\FormNguoiDung.cs",
-              "RelativeDocumentMoniker": "RestaurantManagement\\FormNguoiDung.cs",
-              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\FormNguoiDung.cs [Design]",
-              "RelativeToolTip": "RestaurantManagement\\FormNguoiDung.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "FormThongBaoDatBan.cs [Design]",
+              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\FormThongBaoDatBan.cs",
+              "RelativeDocumentMoniker": "RestaurantManagement\\FormThongBaoDatBan.cs",
+              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\FormThongBaoDatBan.cs [Design]",
+              "RelativeToolTip": "RestaurantManagement\\FormThongBaoDatBan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T19:02:51.483Z",
+              "WhenOpened": "2024-12-14T19:17:54.955Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormDatMon.cs [Design]",
+              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\FormDatMon.cs",
+              "RelativeDocumentMoniker": "RestaurantManagement\\FormDatMon.cs",
+              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\FormDatMon.cs [Design]",
+              "RelativeToolTip": "RestaurantManagement\\FormDatMon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:17:47.083Z",
               "EditorCaption": " [Design]"
             }
           ]
