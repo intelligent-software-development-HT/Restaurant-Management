@@ -30,12 +30,16 @@
         {
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonThemVaoNhom = new System.Windows.Forms.Button();
+            this.buttonPhanQuyen = new System.Windows.Forms.Button();
+            this.buttonManHinh = new System.Windows.Forms.Button();
+            this.buttonNhomNguoiDung = new System.Windows.Forms.Button();
             this.buttonTaiKhoan = new System.Windows.Forms.Button();
             this.buttonNhanVien = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonMonAn = new System.Windows.Forms.Button();
             this.buttonLoaiMonAn = new System.Windows.Forms.Button();
-            this.buttonTable = new System.Windows.Forms.Button();
+            this.buttonBan = new System.Windows.Forms.Button();
             this.buttonDonMon = new System.Windows.Forms.Button();
             this.buttonDatMon = new System.Windows.Forms.Button();
             this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
@@ -48,26 +52,100 @@
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.Transparent;
-            this.panelMain.Location = new System.Drawing.Point(200, 20);
+            this.panelMain.Location = new System.Drawing.Point(300, 31);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1000, 680);
+            this.panelMain.Size = new System.Drawing.Size(1500, 1046);
             this.panelMain.TabIndex = 4;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
+            this.panel1.Controls.Add(this.buttonThemVaoNhom);
+            this.panel1.Controls.Add(this.buttonPhanQuyen);
+            this.panel1.Controls.Add(this.buttonManHinh);
+            this.panel1.Controls.Add(this.buttonNhomNguoiDung);
             this.panel1.Controls.Add(this.buttonTaiKhoan);
             this.panel1.Controls.Add(this.buttonNhanVien);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.buttonMonAn);
             this.panel1.Controls.Add(this.buttonLoaiMonAn);
-            this.panel1.Controls.Add(this.buttonTable);
+            this.panel1.Controls.Add(this.buttonBan);
             this.panel1.Controls.Add(this.buttonDonMon);
             this.panel1.Controls.Add(this.buttonDatMon);
-            this.panel1.Location = new System.Drawing.Point(0, -10);
+            this.panel1.Location = new System.Drawing.Point(0, -15);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 710);
+            this.panel1.Size = new System.Drawing.Size(300, 1092);
             this.panel1.TabIndex = 3;
+            // 
+            // buttonThemVaoNhom
+            // 
+            this.buttonThemVaoNhom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
+            this.buttonThemVaoNhom.FlatAppearance.BorderSize = 0;
+            this.buttonThemVaoNhom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThemVaoNhom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThemVaoNhom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
+            this.buttonThemVaoNhom.Image = global::RestaurantManagement.Properties.Resources.account_settings;
+            this.buttonThemVaoNhom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThemVaoNhom.Location = new System.Drawing.Point(0, 916);
+            this.buttonThemVaoNhom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonThemVaoNhom.Name = "buttonThemVaoNhom";
+            this.buttonThemVaoNhom.Size = new System.Drawing.Size(300, 77);
+            this.buttonThemVaoNhom.TabIndex = 7;
+            this.buttonThemVaoNhom.Text = "Thêm vào nhóm";
+            this.buttonThemVaoNhom.UseVisualStyleBackColor = false;
+            // 
+            // buttonPhanQuyen
+            // 
+            this.buttonPhanQuyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
+            this.buttonPhanQuyen.FlatAppearance.BorderSize = 0;
+            this.buttonPhanQuyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPhanQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPhanQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
+            this.buttonPhanQuyen.Image = global::RestaurantManagement.Properties.Resources.account_settings;
+            this.buttonPhanQuyen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonPhanQuyen.Location = new System.Drawing.Point(0, 829);
+            this.buttonPhanQuyen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonPhanQuyen.Name = "buttonPhanQuyen";
+            this.buttonPhanQuyen.Size = new System.Drawing.Size(300, 77);
+            this.buttonPhanQuyen.TabIndex = 7;
+            this.buttonPhanQuyen.Text = "Phân quyền";
+            this.buttonPhanQuyen.UseVisualStyleBackColor = false;
+            // 
+            // buttonManHinh
+            // 
+            this.buttonManHinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
+            this.buttonManHinh.FlatAppearance.BorderSize = 0;
+            this.buttonManHinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonManHinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonManHinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
+            this.buttonManHinh.Image = global::RestaurantManagement.Properties.Resources.account_settings;
+            this.buttonManHinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonManHinh.Location = new System.Drawing.Point(0, 742);
+            this.buttonManHinh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonManHinh.Name = "buttonManHinh";
+            this.buttonManHinh.Size = new System.Drawing.Size(300, 77);
+            this.buttonManHinh.TabIndex = 7;
+            this.buttonManHinh.Text = "Màn hình";
+            this.buttonManHinh.UseVisualStyleBackColor = false;
+            // 
+            // buttonNhomNguoiDung
+            // 
+            this.buttonNhomNguoiDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
+            this.buttonNhomNguoiDung.FlatAppearance.BorderSize = 0;
+            this.buttonNhomNguoiDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNhomNguoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNhomNguoiDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
+            this.buttonNhomNguoiDung.Image = global::RestaurantManagement.Properties.Resources.account_settings;
+            this.buttonNhomNguoiDung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonNhomNguoiDung.Location = new System.Drawing.Point(0, 655);
+            this.buttonNhomNguoiDung.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonNhomNguoiDung.Name = "buttonNhomNguoiDung";
+            this.buttonNhomNguoiDung.Size = new System.Drawing.Size(300, 77);
+            this.buttonNhomNguoiDung.TabIndex = 7;
+            this.buttonNhomNguoiDung.Text = "Nhóm người dùng";
+            this.buttonNhomNguoiDung.UseVisualStyleBackColor = false;
             // 
             // buttonTaiKhoan
             // 
@@ -78,9 +156,10 @@
             this.buttonTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
             this.buttonTaiKhoan.Image = global::RestaurantManagement.Properties.Resources.account_settings;
             this.buttonTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTaiKhoan.Location = new System.Drawing.Point(0, 369);
+            this.buttonTaiKhoan.Location = new System.Drawing.Point(0, 568);
+            this.buttonTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonTaiKhoan.Name = "buttonTaiKhoan";
-            this.buttonTaiKhoan.Size = new System.Drawing.Size(200, 50);
+            this.buttonTaiKhoan.Size = new System.Drawing.Size(300, 77);
             this.buttonTaiKhoan.TabIndex = 7;
             this.buttonTaiKhoan.Text = " Tài khoản";
             this.buttonTaiKhoan.UseVisualStyleBackColor = false;
@@ -94,18 +173,20 @@
             this.buttonNhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
             this.buttonNhanVien.Image = global::RestaurantManagement.Properties.Resources.teamwork;
             this.buttonNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonNhanVien.Location = new System.Drawing.Point(0, 313);
+            this.buttonNhanVien.Location = new System.Drawing.Point(0, 482);
+            this.buttonNhanVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonNhanVien.Name = "buttonNhanVien";
-            this.buttonNhanVien.Size = new System.Drawing.Size(200, 50);
+            this.buttonNhanVien.Size = new System.Drawing.Size(300, 77);
             this.buttonNhanVien.TabIndex = 6;
             this.buttonNhanVien.Text = " Nhân viên";
             this.buttonNhanVien.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(0, 10);
+            this.panel2.Location = new System.Drawing.Point(0, 15);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1200, 20);
+            this.panel2.Size = new System.Drawing.Size(1800, 31);
             this.panel2.TabIndex = 0;
             // 
             // buttonMonAn
@@ -117,9 +198,10 @@
             this.buttonMonAn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
             this.buttonMonAn.Image = global::RestaurantManagement.Properties.Resources.christmas_dinner__1_;
             this.buttonMonAn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonMonAn.Location = new System.Drawing.Point(0, 257);
+            this.buttonMonAn.Location = new System.Drawing.Point(0, 395);
+            this.buttonMonAn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonMonAn.Name = "buttonMonAn";
-            this.buttonMonAn.Size = new System.Drawing.Size(200, 50);
+            this.buttonMonAn.Size = new System.Drawing.Size(300, 77);
             this.buttonMonAn.TabIndex = 5;
             this.buttonMonAn.Text = "      Món Ăn";
             this.buttonMonAn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,29 +216,31 @@
             this.buttonLoaiMonAn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
             this.buttonLoaiMonAn.Image = global::RestaurantManagement.Properties.Resources.menu__4_;
             this.buttonLoaiMonAn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLoaiMonAn.Location = new System.Drawing.Point(0, 201);
+            this.buttonLoaiMonAn.Location = new System.Drawing.Point(0, 309);
+            this.buttonLoaiMonAn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonLoaiMonAn.Name = "buttonLoaiMonAn";
-            this.buttonLoaiMonAn.Size = new System.Drawing.Size(200, 50);
+            this.buttonLoaiMonAn.Size = new System.Drawing.Size(300, 77);
             this.buttonLoaiMonAn.TabIndex = 4;
             this.buttonLoaiMonAn.Text = "     Loại Món Ăn";
             this.buttonLoaiMonAn.UseVisualStyleBackColor = false;
             // 
-            // buttonTable
+            // buttonBan
             // 
-            this.buttonTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
-            this.buttonTable.FlatAppearance.BorderSize = 0;
-            this.buttonTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
-            this.buttonTable.Image = global::RestaurantManagement.Properties.Resources.dining_table;
-            this.buttonTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTable.Location = new System.Drawing.Point(0, 145);
-            this.buttonTable.Name = "buttonTable";
-            this.buttonTable.Size = new System.Drawing.Size(200, 50);
-            this.buttonTable.TabIndex = 3;
-            this.buttonTable.Text = "      Bàn";
-            this.buttonTable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonTable.UseVisualStyleBackColor = false;
+            this.buttonBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(113)))), ((int)(((byte)(116)))));
+            this.buttonBan.FlatAppearance.BorderSize = 0;
+            this.buttonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
+            this.buttonBan.Image = global::RestaurantManagement.Properties.Resources.dining_table;
+            this.buttonBan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBan.Location = new System.Drawing.Point(0, 223);
+            this.buttonBan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonBan.Name = "buttonBan";
+            this.buttonBan.Size = new System.Drawing.Size(300, 77);
+            this.buttonBan.TabIndex = 3;
+            this.buttonBan.Text = "      Bàn";
+            this.buttonBan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBan.UseVisualStyleBackColor = false;
             // 
             // buttonDonMon
             // 
@@ -167,9 +251,10 @@
             this.buttonDonMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
             this.buttonDonMon.Image = global::RestaurantManagement.Properties.Resources.menu__2_;
             this.buttonDonMon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDonMon.Location = new System.Drawing.Point(0, 89);
+            this.buttonDonMon.Location = new System.Drawing.Point(0, 137);
+            this.buttonDonMon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonDonMon.Name = "buttonDonMon";
-            this.buttonDonMon.Size = new System.Drawing.Size(200, 50);
+            this.buttonDonMon.Size = new System.Drawing.Size(300, 77);
             this.buttonDonMon.TabIndex = 2;
             this.buttonDonMon.Text = "Đơn món";
             this.buttonDonMon.UseVisualStyleBackColor = false;
@@ -183,9 +268,10 @@
             this.buttonDatMon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(232)))));
             this.buttonDatMon.Image = global::RestaurantManagement.Properties.Resources.bell;
             this.buttonDatMon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDatMon.Location = new System.Drawing.Point(0, 33);
+            this.buttonDatMon.Location = new System.Drawing.Point(0, 51);
+            this.buttonDatMon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonDatMon.Name = "buttonDatMon";
-            this.buttonDatMon.Size = new System.Drawing.Size(200, 50);
+            this.buttonDatMon.Size = new System.Drawing.Size(300, 77);
             this.buttonDatMon.TabIndex = 1;
             this.buttonDatMon.Text = "Đặt món";
             this.buttonDatMon.UseVisualStyleBackColor = false;
@@ -193,9 +279,10 @@
             // pictureBoxMinimize
             // 
             this.pictureBoxMinimize.Image = global::RestaurantManagement.Properties.Resources.minimize__1_;
-            this.pictureBoxMinimize.Location = new System.Drawing.Point(1157, 0);
+            this.pictureBoxMinimize.Location = new System.Drawing.Point(1736, 0);
+            this.pictureBoxMinimize.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxMinimize.Name = "pictureBoxMinimize";
-            this.pictureBoxMinimize.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxMinimize.Size = new System.Drawing.Size(30, 31);
             this.pictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMinimize.TabIndex = 5;
             this.pictureBoxMinimize.TabStop = false;
@@ -203,26 +290,29 @@
             // pictureBoxClose
             // 
             this.pictureBoxClose.Image = global::RestaurantManagement.Properties.Resources.close__1_;
-            this.pictureBoxClose.Location = new System.Drawing.Point(1179, 0);
+            this.pictureBoxClose.Location = new System.Drawing.Point(1768, 0);
+            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxClose.Size = new System.Drawing.Size(30, 31);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxClose.TabIndex = 0;
             this.pictureBoxClose.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.ClientSize = new System.Drawing.Size(1800, 1077);
             this.Controls.Add(this.pictureBoxMinimize);
             this.Controls.Add(this.pictureBoxClose);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
@@ -236,7 +326,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonMonAn;
         private System.Windows.Forms.Button buttonLoaiMonAn;
-        private System.Windows.Forms.Button buttonTable;
+        private System.Windows.Forms.Button buttonBan;
         private System.Windows.Forms.Button buttonDonMon;
         private System.Windows.Forms.Button buttonDatMon;
         private System.Windows.Forms.Panel panel2;
@@ -244,6 +334,10 @@
         private System.Windows.Forms.PictureBox pictureBoxMinimize;
         private System.Windows.Forms.Button buttonTaiKhoan;
         private System.Windows.Forms.Button buttonNhanVien;
+        private System.Windows.Forms.Button buttonPhanQuyen;
+        private System.Windows.Forms.Button buttonManHinh;
+        private System.Windows.Forms.Button buttonNhomNguoiDung;
+        private System.Windows.Forms.Button buttonThemVaoNhom;
     }
 }
 

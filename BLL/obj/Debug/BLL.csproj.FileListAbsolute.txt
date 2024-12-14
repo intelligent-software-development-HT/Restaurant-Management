@@ -22,3 +22,25 @@ C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\obj\Debug\B
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\obj\Debug\BLL.csproj.Up2Date
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\obj\Debug\BLL.dll
 C:\Users\lbthi\OneDrive\Tài liệu\Test\Restaurant-Management\BLL\obj\Debug\BLL.pdb
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\BLL.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\BLL.pdb
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\BCrypt.Net-Next.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\DAL.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\DTO.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\System.Buffers.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\System.Memory.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\System.Numerics.Vectors.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\DAL.pdb
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\DTO.pdb
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\DTO.dll.config
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\BCrypt.Net-Next.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\System.Buffers.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\System.Memory.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\System.Numerics.Vectors.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\obj\Debug\BLL.dll
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\obj\Debug\BLL.pdb

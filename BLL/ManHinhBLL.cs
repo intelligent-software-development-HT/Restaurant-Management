@@ -10,11 +10,28 @@ namespace BLL
 {
     public class ManHinhBLL
     {
-        ManHinhDAL manHinhDAL = new ManHinhDAL();
+        private readonly ManHinhDAL _manHinhDAL = new ManHinhDAL();
+
         public ManHinhBLL() { }
-        public List<ManHinh> getListManHinh()
+
+        public IEnumerable<ManHinh> ReadNhomNguoiDungs()
         {
-            return manHinhDAL.getListManHinh();
+            return _manHinhDAL.ReadManHinhs();
+        }
+
+        public bool Create(ManHinh manHinh)
+        {
+            return manHinh != null ? _manHinhDAL.Create(manHinh) : false;
+        }
+
+        public bool Update(ManHinh manHinh)
+        {
+            return manHinh != null ? _manHinhDAL.Update(manHinh) : false;
+        }
+
+        public bool Delete(int maManHinh)
+        {
+            return _manHinhDAL.Delete(maManHinh);
         }
     }
 }

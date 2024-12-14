@@ -10,11 +10,31 @@ namespace BLL
 {
     public class NhomNguoiDungBLL
     {
-        NhomNguoiDungDAL nhomNguoiDungDAL = new NhomNguoiDungDAL();
-        public NhomNguoiDungBLL() { }
-        public List<NhomNguoiDung> getListNhomNguoiDung()
+        private readonly NhomNguoiDungDAL _nhomNguoiDungDAL = new NhomNguoiDungDAL();
+
+        public IEnumerable<NhomNguoiDung> ReadNhomNguoiDungs()
         {
-            return nhomNguoiDungDAL.getListNhomNguoiDung();
+            return _nhomNguoiDungDAL.ReadNhomNguoiDungs();
+        }
+
+        public bool Create(NhomNguoiDung nhomNguoiDung)
+        {
+            return nhomNguoiDung != null ? _nhomNguoiDungDAL.Create(nhomNguoiDung) : false;
+        }
+
+        public bool Update(NhomNguoiDung nhomNguoiDung)
+        {
+            return nhomNguoiDung != null ? _nhomNguoiDungDAL.Update(nhomNguoiDung) : false;
+        }
+
+        public bool Delete(int maNhomNguoiDung)
+        {
+            return _nhomNguoiDungDAL.Delete(maNhomNguoiDung);
+        }
+
+        public bool IsExists(int maNhomNguoiDung)
+        {
+            return _nhomNguoiDungDAL.IsExists(maNhomNguoiDung);
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\",
+  "WorkspaceRootPath": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{3A37A1A0-4BA1-4A75-8630-71C7E9135467}|DAL\\DAL.csproj|c:\\users\\lbthi\\onedrive\\ta\u0300i li\u00EA\u0323u\\test\\restaurant-management\\dal\\bandal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,16 +25,36 @@
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
@@ -42,53 +62,21 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormBan.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\RestaurantManagement\\FormBan.cs",
-              "RelativeDocumentMoniker": "RestaurantManagement\\FormBan.cs",
-              "ToolTip": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\RestaurantManagement\\FormBan.cs [Design]",
-              "RelativeToolTip": "RestaurantManagement\\FormBan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T00:57:47.067Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormLoaiMonAn.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\RestaurantManagement\\FormLoaiMonAn.cs",
-              "RelativeDocumentMoniker": "RestaurantManagement\\FormLoaiMonAn.cs",
-              "ToolTip": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\RestaurantManagement\\FormLoaiMonAn.cs [Design]",
-              "RelativeToolTip": "RestaurantManagement\\FormLoaiMonAn.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T00:55:09.349Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormMonAn.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\RestaurantManagement\\FormMonAn.cs",
-              "RelativeDocumentMoniker": "RestaurantManagement\\FormMonAn.cs",
-              "ToolTip": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\RestaurantManagement\\FormMonAn.cs [Design]",
-              "RelativeToolTip": "RestaurantManagement\\FormMonAn.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T00:54:36.153Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BanDAL.cs",
-              "DocumentMoniker": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\DAL\\BanDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\BanDAL.cs",
-              "ToolTip": "C:\\Users\\lbthi\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\Test\\Restaurant-Management\\DAL\\BanDAL.cs",
-              "RelativeToolTip": "DAL\\BanDAL.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDIAAAAsAAAAAAAAAA==",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\Form1.cs",
+              "RelativeDocumentMoniker": "RestaurantManagement\\Form1.cs",
+              "ToolTip": "D:\\HocKy7\\phat trien ung dung thong minh\\DoAn\\Restaurant-Management\\RestaurantManagement\\Form1.cs",
+              "RelativeToolTip": "RestaurantManagement\\Form1.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAkwHwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T00:30:51.052Z",
               "EditorCaption": ""
