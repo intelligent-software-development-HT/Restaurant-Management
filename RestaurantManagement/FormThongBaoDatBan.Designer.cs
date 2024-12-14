@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridViewThongBao = new System.Windows.Forms.DataGridView();
-            this.pictureBoxCloseModal = new System.Windows.Forms.PictureBox();
             this.contextMenuStripTrangThaiDatMon = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.duyệtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hủyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBoxCloseModal = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThongBao)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCloseModal)).BeginInit();
             this.contextMenuStripTrangThaiDatMon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCloseModal)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewThongBao
@@ -55,6 +55,27 @@
             this.dataGridViewThongBao.Size = new System.Drawing.Size(556, 233);
             this.dataGridViewThongBao.TabIndex = 0;
             // 
+            // contextMenuStripTrangThaiDatMon
+            // 
+            this.contextMenuStripTrangThaiDatMon.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStripTrangThaiDatMon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.duyệtToolStripMenuItem,
+            this.hủyToolStripMenuItem});
+            this.contextMenuStripTrangThaiDatMon.Name = "contextMenuStripTrangThaiDatMon";
+            this.contextMenuStripTrangThaiDatMon.Size = new System.Drawing.Size(132, 68);
+            // 
+            // duyệtToolStripMenuItem
+            // 
+            this.duyệtToolStripMenuItem.Name = "duyệtToolStripMenuItem";
+            this.duyệtToolStripMenuItem.Size = new System.Drawing.Size(131, 32);
+            this.duyệtToolStripMenuItem.Text = "Duyệt";
+            // 
+            // hủyToolStripMenuItem
+            // 
+            this.hủyToolStripMenuItem.Name = "hủyToolStripMenuItem";
+            this.hủyToolStripMenuItem.Size = new System.Drawing.Size(131, 32);
+            this.hủyToolStripMenuItem.Text = "Hủy";
+            // 
             // pictureBoxCloseModal
             // 
             this.pictureBoxCloseModal.Image = global::RestaurantManagement.Properties.Resources.close_24;
@@ -64,27 +85,6 @@
             this.pictureBoxCloseModal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCloseModal.TabIndex = 1;
             this.pictureBoxCloseModal.TabStop = false;
-            // 
-            // contextMenuStripTrangThaiDatMon
-            // 
-            this.contextMenuStripTrangThaiDatMon.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStripTrangThaiDatMon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.duyệtToolStripMenuItem,
-            this.hủyToolStripMenuItem});
-            this.contextMenuStripTrangThaiDatMon.Name = "contextMenuStripTrangThaiDatMon";
-            this.contextMenuStripTrangThaiDatMon.Size = new System.Drawing.Size(241, 101);
-            // 
-            // duyệtToolStripMenuItem
-            // 
-            this.duyệtToolStripMenuItem.Name = "duyệtToolStripMenuItem";
-            this.duyệtToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
-            this.duyệtToolStripMenuItem.Text = "Duyệt";
-            // 
-            // hủyToolStripMenuItem
-            // 
-            this.hủyToolStripMenuItem.Name = "hủyToolStripMenuItem";
-            this.hủyToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
-            this.hủyToolStripMenuItem.Text = "Hủy";
             // 
             // FormThongBaoDatBan
             // 
@@ -98,8 +98,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormThongBaoDatBan";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThongBao)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCloseModal)).EndInit();
             this.contextMenuStripTrangThaiDatMon.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCloseModal)).EndInit();
             this.ResumeLayout(false);
 
         }

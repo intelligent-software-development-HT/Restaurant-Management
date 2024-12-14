@@ -111,12 +111,19 @@ namespace RestaurantManagement
 
         private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBoxMaMonAn.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            textBoxTenMonAn.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            textBoxDonGia.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            comboBoxLoaiMonAn.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            int maMonAn = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
 
+            BindingDataMonAn(maMonAn);
+        }
 
+        private void BindingDataMonAn(int maMonAn)
+        {
+            MonAn monAn = monAnBLL.getById(maMonAn);
+
+            textBoxMaMonAn.Text = monAn.MaMonAn.ToString();
+            textBoxTenMonAn.Text = monAn.TenMonAn;
+            textBoxDonGia.Text = monAn.DonGia.ToString();
+            comboBoxLoaiMonAn.Text = monAn.LoaiMonAn.TenLoaiMonAn;
         }
 
         private void FormMonAn_Load(object sender, EventArgs e)
@@ -127,10 +134,8 @@ namespace RestaurantManagement
         {
             loadDataGridView();
             loadCMB();
-            textBoxMaMonAn.Text = dataGridView1.Rows[0].Cells[0].Value.ToString();
-            textBoxTenMonAn.Text = dataGridView1.Rows[0].Cells[1].Value.ToString();
-            textBoxDonGia.Text = dataGridView1.Rows[0].Cells[2].Value.ToString();
-            comboBoxLoaiMonAn.Text = dataGridView1.Rows[0].Cells[3].Value.ToString();
+
+            BindingDataMonAn(1);
         }
         void loadCMB()
         {
@@ -143,9 +148,10 @@ namespace RestaurantManagement
             dataGridView1.DataSource = monAnBLL.listMonAn();
             dataGridView1.Columns[0].HeaderText = "Mã món ăn"; 
             dataGridView1.Columns[1].HeaderText = "Tên món ăn";
-            dataGridView1.Columns[2].HeaderText = "Đơn giá";
-            dataGridView1.Columns[3].HeaderText = "Tên loại món ăn";
-            
+            dataGridView1.Columns[2].HeaderText = "Mô tả";
+            dataGridView1.Columns[3].HeaderText = "Hình ảnh";
+            dataGridView1.Columns[4].HeaderText = "Đơn giá";
+            dataGridView1.Columns[5].HeaderText = "Mã loại món ăn";
         }
     }
 }

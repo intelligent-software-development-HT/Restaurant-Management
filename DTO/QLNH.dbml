@@ -149,4 +149,20 @@
   <Function Name="dbo.sp_xuLyTrangThaiDatBan" Method="sp_xuLyTrangThaiDatBan">
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.sp_ThongKeMonAn" Method="sp_ThongKeMonAn">
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="sp_ThongKeMonAnResult">
+      <Column Name="TenMonAn" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TongSoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getRevenue" Method="getRevenue">
+    <Parameter Name="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="endDate" Type="System.DateTime" DbType="Date" />
+    <ElementType Name="getRevenueResult">
+      <Column Name="Ngay" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DoanhThu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

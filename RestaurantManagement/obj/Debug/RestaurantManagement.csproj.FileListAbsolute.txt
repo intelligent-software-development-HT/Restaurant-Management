@@ -128,3 +128,4 @@ D:\QLNH\Restaurant-Management\RestaurantManagement\obj\Debug\Restaura.B356954C.U
 D:\QLNH\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.exe
 D:\QLNH\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.pdb
 D:\QLNH\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormThongKe.resources
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormThongKe.resources

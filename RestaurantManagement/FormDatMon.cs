@@ -255,10 +255,10 @@ namespace RestaurantManagement
             int totalWidth = flowLayoutPanelLoaiMon.Controls.OfType<Button>().Sum(btn => btn.Width + btn.Margin.Horizontal + (loaiMons.Count * 7));
 
             // Cài đặt giá trị cho HScrollBar
-            hScrollBar1.Minimum = 0;
-            hScrollBar1.Maximum = totalWidth - this.flowLayoutPanelLoaiMon.Width; // Tổng chiều rộng - chiều rộng của FlowLayoutPanel
-            hScrollBar1.LargeChange = this.flowLayoutPanelLoaiMon.Width; // Kích thước cuộn lớn
-            hScrollBar1.SmallChange = 10; // Kích thước cuộn nhỏ
+            //hScrollBar1.Minimum = 0;
+            //hScrollBar1.Maximum = totalWidth - this.flowLayoutPanelLoaiMon.Width; // Tổng chiều rộng - chiều rộng của FlowLayoutPanel
+            //hScrollBar1.LargeChange = this.flowLayoutPanelLoaiMon.Width; // Kích thước cuộn lớn
+            //hScrollBar1.SmallChange = 10; // Kích thước cuộn nhỏ
 
             // Đặt chiều rộng của FlowLayoutPanel nếu cần
             flowLayoutPanelLoaiMon.Width = totalWidth; // Cập nhật chiều rộng của FlowLayoutPanel

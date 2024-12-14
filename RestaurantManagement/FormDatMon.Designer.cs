@@ -206,22 +206,17 @@ namespace RestaurantManagement
             // 
             // buttonThanhToan
             // 
-            this.buttonThanhToan.Enabled = false;
-            this.buttonThanhToan.Location = new System.Drawing.Point(535, 666);
+            this.buttonThanhToan.Location = new System.Drawing.Point(0, 0);
             this.buttonThanhToan.Name = "buttonThanhToan";
-            this.buttonThanhToan.Size = new System.Drawing.Size(166, 64);
-            this.buttonThanhToan.TabIndex = 3;
-            this.buttonThanhToan.Text = "Thanh toán";
-            this.buttonThanhToan.UseVisualStyleBackColor = true;
+            this.buttonThanhToan.Size = new System.Drawing.Size(75, 23);
+            this.buttonThanhToan.TabIndex = 6;
             // 
             // buttonInHoaDon
             // 
-            this.buttonInHoaDon.Location = new System.Drawing.Point(363, 665);
+            this.buttonInHoaDon.Location = new System.Drawing.Point(0, 0);
             this.buttonInHoaDon.Name = "buttonInHoaDon";
-            this.buttonInHoaDon.Size = new System.Drawing.Size(166, 64);
-            this.buttonInHoaDon.TabIndex = 3;
-            this.buttonInHoaDon.Text = "In hóa đơn";
-            this.buttonInHoaDon.UseVisualStyleBackColor = true;
+            this.buttonInHoaDon.Size = new System.Drawing.Size(75, 23);
+            this.buttonInHoaDon.TabIndex = 7;
             // 
             // listViewDonMon
             // 
@@ -370,9 +365,8 @@ namespace RestaurantManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1000, 680);
+            this.ClientSize = new System.Drawing.Size(1610, 680);
             this.Controls.Add(this.labelThongBao);
             this.Controls.Add(this.buttonKiemTraDatBan);
             this.Controls.Add(this.labelTenDangNhap);
@@ -416,7 +410,6 @@ namespace RestaurantManagement
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelBan;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelLoaiMon;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMon;
-        private System.Windows.Forms.Button buttonThemMon;
         private System.Windows.Forms.TextBox textBoxTongTien;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonTachBan;
@@ -426,8 +419,8 @@ namespace RestaurantManagement
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Button buttonThemMon;
-        private System.Windows.Forms.Button buttonInHoaDon;
-        private System.Windows.Forms.Button buttonThanhToan;
+        //private System.Windows.Forms.Button buttonInHoaDon;
+        //private System.Windows.Forms.Button buttonThanhToan;
         private System.Windows.Forms.HScrollBar hScrollBar1;
         private System.Windows.Forms.Button buttonKiemTraDatBan;
         private System.Windows.Forms.Label labelThongBao;

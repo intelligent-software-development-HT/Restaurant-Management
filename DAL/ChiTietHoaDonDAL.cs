@@ -20,7 +20,7 @@ namespace DAL
         }
         public List<ChiTietHoaDon> getListChiTietHoaDon()
         {
-            return _dataContext.ChiTietHoaDons.ToList<ChiTietHoaDon>();
+            return _dataContext.ChiTietHoaDons.OrderBy(r => r.MaCTHD).ToList();
         }
 
         public ChiTietHoaDon GetByMonVaHoaDon(int maMon, int maHoaDon)
