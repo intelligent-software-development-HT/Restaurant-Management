@@ -38,3 +38,14 @@ D:\QLNH\Restaurant-Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\QLNH\Restaurant-Management\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\QLNH\Restaurant-Management\DAL\obj\Debug\DAL.dll
 D:\QLNH\Restaurant-Management\DAL\obj\Debug\DAL.pdb
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.dll.config
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.dll
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.MachineLearning.dll
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.Math.Core.dll
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.Math.dll
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.Statistics.dll
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.xml
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.MachineLearning.xml
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.Math.xml
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.Math.Core.xml
+D:\QLNH\Restaurant-Management\DAL\bin\Debug\Accord.Statistics.xml

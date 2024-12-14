@@ -461,7 +461,7 @@ namespace RestaurantManagement
 
         private void hScrollBar1_Scroll_1(object sender, ScrollEventArgs e)
         {
-            flowLayoutPanelLoaiMon.Left = -hScrollBar1.Value;
+            //flowLayoutPanelLoaiMon.Left = -hScrollBar1.Value;
         }
     }
 }

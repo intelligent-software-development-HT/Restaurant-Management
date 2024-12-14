@@ -53,5 +53,9 @@ namespace DAL
             var rs = _dataContext.sp_ThongKeMonAn(startDate, endDate);
             return rs;
         }
+        public ISingleResult<GetDoanhThuTheoNgay3Result> getDT()
+        {
+            return _dataContext.GetDoanhThuTheoNgay3();
+        }
     }
 }
