@@ -65,10 +65,6 @@ D:\QLNH\Restaurant-Management\BLL\bin\Debug\DAL.pdb
 D:\QLNH\Restaurant-Management\BLL\bin\Debug\DTO.pdb
 D:\QLNH\Restaurant-Management\BLL\bin\Debug\DTO.dll.config
 D:\QLNH\Restaurant-Management\BLL\bin\Debug\BCrypt.Net-Next.xml
-D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.Compression.Base.xml
-D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.DocIO.Base.xml
-D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.OfficeChart.Base.xml
-D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.XlsIO.Base.xml
 D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Buffers.xml
 D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Memory.xml
 D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Numerics.Vectors.xml

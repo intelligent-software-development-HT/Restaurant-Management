@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Linq;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,19 @@ namespace DAL
             {
                 return false;
             }
+        }
+
+        public ISingleResult<getRevenueResult> GetDoanhThu(DateTime startDate, DateTime endDate)
+        {
+            
+            var rs = _dataContext.getRevenue(startDate, endDate);
+            return rs;
+            
+        }
+        public ISingleResult<sp_ThongKeMonAnResult> thongKeMonAn(DateTime startDate, DateTime endDate)
+        {
+            var rs = _dataContext.sp_ThongKeMonAn(startDate, endDate);
+            return rs;
         }
     }
 }

@@ -33,11 +33,16 @@ namespace RestaurantManagement
             this.buttonPhanQuyen.Click += ButtonPhanQuyen_Click;
             this.buttonDatMon.Click += ButtonDatMon_Click;
             this.buttonDonMon.Click += ButtonDonMon_Click;
-
+            this.buttonThongKe.Click += ButtonThongKe_Click;
             //Lấy role của người dùng
             int maNhom = Convert.ToInt32(Properties.Settings.Default.maNhom);
             //Đưa vào hàm để phân quyền
             HandleQuyenTruyCap(maNhom);
+        }
+
+        private void ButtonThongKe_Click(object sender, EventArgs e)
+        {
+            ShowForm(new FormThongKe());
         }
 
         private void ButtonBan_Click(object sender, EventArgs e)

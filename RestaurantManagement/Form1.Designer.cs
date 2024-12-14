@@ -44,6 +44,7 @@
             this.buttonDatMon = new System.Windows.Forms.Button();
             this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
+            this.buttonThongKe = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -60,6 +61,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.panel1.Controls.Add(this.buttonThongKe);
             this.panel1.Controls.Add(this.buttonThemVaoNhom);
             this.panel1.Controls.Add(this.buttonPhanQuyen);
             this.panel1.Controls.Add(this.buttonManHinh);
@@ -283,6 +285,22 @@
             this.pictureBoxClose.TabIndex = 0;
             this.pictureBoxClose.TabStop = false;
             // 
+            // buttonThongKe
+            // 
+            this.buttonThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(26)))), ((int)(((byte)(8)))));
+            this.buttonThongKe.FlatAppearance.BorderSize = 0;
+            this.buttonThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThongKe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.buttonThongKe.Image = global::RestaurantManagement.Properties.Resources.account_settings;
+            this.buttonThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonThongKe.Location = new System.Drawing.Point(0, 646);
+            this.buttonThongKe.Name = "buttonThongKe";
+            this.buttonThongKe.Size = new System.Drawing.Size(200, 50);
+            this.buttonThongKe.TabIndex = 8;
+            this.buttonThongKe.Text = "Thống kê";
+            this.buttonThongKe.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -322,6 +340,7 @@
         private System.Windows.Forms.Button buttonManHinh;
         private System.Windows.Forms.Button buttonNhomNguoiDung;
         private System.Windows.Forms.Button buttonThemVaoNhom;
+        private System.Windows.Forms.Button buttonThongKe;
     }
 }
 
