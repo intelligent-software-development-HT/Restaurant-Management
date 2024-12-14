@@ -23,6 +23,12 @@ namespace RestaurantManagement
             this.buttonDangNhap.Click += ButtonDangNhap_Click;
             this.textBoxTenDangNhap.KeyPress += TextBoxTenDangNhap_KeyPress;
             this.textBoxMatKhau.KeyPress += TextBoxMatKhau_KeyPress;
+            this.buttonThoat.Click += ButtonThoat_Click;
+        }
+
+        private void ButtonThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void TextBoxMatKhau_KeyPress(object sender, KeyPressEventArgs e)
@@ -89,6 +95,20 @@ namespace RestaurantManagement
         private bool IsInputValid(string username, string password)
         {
             return !string.IsNullOrWhiteSpace(username) && !string.IsNullOrWhiteSpace(password);
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+            if (textBoxMatKhau.UseSystemPasswordChar)
+            {
+                textBoxMatKhau.UseSystemPasswordChar = false;
+                pictureBox4.Image = Properties.Resources.eye;
+            }
+            else
+            {
+                textBoxMatKhau.UseSystemPasswordChar = true;
+                pictureBox4.Image = Properties.Resources.hidden;
+            }
         }
     }
 }

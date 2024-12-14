@@ -47,7 +47,8 @@
             this.dataGridViewDonMon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewDonMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDonMon.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewDonMon.Location = new System.Drawing.Point(12, 12);
+            this.dataGridViewDonMon.Location = new System.Drawing.Point(8, 8);
+            this.dataGridViewDonMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewDonMon.MultiSelect = false;
             this.dataGridViewDonMon.Name = "dataGridViewDonMon";
             this.dataGridViewDonMon.ReadOnly = true;
@@ -55,7 +56,7 @@
             this.dataGridViewDonMon.RowHeadersWidth = 62;
             this.dataGridViewDonMon.RowTemplate.Height = 28;
             this.dataGridViewDonMon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewDonMon.Size = new System.Drawing.Size(1043, 710);
+            this.dataGridViewDonMon.Size = new System.Drawing.Size(695, 461);
             this.dataGridViewDonMon.TabIndex = 0;
             // 
             // groupBox1
@@ -63,18 +64,21 @@
             this.groupBox1.Controls.Add(this.buttonCapNhatTrangThai);
             this.groupBox1.Controls.Add(this.comboBoxDonMon);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(1061, 12);
+            this.groupBox1.Location = new System.Drawing.Point(707, 8);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(320, 160);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(213, 104);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đơn món";
             // 
             // buttonCapNhatTrangThai
             // 
-            this.buttonCapNhatTrangThai.Location = new System.Drawing.Point(27, 95);
+            this.buttonCapNhatTrangThai.Location = new System.Drawing.Point(18, 62);
+            this.buttonCapNhatTrangThai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCapNhatTrangThai.Name = "buttonCapNhatTrangThai";
-            this.buttonCapNhatTrangThai.Size = new System.Drawing.Size(266, 39);
+            this.buttonCapNhatTrangThai.Size = new System.Drawing.Size(177, 25);
             this.buttonCapNhatTrangThai.TabIndex = 2;
             this.buttonCapNhatTrangThai.Text = "Cập nhật trạng thái";
             this.buttonCapNhatTrangThai.UseVisualStyleBackColor = true;
@@ -82,29 +86,32 @@
             // comboBoxDonMon
             // 
             this.comboBoxDonMon.FormattingEnabled = true;
-            this.comboBoxDonMon.Location = new System.Drawing.Point(27, 61);
+            this.comboBoxDonMon.Location = new System.Drawing.Point(18, 40);
+            this.comboBoxDonMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxDonMon.Name = "comboBoxDonMon";
-            this.comboBoxDonMon.Size = new System.Drawing.Size(266, 28);
+            this.comboBoxDonMon.Size = new System.Drawing.Size(179, 21);
             this.comboBoxDonMon.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 37);
+            this.label1.Location = new System.Drawing.Point(15, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 20);
+            this.label1.Size = new System.Drawing.Size(100, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Trạng thái đơn món";
             // 
             // FormDonMon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1393, 734);
+            this.ClientSize = new System.Drawing.Size(1000, 680);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewDonMon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormDonMon";
             this.Text = "FormDonMon";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDonMon)).EndInit();

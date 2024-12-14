@@ -116,6 +116,7 @@ namespace RestaurantManagement
             textBoxDonGia.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             comboBoxLoaiMonAn.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
 
+
         }
 
         private void FormMonAn_Load(object sender, EventArgs e)

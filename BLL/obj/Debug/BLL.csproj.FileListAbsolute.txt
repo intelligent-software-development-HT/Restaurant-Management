@@ -52,3 +52,29 @@ D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debu
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.DocIO.Base.xml
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.OfficeChart.Base.xml
 D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\BLL\bin\Debug\Syncfusion.XlsIO.Base.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\BLL.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\BLL.pdb
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\BCrypt.Net-Next.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\DAL.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\DTO.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Buffers.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Memory.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Numerics.Vectors.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\DAL.pdb
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\DTO.pdb
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\DTO.dll.config
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\BCrypt.Net-Next.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.Compression.Base.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.DocIO.Base.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.OfficeChart.Base.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\Syncfusion.XlsIO.Base.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Buffers.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Memory.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Numerics.Vectors.xml
+D:\QLNH\Restaurant-Management\BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\QLNH\Restaurant-Management\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\QLNH\Restaurant-Management\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\QLNH\Restaurant-Management\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\QLNH\Restaurant-Management\BLL\obj\Debug\BLL.dll
+D:\QLNH\Restaurant-Management\BLL\obj\Debug\BLL.pdb
