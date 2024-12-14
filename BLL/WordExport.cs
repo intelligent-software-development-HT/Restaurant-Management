@@ -220,8 +220,8 @@ namespace BLL
             {
                 File.Delete(file);
             }
-            //string path = Global.AppPath + Constants.FOLDER_TEMPLATES + Constants.CHAR_FLASH + FILE_QUYETDINHKHENTHUONG;
-            string path = @"D:\HocKy7\phat trien ung dung thong minh\DoAn\\Restaurant-Management\BLL\bin\Debug\hoa-don-thanh-toan.docx";
+            string fileName = Path.Combine("hoa-don-thanh-toan.docx");
+            string path = Global.AppPath + fileName;
             try
             {
                 // Read template

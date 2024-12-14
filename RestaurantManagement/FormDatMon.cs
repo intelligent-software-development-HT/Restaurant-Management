@@ -22,6 +22,7 @@ namespace RestaurantManagement
         private readonly DatMonBLL _datMonBLL = new DatMonBLL();
         private readonly HoaDonBLL _hoaDonBLL = new HoaDonBLL();
         private readonly ChiTietHoaDonBLL _chiTietHoaDonBLL = new ChiTietHoaDonBLL();
+        private readonly PhieuDatBanBLL _datBan = new PhieuDatBanBLL();
 
         public FormDatMon()
         {
@@ -32,6 +33,22 @@ namespace RestaurantManagement
             this.buttonThemMon.Click += ButtonThemMon_Click;
             this.buttonThanhToan.Click += ButtonThanhToan_Click;
             this.buttonInHoaDon.Click += ButtonInHoaDon_Click;
+            this.buttonKiemTraDatBan.Click += ButtonKiemTraDatBan_Click;
+        }
+
+        private void ButtonKiemTraDatBan_Click(object sender, EventArgs e)
+        {
+            //Xu ly nhung ban da dat nhung trang thai van chua hoan tat
+            try
+            {
+                _datBan.XuLyTrangThaiDatBan();
+                LoadThongBaoDatBan();
+                MessageBox.Show("Xử lý trạng thái thành công");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Xử lý trạng thái không thành công");
+            }
         }
 
         private void ButtonInHoaDon_Click(object sender, EventArgs e)
@@ -79,6 +96,12 @@ namespace RestaurantManagement
 
         private void ButtonThemMon_Click(object sender, EventArgs e)
         {
+            if (_datBan.KiemTraBanKhaDung() <= 0)
+            {
+                MessageBox.Show("Không còn bàn trống");
+                return;
+            }
+
             if (!panelThongTinDatMon.Visible)
             {
                 MessageBox.Show("Vui lòng chọn món");
@@ -170,6 +193,16 @@ namespace RestaurantManagement
             panelThongTinDatMon.Visible = false;
             labelTenDangNhap.Text = "Hello " + Properties.Settings.Default.tenDangNhap;
             labelTenDangNhap.Tag = Properties.Settings.Default.tenDangNhap;
+            LoadThongBaoDatBan();
+        }
+
+        private void LoadThongBaoDatBan()
+        {
+            var datBans = _datBan.GetDanhSachDatBan();
+
+            int soLuongThongBao = datBans?.Count ?? 0;
+
+            labelThongBao.Text = soLuongThongBao.ToString();
         }
 
         private void LoadThucDon()

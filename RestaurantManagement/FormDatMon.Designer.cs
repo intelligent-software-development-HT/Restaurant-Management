@@ -1,4 +1,6 @@
-﻿namespace RestaurantManagement
+﻿using System.Drawing;
+
+namespace RestaurantManagement
 {
     partial class FormDatMon
     {
@@ -52,8 +54,10 @@
             this.nudSoLuong = new System.Windows.Forms.NumericUpDown();
             this.lblThanhTien = new System.Windows.Forms.Label();
             this.lblTenMon = new System.Windows.Forms.Label();
-            this.pictureBoxNotify = new System.Windows.Forms.PictureBox();
             this.labelTenDangNhap = new System.Windows.Forms.Label();
+            this.buttonKiemTraDatBan = new System.Windows.Forms.Button();
+            this.labelThongBao = new System.Windows.Forms.Label();
+            this.pictureBoxNotify = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPageBan.SuspendLayout();
             this.tabPageThucDon.SuspendLayout();
@@ -320,16 +324,6 @@
             this.lblTenMon.TabIndex = 0;
             this.lblTenMon.Text = "Pizza";
             // 
-            // pictureBoxNotify
-            // 
-            this.pictureBoxNotify.Image = global::RestaurantManagement.Properties.Resources.notification;
-            this.pictureBoxNotify.Location = new System.Drawing.Point(1241, 26);
-            this.pictureBoxNotify.Name = "pictureBoxNotify";
-            this.pictureBoxNotify.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxNotify.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxNotify.TabIndex = 2;
-            this.pictureBoxNotify.TabStop = false;
-            // 
             // labelTenDangNhap
             // 
             this.labelTenDangNhap.AutoSize = true;
@@ -339,11 +333,45 @@
             this.labelTenDangNhap.TabIndex = 3;
             this.labelTenDangNhap.Text = "Hello";
             // 
+            // buttonKiemTraDatBan
+            // 
+            this.buttonKiemTraDatBan.Location = new System.Drawing.Point(954, 26);
+            this.buttonKiemTraDatBan.Name = "buttonKiemTraDatBan";
+            this.buttonKiemTraDatBan.Size = new System.Drawing.Size(167, 46);
+            this.buttonKiemTraDatBan.TabIndex = 4;
+            this.buttonKiemTraDatBan.Text = "Kiểm tra đặt bàn";
+            this.buttonKiemTraDatBan.UseVisualStyleBackColor = true;
+            // 
+            // labelThongBao
+            // 
+            this.labelThongBao.BackColor = System.Drawing.Color.Transparent;
+            this.labelThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThongBao.ForeColor = System.Drawing.Color.Transparent;
+            this.labelThongBao.Image = global::RestaurantManagement.Properties.Resources.circle__2_;
+            this.labelThongBao.Location = new System.Drawing.Point(1192, 9);
+            this.labelThongBao.Name = "labelThongBao";
+            this.labelThongBao.Size = new System.Drawing.Size(32, 32);
+            this.labelThongBao.TabIndex = 6;
+            this.labelThongBao.Text = "0";
+            this.labelThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBoxNotify
+            // 
+            this.pictureBoxNotify.Image = global::RestaurantManagement.Properties.Resources.notification;
+            this.pictureBoxNotify.Location = new System.Drawing.Point(1178, 26);
+            this.pictureBoxNotify.Name = "pictureBoxNotify";
+            this.pictureBoxNotify.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxNotify.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxNotify.TabIndex = 2;
+            this.pictureBoxNotify.TabStop = false;
+            // 
             // FormDatMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1589, 833);
+            this.Controls.Add(this.labelThongBao);
+            this.Controls.Add(this.buttonKiemTraDatBan);
             this.Controls.Add(this.labelTenDangNhap);
             this.Controls.Add(this.pictureBoxNotify);
             this.Controls.Add(this.groupBoxDatMon);
@@ -394,5 +422,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Button buttonKiemTraDatBan;
+        private System.Windows.Forms.Label labelThongBao;
     }
 }

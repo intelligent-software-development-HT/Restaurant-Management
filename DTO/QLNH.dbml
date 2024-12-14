@@ -143,4 +143,10 @@
     <Parameter Name="maBan" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.sp_kiemTraBanKhaDung" Method="sp_kiemTraBanKhaDung">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_xuLyTrangThaiDatBan" Method="sp_xuLyTrangThaiDatBan">
+    <Return Type="System.Int32" />
+  </Function>
 </Database>
