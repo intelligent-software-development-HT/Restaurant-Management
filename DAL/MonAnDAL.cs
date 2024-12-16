@@ -48,8 +48,16 @@ namespace DAL
                 MonAn monAn = dataContext.MonAns.Where(p => p.MaMonAn == maMonAn).FirstOrDefault();
                 monAn.TenMonAn = mNew.TenMonAn;
                 monAn.DonGia = mNew.DonGia;
-                monAn.LoaiMonAn = mNew.LoaiMonAn;
-                monAn.MaLoaiMonAn = mNew.MaLoaiMonAn;
+
+                if (monAn.MaLoaiMonAn != mNew.MaLoaiMonAn)
+                {
+                    var newLoaiMonAn = dataContext.LoaiMonAns.FirstOrDefault(l => l.MaLoaiMonAn == mNew.MaLoaiMonAn);
+                    if (newLoaiMonAn != null)
+                    {
+                        monAn.LoaiMonAn = newLoaiMonAn; // Cập nhật đối tượng liên quan
+                    }
+                }
+
                 dataContext.SubmitChanges();
                 return true;
             }

@@ -38,12 +38,13 @@ namespace RestaurantManagement
 
         private void ButtonKiemTraDatBan_Click(object sender, EventArgs e)
         {
-            //Xu ly nhung ban da dat nhung trang thai van chua hoan tat
             try
             {
                 _datBan.XuLyTrangThaiDatBan();
                 LoadThongBaoDatBan();
-                MessageBox.Show("Xử lý trạng thái thành công");
+                int banKhaDung = _datBan.KiemTraBanKhaDung() > 0 ? _datBan.KiemTraBanKhaDung() : 0;
+                
+                MessageBox.Show($"Hiện tại có {banKhaDung} bàn khả dụng");
             }
             catch (Exception ex)
             {
@@ -181,8 +182,6 @@ namespace RestaurantManagement
         private void PictureBoxNotify_Click(object sender, EventArgs e)
         {
             FormThongBaoDatBan form = new FormThongBaoDatBan();
-            form.StartPosition = FormStartPosition.Manual;
-            form.Location = new Point(620, 80);
             form.ShowDialog();
         }
 

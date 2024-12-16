@@ -20,7 +20,6 @@ namespace RestaurantManagement
         {
             InitializeComponent();
             this.Load += FormThongBaoDatBan_Load;
-            this.pictureBoxCloseModal.Click += PictureBoxCloseModal_Click;
             this.dataGridViewThongBao.MouseDown += DataGridViewThongBao_MouseDown;
             this.duyệtToolStripMenuItem.Click += DuyệtToolStripMenuItem_Click;
             this.hủyToolStripMenuItem.Click += HủyToolStripMenuItem_Click;
@@ -70,11 +69,6 @@ namespace RestaurantManagement
                     contextMenuStripTrangThaiDatMon.Show(dataGridViewThongBao, e.Location);
                 }
             }
-        }
-
-        private void PictureBoxCloseModal_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void FormThongBaoDatBan_Load(object sender, EventArgs e)

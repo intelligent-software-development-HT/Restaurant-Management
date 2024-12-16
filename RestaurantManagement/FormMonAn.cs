@@ -81,7 +81,6 @@ namespace RestaurantManagement
                 mNew.DonGia = int.Parse(textBoxDonGia.Text);
                 int maLoaiMon = int.Parse(comboBoxLoaiMonAn.SelectedValue.ToString());
                 mNew.LoaiMonAn = loaiMonAnBLL.getById(maLoaiMon);
-                mNew.MaLoaiMonAn = maLoaiMon;
                 if (!monAnBLL.editMonAn(maMonAn, mNew))
                 {
                     MessageBox.Show("Sửa món ăn không thành công !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

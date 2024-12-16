@@ -75,7 +75,7 @@
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="HinhAnh" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="DonGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MaLoaiMonAn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaLoaiMonAn" Type="System.Int32" DbType="Int" CanBeNull="false" />
       <Association Name="MonAn_ChiTietHoaDon" Member="ChiTietHoaDons" ThisKey="MaMonAn" OtherKey="MaMonAn" Type="ChiTietHoaDon" />
       <Association Name="LoaiMonAn_MonAn" Member="LoaiMonAn" ThisKey="MaLoaiMonAn" OtherKey="MaLoaiMonAn" Type="LoaiMonAn" IsForeignKey="true" />
     </Type>

@@ -1632,7 +1632,7 @@ namespace DTO
 		
 		private System.Nullable<int> _DonGia;
 		
-		private System.Nullable<int> _MaLoaiMonAn;
+		private int _MaLoaiMonAn;
 		
 		private EntitySet<ChiTietHoaDon> _ChiTietHoaDons;
 		
@@ -1652,7 +1652,7 @@ namespace DTO
     partial void OnHinhAnhChanged();
     partial void OnDonGiaChanging(System.Nullable<int> value);
     partial void OnDonGiaChanged();
-    partial void OnMaLoaiMonAnChanging(System.Nullable<int> value);
+    partial void OnMaLoaiMonAnChanging(int value);
     partial void OnMaLoaiMonAnChanged();
     #endregion
 		
@@ -1764,7 +1764,7 @@ namespace DTO
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiMonAn", DbType="Int")]
-		public System.Nullable<int> MaLoaiMonAn
+		public int MaLoaiMonAn
 		{
 			get
 			{
@@ -1827,7 +1827,7 @@ namespace DTO
 					}
 					else
 					{
-						this._MaLoaiMonAn = default(Nullable<int>);
+						this._MaLoaiMonAn = default(int);
 					}
 					this.SendPropertyChanged("LoaiMonAn");
 				}
