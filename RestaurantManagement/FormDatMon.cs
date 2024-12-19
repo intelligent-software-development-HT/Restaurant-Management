@@ -412,9 +412,10 @@ namespace RestaurantManagement
                         Dock = DockStyle.Fill,
                         Tag = bans[index].MaBan,
                         Margin = new Padding(5),
-                        BackColor = !bans[index].TrangThai ? Color.FromArgb(0, 128, 128) : Color.FromArgb(172, 26, 8),
+                        BackColor = bans[index].TrangThai == 0 ? Color.FromArgb(0, 128, 128) : Color.FromArgb(172, 26, 8),
                         ForeColor = Color.White
                     };
+                    btnTable.MouseDown += BtnTable_MouseDown;
                     btnTable.Click += BtnTable_Click;
                     this.tableLayoutPanelBan.Controls.Add(btnTable, index % tableLayoutPanelBan.ColumnCount,
                     index / tableLayoutPanelBan.ColumnCount);
@@ -429,6 +430,20 @@ namespace RestaurantManagement
                     this.tableLayoutPanelBan.Controls.Add(emptyLabel, index % tableLayoutPanelBan.ColumnCount,
                     index / tableLayoutPanelBan.ColumnCount);
                 }
+            }
+        }
+
+        private void BtnTable_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Button button = sender as Button;
+
+                Point locationButton = button.Location;
+
+                Point locationClick = e.Location;
+
+                contextMenuStripThaoTac.Show(button, locationClick);
             }
         }
 
@@ -462,6 +477,30 @@ namespace RestaurantManagement
         private void hScrollBar2_Scroll(object sender, ScrollEventArgs e)
         {
             flowLayoutPanelLoaiMon.Left = -hScrollBar2.Value;
+        }
+
+        private void gộpBànToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Bàn hiện tại phải trống
+            if (!int.TryParse(groupBoxDatMon?.Tag?.ToString(), out int maBan))
+            {
+                MessageBox.Show("Vui lòng chọn bàn muốn gộp");
+                return;
+            }
+
+            //Ban ban = _banBLL.GetById(maBan);
+
+            //Hiển thị màn hình gộp bàn
+            var formGopBan = new FormGopBan(maBan);
+            formGopBan.Show();
+
+            //Lấy danh sách bàn gộp vd (3 bàn gộp với bàn 1) => đưa hóa đơn vào từng bàn đấy
+            //Thanh toán: thanh toán hóa đơn bàn 1 sau đó duyệt trạng thái của những bàn gộp với nó (if có flag gộp bàn ngược lại thì thanh toán bth)
+        }
+
+        private void chuyểnBànToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chuyển bàn nè");
         }
     }
 }

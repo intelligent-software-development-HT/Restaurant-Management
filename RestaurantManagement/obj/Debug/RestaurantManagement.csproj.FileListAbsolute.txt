@@ -156,3 +156,4 @@ D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantMa
 D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.DocIO.Base.xml
 D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.Compression.Base.xml
 D:\QLNH\Restaurant-Management\RestaurantManagement\bin\Debug\Syncfusion.OfficeChart.Base.xml
+D:\HocKy7\phat trien ung dung thong minh\DoAn\Restaurant-Management\RestaurantManagement\obj\Debug\RestaurantManagement.FormGopBan.resources

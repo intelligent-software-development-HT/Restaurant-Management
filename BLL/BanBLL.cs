@@ -32,5 +32,10 @@ namespace BLL
         {
             return banDAL.editBan(maBan, bNew);
         }
+
+        public bool CapNhatTrangThaiBan(int maBan, int trangThai)
+        {
+            return banDAL.CapNhatTrangThaiBan(maBan, trangThai);
+        }
     }
 }

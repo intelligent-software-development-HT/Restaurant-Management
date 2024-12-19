@@ -67,7 +67,7 @@ namespace RestaurantManagement
                 string tenBan = textBoxTenBan.Text;
                 Ban b = new Ban();
                 b.TenBan = tenBan;
-                b.TrangThai = false;
+                b.TrangThai = 0;
                 if(!banBLL.addBan(b))
                 {
                     MessageBox.Show("Thêm bàn mới không thành công !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -77,7 +77,7 @@ namespace RestaurantManagement
             {
                 int maBan = int.Parse(textBoxMaBan.Text);
                 string tenBan = textBoxTenBan.Text.Trim();
-                bool trangThai = false;
+                int trangThai = 0;
                 Ban b = new Ban();
                 b.TenBan = tenBan;
                 b.TrangThai = trangThai;

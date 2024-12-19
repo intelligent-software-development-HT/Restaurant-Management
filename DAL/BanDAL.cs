@@ -10,23 +10,27 @@ namespace DAL
 {
     public class BanDAL
     {
-        QLNHDataContext dataContext = new QLNHDataContext();
+        private readonly QLNHDataContext _dataContext = new QLNHDataContext();
+
         public BanDAL() { }
+
         public Ban GetById(int id)
         {
-            return dataContext.Bans.FirstOrDefault(r => r.MaBan.Equals(id));
+            return _dataContext.Bans.FirstOrDefault(r => r.MaBan.Equals(id));
         }
+
         public List<Ban> getListBan()
         {
-            dataContext.Refresh(RefreshMode.OverwriteCurrentValues, dataContext.Bans);
-            return dataContext.Bans.ToList<Ban>();
+            _dataContext.Refresh(RefreshMode.OverwriteCurrentValues, _dataContext.Bans);
+            return _dataContext.Bans.ToList<Ban>();
         }
+
         public bool addBan(Ban ban)
         {
             try
             {
-                dataContext.Bans.InsertOnSubmit(ban);
-                dataContext.SubmitChanges();
+                _dataContext.Bans.InsertOnSubmit(ban);
+                _dataContext.SubmitChanges();
                 return true;
             }
             catch (Exception ex)
@@ -34,30 +38,49 @@ namespace DAL
                 return false;
             }
         }
+
         public bool deleteBan(int maBan)
         {
             try
             {
-                Ban b = dataContext.Bans.Where(p => p.MaBan == maBan).FirstOrDefault();
-                dataContext.Bans.DeleteOnSubmit(b);
-                dataContext.SubmitChanges();
+                Ban b = _dataContext.Bans.Where(p => p.MaBan == maBan).FirstOrDefault();
+                _dataContext.Bans.DeleteOnSubmit(b);
+                _dataContext.SubmitChanges();
                 return true;
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 return false;
             }
         }
-        public bool editBan(int maBan,Ban bNew)
+
+        public bool editBan(int maBan, Ban bNew)
         {
             try
             {
-                Ban b = dataContext.Bans.Where(p => p.MaBan == maBan).FirstOrDefault();
+                Ban b = _dataContext.Bans.Where(p => p.MaBan == maBan).FirstOrDefault();
                 b.TenBan = bNew.TenBan;
                 b.TrangThai = bNew.TrangThai;
-                dataContext.SubmitChanges();
+                _dataContext.SubmitChanges();
                 return true;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public bool CapNhatTrangThaiBan(int maBan, int trangThai)
+        {
+            try
+            {
+                Ban ban = _dataContext.Bans.FirstOrDefault(r => r.MaBan.Equals(maBan));
+
+                ban.TrangThai = trangThai;
+                _dataContext.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex)
             {
                 return false;
             }
