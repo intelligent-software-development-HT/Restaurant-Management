@@ -39,10 +39,12 @@ namespace RestaurantManagement
             this.flowLayoutPanelLoaiMon = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanelMon = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxDatMon = new System.Windows.Forms.GroupBox();
+            this.comboBoxDoiBan = new System.Windows.Forms.ComboBox();
             this.buttonThemMon = new System.Windows.Forms.Button();
             this.textBoxTongTien = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonThanhToan = new System.Windows.Forms.Button();
+            this.buttonDoiBan = new System.Windows.Forms.Button();
             this.buttonInHoaDon = new System.Windows.Forms.Button();
             this.listViewDonMon = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -56,19 +58,18 @@ namespace RestaurantManagement
             this.lblTenMon = new System.Windows.Forms.Label();
             this.labelTenDangNhap = new System.Windows.Forms.Label();
             this.buttonKiemTraDatBan = new System.Windows.Forms.Button();
-            this.labelThongBao = new System.Windows.Forms.Label();
-            this.pictureBoxNotify = new System.Windows.Forms.PictureBox();
             this.contextMenuStripThaoTac = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.gộpBànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chuyểnBànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelThongBao = new System.Windows.Forms.Label();
+            this.pictureBoxNotify = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPageBan.SuspendLayout();
             this.tabPageThucDon.SuspendLayout();
             this.groupBoxDatMon.SuspendLayout();
             this.panelThongTinDatMon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNotify)).BeginInit();
             this.contextMenuStripThaoTac.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNotify)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -157,10 +158,12 @@ namespace RestaurantManagement
             // 
             // groupBoxDatMon
             // 
+            this.groupBoxDatMon.Controls.Add(this.comboBoxDoiBan);
             this.groupBoxDatMon.Controls.Add(this.buttonThemMon);
             this.groupBoxDatMon.Controls.Add(this.textBoxTongTien);
             this.groupBoxDatMon.Controls.Add(this.label1);
             this.groupBoxDatMon.Controls.Add(this.buttonThanhToan);
+            this.groupBoxDatMon.Controls.Add(this.buttonDoiBan);
             this.groupBoxDatMon.Controls.Add(this.buttonInHoaDon);
             this.groupBoxDatMon.Controls.Add(this.listViewDonMon);
             this.groupBoxDatMon.Controls.Add(this.panelThongTinDatMon);
@@ -172,6 +175,16 @@ namespace RestaurantManagement
             this.groupBoxDatMon.TabIndex = 1;
             this.groupBoxDatMon.TabStop = false;
             this.groupBoxDatMon.Text = "Đặt món";
+            // 
+            // comboBoxDoiBan
+            // 
+            this.comboBoxDoiBan.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
+            this.comboBoxDoiBan.FormattingEnabled = true;
+            this.comboBoxDoiBan.IntegralHeight = false;
+            this.comboBoxDoiBan.Location = new System.Drawing.Point(20, 880);
+            this.comboBoxDoiBan.Name = "comboBoxDoiBan";
+            this.comboBoxDoiBan.Size = new System.Drawing.Size(175, 43);
+            this.comboBoxDoiBan.TabIndex = 9;
             // 
             // buttonThemMon
             // 
@@ -215,12 +228,25 @@ namespace RestaurantManagement
             this.buttonThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThanhToan.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThanhToan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
-            this.buttonThanhToan.Location = new System.Drawing.Point(450, 880);
+            this.buttonThanhToan.Location = new System.Drawing.Point(515, 880);
             this.buttonThanhToan.Name = "buttonThanhToan";
-            this.buttonThanhToan.Size = new System.Drawing.Size(266, 62);
+            this.buttonThanhToan.Size = new System.Drawing.Size(210, 62);
             this.buttonThanhToan.TabIndex = 6;
             this.buttonThanhToan.Text = "Thanh toán";
             this.buttonThanhToan.UseVisualStyleBackColor = false;
+            // 
+            // buttonDoiBan
+            // 
+            this.buttonDoiBan.BackColor = System.Drawing.Color.Teal;
+            this.buttonDoiBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDoiBan.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDoiBan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
+            this.buttonDoiBan.Image = global::RestaurantManagement.Properties.Resources.refresh__2_;
+            this.buttonDoiBan.Location = new System.Drawing.Point(230, 880);
+            this.buttonDoiBan.Name = "buttonDoiBan";
+            this.buttonDoiBan.Size = new System.Drawing.Size(62, 62);
+            this.buttonDoiBan.TabIndex = 7;
+            this.buttonDoiBan.UseVisualStyleBackColor = false;
             // 
             // buttonInHoaDon
             // 
@@ -229,9 +255,9 @@ namespace RestaurantManagement
             this.buttonInHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInHoaDon.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonInHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(228)))), ((int)(((byte)(205)))));
-            this.buttonInHoaDon.Location = new System.Drawing.Point(174, 880);
+            this.buttonInHoaDon.Location = new System.Drawing.Point(298, 880);
             this.buttonInHoaDon.Name = "buttonInHoaDon";
-            this.buttonInHoaDon.Size = new System.Drawing.Size(270, 62);
+            this.buttonInHoaDon.Size = new System.Drawing.Size(210, 62);
             this.buttonInHoaDon.TabIndex = 7;
             this.buttonInHoaDon.Text = "In hóa đơn";
             this.buttonInHoaDon.UseVisualStyleBackColor = false;
@@ -370,6 +396,21 @@ namespace RestaurantManagement
             this.buttonKiemTraDatBan.Text = "Kiểm tra đặt bàn";
             this.buttonKiemTraDatBan.UseVisualStyleBackColor = false;
             // 
+            // contextMenuStripThaoTac
+            // 
+            this.contextMenuStripThaoTac.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStripThaoTac.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gộpBànToolStripMenuItem});
+            this.contextMenuStripThaoTac.Name = "contextMenuStripThaoTac";
+            this.contextMenuStripThaoTac.Size = new System.Drawing.Size(241, 69);
+            // 
+            // gộpBànToolStripMenuItem
+            // 
+            this.gộpBànToolStripMenuItem.Name = "gộpBànToolStripMenuItem";
+            this.gộpBànToolStripMenuItem.Size = new System.Drawing.Size(178, 32);
+            this.gộpBànToolStripMenuItem.Text = "Gộp bàn";
+            this.gộpBànToolStripMenuItem.Click += new System.EventHandler(this.gộpBànToolStripMenuItem_Click);
+            // 
             // labelThongBao
             // 
             this.labelThongBao.BackColor = System.Drawing.Color.Transparent;
@@ -393,29 +434,6 @@ namespace RestaurantManagement
             this.pictureBoxNotify.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxNotify.TabIndex = 2;
             this.pictureBoxNotify.TabStop = false;
-            // 
-            // contextMenuStripThaoTac
-            // 
-            this.contextMenuStripThaoTac.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStripThaoTac.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gộpBànToolStripMenuItem,
-            this.chuyểnBànToolStripMenuItem});
-            this.contextMenuStripThaoTac.Name = "contextMenuStripThaoTac";
-            this.contextMenuStripThaoTac.Size = new System.Drawing.Size(241, 101);
-            // 
-            // gộpBànToolStripMenuItem
-            // 
-            this.gộpBànToolStripMenuItem.Name = "gộpBànToolStripMenuItem";
-            this.gộpBànToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
-            this.gộpBànToolStripMenuItem.Text = "Gộp bàn";
-            this.gộpBànToolStripMenuItem.Click += new System.EventHandler(this.gộpBànToolStripMenuItem_Click);
-            // 
-            // chuyểnBànToolStripMenuItem
-            // 
-            this.chuyểnBànToolStripMenuItem.Name = "chuyểnBànToolStripMenuItem";
-            this.chuyểnBànToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
-            this.chuyểnBànToolStripMenuItem.Text = "Chuyển bàn";
-            this.chuyểnBànToolStripMenuItem.Click += new System.EventHandler(this.chuyểnBànToolStripMenuItem_Click);
             // 
             // FormDatMon
             // 
@@ -442,8 +460,8 @@ namespace RestaurantManagement
             this.panelThongTinDatMon.ResumeLayout(false);
             this.panelThongTinDatMon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNotify)).EndInit();
             this.contextMenuStripThaoTac.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNotify)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -483,6 +501,7 @@ namespace RestaurantManagement
         private System.Windows.Forms.HScrollBar hScrollBar2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripThaoTac;
         private System.Windows.Forms.ToolStripMenuItem gộpBànToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem chuyểnBànToolStripMenuItem;
+        private System.Windows.Forms.Button buttonDoiBan;
+        private System.Windows.Forms.ComboBox comboBoxDoiBan;
     }
 }

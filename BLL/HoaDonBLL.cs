@@ -21,6 +21,11 @@ namespace BLL
             return _hoaDonDAL.GetById(maHoaDon);
         }
 
+        public bool DoiBan(int maBanHienTai, int maBanMoi)
+        {
+            return _hoaDonDAL.DoiBan(maBanHienTai, maBanMoi);
+        }
+
         public List<HoaDon> getListHoaDon()
         {
             return _hoaDonDAL.getListHoaDon();

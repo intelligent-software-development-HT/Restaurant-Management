@@ -12,12 +12,15 @@ namespace DAL
     public class HoaDonDAL
     {
         private readonly QLNHDataContext _dataContext = new QLNHDataContext();
+
         public HoaDonDAL() { }
+
         public HoaDon GetById(int maHoaDon)
         {
             _dataContext.Refresh(RefreshMode.OverwriteCurrentValues, _dataContext.HoaDons);
             return _dataContext.HoaDons.FirstOrDefault(r => r.MaHD.Equals(maHoaDon));
         }
+
         public List<HoaDon> getListHoaDon()
         {
             return _dataContext.HoaDons.ToList();
@@ -42,18 +45,48 @@ namespace DAL
             }
         }
 
+        public bool DoiBan(int maBanHienTai, int maBanMoi)
+        {
+            try
+            {
+                HoaDon hoaDon = GetByBan(maBanHienTai);
+
+                if (hoaDon == null)
+                {
+                    return false;
+                }
+
+                Ban banMoi = _dataContext.Bans.FirstOrDefault(r => r.MaBan.Equals(maBanMoi));
+                Ban banHienTai = _dataContext.Bans.FirstOrDefault(r => r.MaBan.Equals(maBanHienTai));
+
+                banHienTai.TrangThai = 0;
+                banMoi.TrangThai = 1;
+
+                hoaDon.Ban = banMoi;
+
+                _dataContext.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
         public ISingleResult<getRevenueResult> GetDoanhThu(DateTime startDate, DateTime endDate)
         {
-            
+
             var rs = _dataContext.getRevenue(startDate, endDate);
             return rs;
-            
+
         }
+
         public ISingleResult<sp_ThongKeMonAnResult> thongKeMonAn(DateTime startDate, DateTime endDate)
         {
             var rs = _dataContext.sp_ThongKeMonAn(startDate, endDate);
             return rs;
         }
+
         public ISingleResult<GetDoanhThuTheoNgay3Result> getDT()
         {
             return _dataContext.GetDoanhThuTheoNgay3();

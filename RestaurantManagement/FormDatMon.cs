@@ -34,6 +34,43 @@ namespace RestaurantManagement
             this.buttonThanhToan.Click += ButtonThanhToan_Click;
             this.buttonInHoaDon.Click += ButtonInHoaDon_Click;
             this.buttonKiemTraDatBan.Click += ButtonKiemTraDatBan_Click;
+            this.buttonDoiBan.Click += ButtonDoiBan_Click;
+        }
+
+        private void ButtonDoiBan_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(groupBoxDatMon.Tag.ToString(), out int maBan))
+            {
+                MessageBox.Show("Không thể đổi bàn trống");
+                return;
+            }
+
+            Ban ban = _banBLL.GetById(maBan);
+
+            if (ban.TrangThai == 0)
+            {
+                MessageBox.Show("Đổi bàn không thành công. Bàn được chọn không có hóa đơn");
+                return;
+            }
+
+            int maBanDoi = Convert.ToInt32(comboBoxDoiBan.SelectedValue);
+
+            HoaDon hoaDon = _hoaDonBLL.GetByBan(maBanDoi);
+
+            if (hoaDon != null)
+            {
+                MessageBox.Show("Bàn muốn đổi đang có người ngồi");
+                return;
+            }
+
+            if (!_hoaDonBLL.DoiBan(maBan, maBanDoi))
+            {
+                MessageBox.Show("Đổi bàn không thành công");
+                return;
+            }
+
+            LoadDanhSachBan();
+            LoadThongTinDatMon();
         }
 
         private void ButtonKiemTraDatBan_Click(object sender, EventArgs e)
@@ -43,7 +80,7 @@ namespace RestaurantManagement
                 _datBan.XuLyTrangThaiDatBan();
                 LoadThongBaoDatBan();
                 int banKhaDung = _datBan.KiemTraBanKhaDung() > 0 ? _datBan.KiemTraBanKhaDung() : 0;
-                
+
                 MessageBox.Show($"Hiện tại có {banKhaDung} bàn khả dụng");
             }
             catch (Exception ex)
@@ -189,11 +226,21 @@ namespace RestaurantManagement
         {
             LoadDanhSachBan();
             LoadThucDon();
+            LoadBanDoi(0);
 
             panelThongTinDatMon.Visible = false;
             labelTenDangNhap.Text = "Hello " + Properties.Settings.Default.tenDangNhap;
             labelTenDangNhap.Tag = Properties.Settings.Default.tenDangNhap;
             LoadThongBaoDatBan();
+        }
+
+        private void LoadBanDoi(int banChon)
+        {
+            var bans = _banBLL.getListBan().Where(r => r.MaBan != banChon).ToList();
+
+            comboBoxDoiBan.DataSource = bans;
+            comboBoxDoiBan.DisplayMember = "TenBan";
+            comboBoxDoiBan.ValueMember = "MaBan";
         }
 
         private void LoadThongBaoDatBan()
@@ -453,7 +500,9 @@ namespace RestaurantManagement
             panelThongTinDatMon.Visible = false;
             groupBoxDatMon.Tag = (sender as Button).Tag;//Mã hóa đơn
 
-            HoaDon hoaDon = _hoaDonBLL.GetByBan(Convert.ToInt32(groupBoxDatMon.Tag));
+            int maBan = Convert.ToInt32(groupBoxDatMon.Tag);
+
+            HoaDon hoaDon = _hoaDonBLL.GetByBan(maBan);
 
             if (hoaDon != null)
             {
@@ -467,6 +516,7 @@ namespace RestaurantManagement
             }
 
             LoadThongTinDatMon(hoaDon?.MaHD ?? 0);
+            LoadBanDoi(maBan);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -496,11 +546,6 @@ namespace RestaurantManagement
 
             //Lấy danh sách bàn gộp vd (3 bàn gộp với bàn 1) => đưa hóa đơn vào từng bàn đấy
             //Thanh toán: thanh toán hóa đơn bàn 1 sau đó duyệt trạng thái của những bàn gộp với nó (if có flag gộp bàn ngược lại thì thanh toán bth)
-        }
-
-        private void chuyểnBànToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chuyển bàn nè");
         }
     }
 }
